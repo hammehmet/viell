@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,  maximum-scale=1.0, minimum-scale=1.0, user-scalable=0"/>
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+	<meta http-equiv="content-language" content="TR"/>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/4.5.1/css/fileinput.min.css" media="all" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" type="text/css" href="cdn/css/main.css">
+	<link rel="stylesheet" type="text/css" href="cdn/css/brand.css">
+	<link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700|Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+</head>
+<body>
+
+<div id="header"></div>
+<div class="content hundred-percent">
+	<div id="menu"></div>
+	<div class="sidebar-right brand-page">
+		<div class="sidebar-qutter">
+			<div class="breadcrumbs">
+				<ul>
+					<li>
+						<a href="#">Netflix</a>
+					</li>
+					<li>
+						<a href="#">Marka Ekleyin</a>
+					</li>
+				</ul>
+			</div>
+			<div class="head">
+				<h1>Marka Ekleyin</h1>
+			</div>
+			<div class="sidebar-content">
+				<div class="form">
+					<input id="input-b1" name="input-b1[]" type="file" multiple  data-browse-on-zone-click="true">
+					<div class="form-items">
+						<div class="items half">
+							<label>MARKA ADI</label>
+							<div class="form-group">
+								<input type="text" placeholder="">
+							</div>
+						</div>
+						<div class="items half">
+							<label>RESMİ ŞİRKET ÜNVANI</label>
+							<div class="form-group">
+								<input type="text" placeholder="">
+							</div>
+						</div>
+					</div>
+					<div class="form-items single-colm">
+						<div class="items">
+							<label>RESMİ ŞİRKET ADRESİ</label>
+							<div class="form-group">
+								<input type="text" placeholder="">
+							</div>
+						</div>
+					</div>
+					<div class="form-items">
+						<div class="items half">
+							<label>VERGİ DAİRESİ</label>
+							<div class="form-group">
+								<input type="text" placeholder="">
+							</div>
+						</div>
+						<div class="items half">
+							<label>VERGİ KİMLİK NUMARASI</label>
+							<div class="form-group">
+								<input type="text" placeholder="">
+							</div>
+						</div>
+					</div>
+					<div class="seperator"></div>
+					<div class="form-items">
+						<div class="items half">
+							<label>YETKİLİ ADI</label>
+							<div class="form-group">
+								<input type="text" placeholder="">
+							</div>
+						</div>
+						<div class="items half">
+							<label>YETKİLİ SOYADI</label>
+							<div class="form-group">
+								<input type="text" placeholder="">
+							</div>
+						</div>
+					</div>
+
+					<div class="form-items">
+						<div class="items half">
+							<label>EMAIL</label>
+							<div class="form-group">
+								<input type="text" placeholder="">
+							</div>
+						</div>
+						<div class="items half phone">
+							<label>NUMARA</label>
+							<div class="form-group">
+								<select>
+									<option>+90</option>
+								</select>
+								<input type="text" placeholder="">
+							</div>
+						</div>
+					</div>
+					<div class="form-items single-colm">
+						<div class="items">
+							<label>ŞİFRE</label>
+							<div class="form-group">
+								<i class="passwordIcon font-icon-eye"></i>
+								<input type="password" name="password" placeholder="">
+							</div>
+						</div>
+					</div>
+					<div class="items">
+						<button type="submit" class="buttons">KAYDET</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<script src="js/jquery.js"></script>
+<script src="js/jquery.validate.js"></script>
+<script src="js/jquery.mask.js"></script>
+<script src="cdn/js/main.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/4.5.1/js/fileinput.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $("#input-b1").fileinput({
+            showCaption: false,
+            dropZoneEnabled: true,
+            dropZoneTitle:"",
+            dropZoneClickTitle:"<span>Profil Fotoğrafı Ekleyin</span>",
+            showRemove: true,
+            showUpload: false, // <------ just set this from true to false
+            showCancel: true,
+            showUploadedThumbs: true,
+            showBrowse: true,
+            layoutTemplates: {footer: ""},
+            overwriteInitial: true,
+            initialPreview: [
+                // IMAGE RAW MARKUP
+                '<img src="https://am24.akamaized.net/tms/cnt/uploads/2011/02/netflix-logo-square-300x300.jpg" class="kv-preview-data file-preview-image">',
+            ],
+
+        });
+    });
+</script>
+</body>
+
+</html>

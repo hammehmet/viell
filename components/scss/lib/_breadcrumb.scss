@@ -1,0 +1,38 @@
+.breadcrumbs{
+  padding-bottom: 15px;
+  ul{
+    li{
+      display: inline-block;
+      &:before{
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 0 8px 8px;
+        border-color: transparent transparent $colorGray transparent;
+        content: "";
+        display: inline-block;
+      }
+      &:last-child{
+        &:after{
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 0 0 8px 8px;
+          border-color: transparent transparent $companyColor transparent;
+          content: "";
+          display: inline-block;
+        }
+        a{
+          color:$companyColor;
+        }
+      }
+      a{
+        color:$colorGray;
+        font-size: 11px;
+        line-height: 15px;
+        display: inline-block;
+        margin-right: 3px;
+      }
+    }
+  }
+}

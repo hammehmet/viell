@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,  maximum-scale=1.0, minimum-scale=1.0, user-scalable=0"/>
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+	<meta http-equiv="content-language" content="TR"/>
+	<link rel="stylesheet" type="text/css" href="cdn/css/main.css">
+	<link rel="stylesheet" type="text/css" href="cdn/css/product.css">
+	<link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700|Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+</head>
+<body>
+
+<div id="header"></div>
+<div class="content hundred-percent">
+	<div id="menu"></div>
+	<div class="sidebar-right  product-page">
+		<div class="sidebar-qutter">
+			<div class="breadcrumbs">
+				<ul>
+					<li>
+						<a href="#">Anasayfa</a>
+					</li>
+					<li>
+						<a href="#">Üyelik Tipleri</a>
+					</li>
+				</ul>
+			</div>
+			<div class="head">
+				<h1>Üyelik Tipleri</h1>
+				<div class="add-brand">
+					<a href="#" class="buttons ">Satın Aldıklarım</a>
+				</div>
+			</div>
+			<div class="sidebar-content">
+				<div class="product-tabs">
+					<ul>
+						<li>
+							<a href="#" class="current" onclick="getProductContent('_uyelik-tipleri')">Üyelik Tipleri</a>
+						</li>
+						<li>
+							<a href="#" onclick="getProductContent('_online-urunler')">Online Ürünler</a>
+						</li>
+						<li>
+							<a href="#" onclick="getProductContent('_offline-urunler')">Offline Ürünler</a>
+						</li>
+						<li>
+							<a href="#" onclick="getProductContent('_etkinlik-biletleri')">Etkinlik Biletleri</a>
+						</li>
+					</ul>
+				</div>
+				<div id="product-content">
+
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<script src="js/jquery.js"></script>
+<script src="cdn/js/main.js"></script>
+<script>
+
+    $(document).ready(function () {
+        getProductContent('_uyelik-tipleri');
+
+        $('.product-tabs li a').click(function(){
+            $('.product-tabs li a').removeClass('current');
+            $(this).addClass('current');
+        });
+    });
+
+
+
+    function getProductContent (type) {
+        $.ajax({
+            type: "GET",
+            url:  type + '.html',
+            data: "",
+            success: function (data) {
+                $("#product-content").html('');
+                $("#product-content").append(data);
+            },
+            failure: function (error) {
+
+            },
+            error: function (event, request, settings) {
+
+            }
+        });
+
+
+    }
+
+</script>
+</body>
+
+</html>

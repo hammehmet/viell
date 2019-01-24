@@ -1,0 +1,49 @@
+@import "../font-icons";
+.sidebar-right{
+  &.billfold-page{
+    .sidebar-qutter{
+      .head{
+
+      }
+      .sidebar-content{
+        .radios-items{
+          background: #fff;
+          max-width: 770px;
+          width: 100%;
+          box-shadow: 0 6px 19px 0 #dbe1f1;
+          @include border-radius(4px);
+          border: 1px solid #d7d7d7;
+          margin-top: 30px;
+          .title{
+            font-size: 24px;
+            color: #373737;
+            border-bottom: 1px solid #d7d7d7;
+            padding: 20px 30px;
+          }
+          .radios-content{
+            padding: 24px;
+            .sub-title{
+              font-size: 18px;
+              font-weight: 400;
+              color: #373737;
+              margin-bottom: 24px;
+            }
+            .action{
+              text-align: right;
+              .buttons{
+                display: inline-block;
+                &.add{
+                  max-width: 224px;
+                  margin-left: 10px;
+                }
+                &.delete{
+                  max-width: 180px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

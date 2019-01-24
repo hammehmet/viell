@@ -1,0 +1,470 @@
+@import "../font-icons";
+.login-page{
+  display: table;
+  height: 100%;
+  width: 100%;
+  .form{
+    width: 50%;
+    height: 100%;
+    float: left;
+    background-color: #f3f6fe;
+    padding: 30px;
+    position: relative;
+    .logos{
+      float: left;
+    }
+    .action{
+      display: inline-block;
+      float: right;
+      a{
+        border: 1px solid $companyColor;
+        @include border-radius(6px);
+        color:$companyColor;
+        font-size: 17px;
+        font-family: $Titillium;
+        font-weight: normal;
+        display: block;
+        text-align: center;
+        &:hover{
+          background: $companyColor;
+          color:$textColor;
+        }
+        &.signup{
+          width: 155px;
+          height: 50px;
+          line-height: 50px;
+        }
+      }
+    }
+    .forms{
+      width: 100%;
+      height: 100%;
+      padding: 50px 0;
+      display: table;
+      .forms-center{
+        display: table-cell;
+        vertical-align: middle;
+        .sub-tabs,
+        .tabs{
+          ul{
+            display: block;
+            text-align: center;
+            li{
+              display: inline-block;
+              min-width: 175px;
+              margin: 0 7px;
+              &.current{
+                a{
+                  background: $companyColor;
+                  color:#fff;
+                  span{
+                    &:before{
+                      content: "";
+                      width: 12px;
+                      height: 12px;
+                      background: #fff;
+                      display: inline-block;
+                      @include border-radius(50%);
+                      @include position(absolute, 50% null null -20px);
+                      z-index: 1;
+                      margin-top: -6px;
+                    }
+                    &:after{
+                      border: 1px solid #fff;
+                    }
+                  }
+                }
+              }
+              a{
+                display: block;
+                @include border-radius(2px);
+                box-shadow: 0 6px 12px 0 #dbe1f1, 0 1px 3px 0 #d9dbdf;
+                background-color: #ffffff;
+                font-size: 20px;
+                line-height: 38px;
+                letter-spacing: normal;
+                color: #9b9b9b;
+                border: 1px solid $companyColor;
+                font-family: $sourceSansFontFamily;
+                span{
+                  position: relative;
+                  margin-right: -18px;
+                  &:after{
+                    width: 16px;
+                    height: 16px;
+                    border: 1px solid $companyColor;
+                    background: $companyColor;
+                    @include border-radius(50%);
+                    display: inline-block;
+                    content: "";
+                    @include position(absolute, 50% null null -23px);
+                    margin-top: -9px;
+
+                  }
+                }
+              }
+            }
+          }
+        }
+        .sub-tabs{
+          margin: 45px 0 0 0;
+          ul{
+            li{
+              &.current{
+                a{
+                  span{
+                    &:before{
+                      @include size(8px);
+                      margin-top: -4px;
+                    }
+                  }
+                }
+              }
+              a{
+                font-size: 16px;
+                line-height: 48px;
+                span{
+                  &:after{
+                    @include size(12px);
+                    margin-top: -7px;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .login{
+          width: 100%;
+          max-width: 400px;
+          margin: 0 auto;
+          .title{
+            font-family: $Titillium;
+            font-size: 34px;
+            text-align: left;
+            color: #000000;
+            margin: 30px 0 18px 0;
+            span{
+              display: block;
+              font-size: 15px;
+              color: #9b9b9b;
+              margin-top: 5px;
+              padding-bottom: 12px;
+            }
+          }
+          .form-items{
+            .items{
+              padding-bottom: 25px;
+              @include clearfix();
+              &.half{
+                width: 50%;
+                float: left;
+                padding-left:10px;
+                padding-right: 10px;
+              }
+              &.phone{
+                select{
+                  width: 30%;
+                  float: left;
+                  @include border-radius(3px 0 0 3px);
+                  margin-right: -1px;
+                  font-size: 15px;
+                  padding-left: 10px;
+                  &.maxWidth-80{
+                    width: 20%;
+                  }
+                }
+                input[type=text]{
+                  width: 70%;
+                  float: left;
+                  @include border-radius(0px 3px 3px 0px);
+                  &.maxWidth-320{
+                    width: 80%;
+                  }
+                }
+              }
+              .form-group{
+                position: relative;
+                margin: 0;
+              }
+              label{
+                font-family: $Titillium;
+                font-size: 15px;
+                color: #9b9b9b;
+                display: block;
+                margin-bottom: 5px;
+              }
+              input[type=password],
+              input[type=text]{
+                @include border-radius(3px);
+                border: 1px solid $companyColor;
+                background: #fff;
+                height: 50px;
+                line-height: 50px;
+                padding-left: 15px;
+              }
+              select{
+                width: 100%;
+                height: 50px;
+                @include border-radius(3px);
+                border-color: $companyColor;
+              }
+              .passwordIcon{
+                @include position(absolute, 17px 17px null null);
+                font-size: 18px;
+                color:#c5cdd7;
+                display:inline-block;
+                &.font-icon-eye-clicked{
+                  color:$companyColor;
+                }
+                &:before{
+                  display: block;
+                }
+              }
+              .buttons{
+                margin-top: 15px;
+              }
+            }
+          }
+          .forgot-password-link{
+            border-top: 1px solid #c5cdd7;
+            text-align: center;
+            padding-top: 30px;
+            margin-top: 5px;
+            a{
+              color:$companyColor;
+              font-family: $Titillium;
+              font-size: 15px;
+            }
+          }
+          .seperator{
+            height: 1px;
+            background: $companyColor;
+            margin-top: 5px;
+            margin-bottom: 30px;
+          }
+          .pincode{
+            padding: 35px 0 0 0;
+            .pincode-input-container{
+              display: inline-block;
+              vertical-align: middle;
+              input{
+                &.pincode-input-text{
+                  @include size(60px);
+                  display: inline-block;
+                  border:1px solid $companyColor;
+                  color:$textColorLight;
+                  font-size: 26px;
+                  @include border-radius(4px);
+                  margin: 0 5px;
+                  text-align: center;
+                }
+              }
+            }
+            .accept{
+              display: inline-block;
+              max-width: 165px;
+              margin-left: 20px;
+              font-family: $Titillium;
+              font-size: 26px;
+              &:disabled{
+                @include opacity(.5)
+              }
+            }
+            p{
+              text-align: center;
+              font-size: 14px;
+              font-family: $sourceSansFontFamily;
+              color: $textColorLight;
+            }
+          }
+          .profile-photo{
+            @include size(165px);
+            border: 1px dashed $companyColor;
+            @include border-radius(6px);
+            margin: 0 auto 30px auto;
+            position: relative;
+            overflow: hidden;
+            img{
+              width: 100%;
+              position: absolute;
+              left: 50%;
+              top: 50%;
+              -webkit-transform: translate(-50%, -50%);
+              -ms-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+            }
+          }
+        }
+        .signup{
+          max-width: 470px;
+          .title{
+            text-align: center;
+          }
+          .form-items{
+            margin: 0 -10px;
+            @include clearfix();
+            &.single-colm{
+              margin:0;
+            }
+          }
+          .form-check {
+            margin-top: 15px;
+            &.margin-top{
+              margin-top: 25px;
+            }
+          }
+        }
+        .verification{
+          .items{
+            &.repeat-code-send{
+              text-align: center;
+              a{
+                font-size: 18px;
+                font-weight: 500;
+                text-align: center;
+                color: $companyColor;
+              }
+            }
+            &.time{
+              font-size: 25px;
+              text-align: center;
+              color: #888888;
+            }
+            &.policy{
+              font-size: 15px;
+              font-weight: normal;
+              font-style: normal;
+              font-stretch: normal;
+              line-height: 1.73;
+              letter-spacing: normal;
+              text-align: center;
+              color: #888888;
+              padding-bottom: 0;
+            }
+            .pincode-title{
+              font-size: 18px;
+              text-align: center;
+              color: #000000;
+              padding: 10px 0 15px 0;
+            }
+            .pincode-input-container{
+              .pincode-input-text{
+                height: 60px !important;
+                padding:0  !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .images{
+    width: 50%;
+    height: 100%;
+    float: left;
+    background: url('../../img/group-4.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+    .head{
+      text-align: right;
+      padding: 30px 50px 0 0;
+      a{
+        display: inline-block;
+        color:$companyColor;
+        font-family: $Titillium;
+        font-size: 20px;
+        i{
+          font-size: 26px;
+          margin-right: 15px;
+          display: inline-block;
+          position: relative;
+          top:-1px;
+        }
+      }
+    }
+    .logos{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-right: -50%;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+    }
+    .foot{
+      @include position(absolute, null null 0px 0px);
+      width: 100%;
+      padding:20px 15px;
+      ul{
+        display: block;
+        text-align: center;
+        li{
+          display: inline-block;
+          margin: 0 10px;
+          a{
+            color:#fff;
+            font-family: $Titillium;
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.file-input{
+  width: 191px;
+  max-width: 320px;
+  margin: 0 auto 30px auto;
+  text-align: center;
+  .file-preview{
+    padding: 0;
+    border: 0;
+    .close{
+      &.fileinput-remove{
+        display: none;
+      }
+    }
+    .file-drop-zone{
+      margin: 0;
+      padding: 10px;
+      border-color: $companyColor;
+      .file-drop-zone-title{
+        padding: 48px 0 32px 0;
+        i{
+          width: 48px;
+          height: 48px;
+          @include border-radius(50%);
+          background: $companyColor;
+          color:#fff;
+          text-align: center;
+          line-height: 48px;
+          font-size: 35px;
+          display: inline-block;
+          font-style: normal;
+        }
+        span{
+          display: block;
+          font-size: 14px;
+          color: #000000;
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}
+.krajee-default.file-preview-frame .kv-file-content{
+  width: auto;
+  height: auto;
+}
+.krajee-default.file-preview-frame {
+  margin: 0;
+  border: 0;
+  box-shadow: none;
+  padding: 0;
+}
+.fileinput-remove-button{
+  background: $textColorLight;
+  color:#fff;
+  padding: 5px 10px;
+  @include border-radius(3px);
+}

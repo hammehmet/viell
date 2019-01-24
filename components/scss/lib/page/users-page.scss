@@ -1,0 +1,204 @@
+@import "../font-icons";
+.sidebar-right{
+  &.users-page{
+    .sidebar-qutter{
+      .head{
+        .report-time{
+          display: inline-block;
+          width: 140px;
+          position: relative;
+          margin-left: 40px;
+          top:-3px;
+          &:after{
+            content: "";
+            width: 1px;
+            height: 100%;
+            @include position(absolute,0px 33px null null);
+            background: #c2c5cb;
+          }
+          select{
+            width: 100%;
+            height: 27px;
+            border-radius: 2.4px;
+            background-color: #eff1f4;
+            font-size: 11.2px;
+            color: #7c7c7c;
+            padding: 0 33px 0px 7px;
+          }
+        }
+        .choose-delete{
+          float: right;
+          a{
+            font-size: 14px;
+            color:$companyColor;
+            margin-right: 24px;
+            display: block;
+            padding-top: 15px;
+            i{
+              font-size: 16px;
+              margin-right: 4px;
+            }
+          }
+          &.margin-right-0{
+           a{
+             margin-right: 0px;
+           }
+          }
+        }
+      }
+      .sidebar-content{
+        background: transparent;
+        .dataTables_wrapper{
+          margin-top: 9px;
+          .dataTables_scroll{
+            box-shadow: 0 8px 28px 0 rgba(72, 89, 102, 0.1);
+            .dataTables_scrollHead{
+              table{
+                @include border-radius(4px 4px 0 0);
+                background-color: $textColor;
+                thead{
+                  tr{
+                    th{
+                      font-size: 12px;
+                      font-weight: normal;
+                      color: #ffffff;
+                      padding: 23px 15px;
+                      text-align: left;
+                      outline: none;
+                      cursor: pointer;
+                      &.sorting_asc,
+                      &.sorting{
+                        &:after{
+                          @extend %font;
+                          content:  font-char(arrow-down-sign-to-navigate);
+                          display: inline-block;
+                          margin-left: 4px;
+                          font-size: 11px;
+                        }
+                      }
+                      &.sorting_desc{
+                        &:after{
+                          content:  font-char(navigate-up-arrow);
+                          @extend %font;
+                          display: inline-block;
+                          margin-left: 4px;
+                          font-size: 11px;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            .dataTables_scrollBody{
+
+              tbody{
+                tr{
+                  background-color: #f6f6f6;
+                  td{
+                    font-family: $helveticaFontFamily;
+                    font-size: 14px;
+                    font-weight: normal;
+                    color: #757575;
+                    padding: 15px;
+                    border-top: 8px solid #fff;
+                    i{
+                      &.font-download{
+                        font-size: 25px;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  &.users-page-add{
+    .head{
+      .choose-delete{
+        float: right;
+        a{
+          font-size: 14px;
+          color:$companyColor;
+          margin-right: 24px;
+          display: block;
+          padding-top: 15px;
+          i{
+            font-size: 16px;
+            margin-right: 4px;
+          }
+        }
+        &.margin-right-0{
+          a{
+            margin-right: 0px;
+          }
+        }
+      }
+    }
+    .sidebar-qutter{
+      .sidebar-content{
+        background: #fff;
+        @include border-radius(4px);
+        box-shadow: 0 9px 30px 0 #dbe1f1;
+        margin-top: 15px;
+        .form{
+          max-width: 470px;
+          width: 100%;
+          margin: 0 auto;
+          padding: 115px  0;
+          .form-items{
+            @include clearfix();
+            margin-bottom: 15px;
+            &.half{
+              margin-left:-7px;
+              margin-right: -7px;
+              .items{
+                padding: 0 7px;
+              }
+            }
+            .items{
+              width: 50%;
+              float: left;
+              &.phone{
+                select{
+                  width: 30%;
+                  float: left;
+                  @include border-radius(6px 0px 0px 6px);
+                  border-right: 1px solid #979797;
+                }
+                input[type=text]{
+                  width: 70%;
+                  float: left;
+                  @include border-radius(0px 6px 6px 0px);
+                }
+              }
+            }
+            label{
+              display: block;
+              font-size: 15px;
+              color:$textColor;
+              margin-bottom: 5px;
+            }
+            select,
+            input[type=text]{
+              width: 100%;
+              height: 50px;
+              @include border-radius(6px);
+              box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.16);
+              background-color: #e3e3e3;
+              border: 0px;
+              padding-left: 18px;
+              font-size: 15px;
+            }
+            select{
+              padding-left: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

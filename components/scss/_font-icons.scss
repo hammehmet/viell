@@ -1,0 +1,292 @@
+@font-face {
+	font-family: "icons";
+	src: url('../fonts/icons/icons.eot');
+	src: url('../fonts/icons/icons.eot?#iefix') format('eot'),
+		url('../fonts/icons/icons.woff') format('woff'),
+		url('../fonts/icons/icons.ttf') format('truetype'),
+		url('../fonts/icons/icons.svg#icons') format('svg');
+}
+
+%font {
+	font-family: "icons";
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	// speak: none; // only necessary if not using the private unicode range (firstGlyph option)
+	text-decoration: none;
+	text-transform: none;
+	vertical-align: middle;
+	display: inline-block;
+}
+
+@function font-char($filename) {
+	$char: "";
+
+	@if $filename == 3-d-objects {
+		$char: "\E001";
+	}
+	@if $filename == analytics-reports {
+		$char: "\E002";
+	}
+	@if $filename == angellist {
+		$char: "\E003";
+	}
+	@if $filename == arrow-down {
+		$char: "\E004";
+	}
+	@if $filename == arrow-left {
+		$char: "\E005";
+	}
+	@if $filename == arrow-right {
+		$char: "\E006";
+	}
+	@if $filename == arrow-up {
+		$char: "\E007";
+	}
+	@if $filename == check {
+		$char: "\E008";
+	}
+	@if $filename == crunchbase {
+		$char: "\E009";
+	}
+	@if $filename == desktop-laptop {
+		$char: "\E00A";
+	}
+	@if $filename == dots {
+		$char: "\E00B";
+	}
+	@if $filename == drag-and-drop {
+		$char: "\E00C";
+	}
+	@if $filename == eye {
+		$char: "\E00D";
+	}
+	@if $filename == facebook {
+		$char: "\E00E";
+	}
+	@if $filename == filter {
+		$char: "\E00F";
+	}
+	@if $filename == google-plus {
+		$char: "\E010";
+	}
+	@if $filename == hmd-vr {
+		$char: "\E011";
+	}
+	@if $filename == icon-event {
+		$char: "\E012";
+	}
+	@if $filename == icon-exit-white {
+		$char: "\E013";
+	}
+	@if $filename == icon-hamburger {
+		$char: "\E014";
+	}
+	@if $filename == icon-send {
+		$char: "\E015";
+	}
+	@if $filename == instagram {
+		$char: "\E016";
+	}
+	@if $filename == linkedin {
+		$char: "\E017";
+	}
+	@if $filename == medium {
+		$char: "\E018";
+	}
+	@if $filename == mixed-vr {
+		$char: "\E019";
+	}
+	@if $filename == mobile-ar {
+		$char: "\E01A";
+	}
+	@if $filename == mobile-vr {
+		$char: "\E01B";
+	}
+	@if $filename == mobile {
+		$char: "\E01C";
+	}
+	@if $filename == pay {
+		$char: "\E01D";
+	}
+	@if $filename == place-objects-2 {
+		$char: "\E01E";
+	}
+	@if $filename == plus {
+		$char: "\E01F";
+	}
+	@if $filename == pricing {
+		$char: "\E020";
+	}
+	@if $filename == producthunt-icon {
+		$char: "\E021";
+	}
+	@if $filename == quality {
+		$char: "\E022";
+	}
+	@if $filename == reddit {
+		$char: "\E023";
+	}
+	@if $filename == review-placement {
+		$char: "\E024";
+	}
+	@if $filename == search {
+		$char: "\E025";
+	}
+	@if $filename == twitter {
+		$char: "\E026";
+	}
+	@if $filename == unity-technologies {
+		$char: "\E027";
+	}
+	@if $filename == unreal {
+		$char: "\E028";
+	}
+	@if $filename == upload-3-d {
+		$char: "\E029";
+	}
+	@if $filename == youtube {
+		$char: "\E02A";
+	}
+
+	@return $char;
+}
+
+@mixin font($filename, $insert: before) {
+	&:#{$insert} {
+		@extend %font;
+		content: font-char($filename);
+	}
+}
+
+.font-3-d-objects {
+	@include font(3-d-objects);
+}
+.font-analytics-reports {
+	@include font(analytics-reports);
+}
+.font-angellist {
+	@include font(angellist);
+}
+.font-user {
+	@include font(user);
+}
+.font-arrow-down {
+	@include font(arrow-down);
+}
+.font-arrow-left {
+	@include font(arrow-left);
+}
+.font-arrow-right {
+	@include font(arrow-right);
+}
+.font-arrow-up {
+	@include font(arrow-up);
+}
+.font-check {
+	@include font(check);
+}
+.font-crunchbase {
+	@include font(crunchbase);
+}
+.font-desktop-laptop {
+	@include font(desktop-laptop);
+}
+.font-dots {
+	@include font(dots);
+}
+.font-drag-and-drop {
+	@include font(drag-and-drop);
+}
+.font-eye {
+	@include font(eye);
+}
+.font-facebook {
+	@include font(facebook);
+}
+.font-filter {
+	@include font(filter);
+}
+.font-google-plus {
+	@include font(google-plus);
+}
+.font-hmd-vr {
+	@include font(hmd-vr);
+}
+.font-icon-event {
+	@include font(icon-event);
+}
+.font-icon-exit-white {
+	@include font(icon-exit-white);
+}
+.font-icon-hamburger {
+	@include font(icon-hamburger);
+}
+.font-icon-send {
+	@include font(icon-send);
+}
+.font-instagram {
+	@include font(instagram);
+}
+.font-linkedin {
+	@include font(linkedin);
+}
+.font-medium {
+	@include font(medium);
+}
+.font-mixed-vr {
+	@include font(mixed-vr);
+}
+.font-mobile-ar {
+	@include font(mobile-ar);
+}
+.font-mobile-vr {
+	@include font(mobile-vr);
+}
+.font-mobile {
+	@include font(mobile);
+}
+.font-pay {
+	@include font(pay);
+}
+.font-place-objects-2 {
+	@include font(place-objects-2);
+}
+.font-plus {
+	@include font(plus);
+}
+.font-pricing {
+	@include font(pricing);
+}
+.font-producthunt-icon {
+	@include font(producthunt-icon);
+}
+.font-quality {
+	@include font(quality);
+}
+.font-reddit {
+	@include font(reddit);
+}
+.font-review-placement {
+	@include font(review-placement);
+}
+.font-search {
+	@include font(search);
+}
+.font-twitter {
+	@include font(twitter);
+}
+.font-unity-technologies {
+	@include font(unity-technologies);
+}
+.font-unreal {
+	@include font(unreal);
+}
+.font-upload-3-d {
+	@include font(upload-3-d);
+}
+.font-youtube {
+	@include font(youtube);
+}

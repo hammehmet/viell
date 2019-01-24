@@ -1,0 +1,22 @@
+.sidebar-right{
+  padding: $headerHeight+25 45px 0 $sidebarWidth+40;
+  .sidebar-qutter{
+    //max-width: $screen-large;
+    padding-bottom: 100px;
+    .head{
+      @include clearfix();
+      h1{
+        display: inline-block;
+        padding-top: 18px;
+      }
+      .add-brand{
+        float: right;
+        max-width: 216px;
+        width: 100%;
+      }
+    }
+    .sidebar-content{
+
+    }
+  }
+}

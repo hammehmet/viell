@@ -1,0 +1,70 @@
+//.tooltip
+//{
+//	position: absolute;
+//    z-index: 99999;
+//    background-color: #FFF;
+//    border-radius: $borderRadius * 2;
+//    background-clip: padding-box;
+//    border: 1px solid rgba(0,0,0,.18);
+//    box-shadow: 0 3px 9px rgba(0,0,0,.3);
+//    @include opacity(0);
+//    @include transition(all,.15s);
+//    @include transform(translate3d(0,-10px,0));
+//    padding: 10px 15px;
+//
+//    &.show
+//    {
+//        @include opacity(1);
+//        @include transform(translate3d(0,0,0));
+//    }
+//}
+
+.tooltip
+{
+    margin-top: 10px;
+    padding: 10px 15px;
+    font-size: 12px;
+    position: static;
+    z-index: 99999;
+    color:#fff;
+    background-color: #000;
+    @include opacity(0);
+    @include transition(all,.15s);
+    @include transform(translate3d(0,-10px,0));
+    @media #{$query-desktop} {
+        display: none;
+    }
+    &:before{
+        display: inline-block;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 8px 10px 8px;
+        margin-left:-8px;
+        border-color: transparent transparent #000 transparent;
+        @include position(absolute,-9px null null 50%);
+        @media #{$query-tablet} {
+            border-width: 0 10px 12px 10px;
+            margin-left: -10px;
+            top: -11px;
+
+        }
+    }
+    &.shows
+    {
+        @include opacity(1);
+        @include transform(translate3d(0,0,0));
+
+        i{
+            &.close{
+                color:#fff;
+                margin: 0;
+                font-weight: normal;
+                font-style: normal;
+                font-size: 15px;
+                @include opacity(1);
+                @include position(absolute, 10px 10px null null);
+            }
+        }
+    }
+}

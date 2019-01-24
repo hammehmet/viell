@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,  maximum-scale=1.0, minimum-scale=1.0, user-scalable=0"/>
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+	<meta http-equiv="content-language" content="TR"/>
+
+
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/4.5.1/css/fileinput.min.css" media="all" rel="stylesheet" type="text/css" />
+
+	<link rel="stylesheet" type="text/css" href="cdn/css/main.css">
+	<link rel="stylesheet" type="text/css" href="cdn/css/login.css">
+	<link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700|Source+Sans+Pro:300,400,600,700|Titillium+Web:300,400,600" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="login-page">
+	<div class="form">
+		<div class="head">
+			<div class="logos">
+				<a href="/">
+					<img src="img/viell-logo.svg" alt="">
+				</a>
+			</div>
+			<div class="action">
+				<a href="#" class="signup">Geri Dön</a>
+			</div>
+		</div>
+		<div class="forms">
+			<div class="forms-center">
+				<div class="tabs">
+					<ul>
+						<li><a href="#"><span>Bireysel Üye</span></a></li>
+						<li><a href="#"><span>Kurumsal Üye</span></a></li>
+						<li><a href="#"><span>Ajans</span></a></li>
+					</ul>
+				</div>
+				<div class="tabs-detay login signup">
+                    <form class="sub registerForm" method="POST" action="#">
+                        <input type="hidden" name="registerType" value="individual">
+                        <div>
+                            <div class="title">Bireysel Üye Başvurusu</div>
+                            <input id="input-b1" name="input-b1[]" type="file" multiple  data-browse-on-zone-click="true">
+                            <div class="form-items">
+                                <div class="items half">
+                                    <label>ADI</label>
+                                    <div class="form-group">
+                                        <input type="text" name="firstName" placeholder="">
+                                    </div>
+                                </div>
+                                <div class="items half">
+                                    <label>SOYADI</label>
+                                    <div class="form-group">
+                                        <input type="text" name="lastName" placeholder="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-items">
+                                <div class="items half">
+                                    <label>EMAIL</label>
+                                    <div class="form-group">
+                                        <input type="text" placeholder="">
+                                    </div>
+                                </div>
+                                <div class="items half phone">
+                                    <label>NUMARA</label>
+                                    <div class="form-group">
+                                        <select>
+                                            <option>+90</option>
+                                        </select>
+                                        <input type="text" placeholder="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-items single-colm">
+                                <div class="items">
+                                    <label>ŞİFRE</label>
+                                    <div class="form-group">
+                                        <i class="passwordIcon font-icon-eye"></i>
+                                        <input type="password" name="password" placeholder="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-items">
+                                <div class="items half">
+                                    <label>ÜLKE</label>
+                                    <div class="form-group">
+                                        <select>
+                                            <option></option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="items half">
+                                    <label>ŞEHİR</label>
+                                    <div class="form-group">
+                                        <select>
+                                            <option></option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-items">
+                                <div class="items half">
+                                    <label>ÜNİVERSİTE</label>
+                                    <div class="form-group">
+                                        <select>
+                                            <option></option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="items half">
+                                    <label>MESLEK</label>
+                                    <div class="form-group">
+                                        <select>
+                                            <option></option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-items">
+                                <div class="items half">
+                                    <label>ŞİRKET</label>
+                                    <div class="form-group">
+                                        <select>
+                                            <option></option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="items half">
+                                    <label>ÜNVAN</label>
+                                    <div class="form-group">
+                                        <input type="text" placeholder="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-items">
+                                <div class="items half">
+                                    <label>DOĞUM TARİHİ</label>
+                                    <div class="form-group">
+                                        <select>
+                                            <option></option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="items half">
+                                    <label>CİNSİYET</label>
+                                    <div class="form-group">
+                                        <select>
+                                            <option></option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-items  single-colm">
+                                <div class="items">
+                                    <label>DAVET KODU (Opsiyonel)</label>
+                                    <div class="form-group">
+                                        <input type="text" placeholder="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="items">
+                                <button type="submit" class="buttons">BAŞVUR</button>
+                            </div>
+                            <div class="form-check margin-top">
+                                <input class="terms" type="checkbox" id="terms" name="terms" value="individualTerms1">
+                                <label class="form-check-label" for="terms">I have read and understood terms and conditions.</label>
+                                <div>
+                                    <label id="terms-error" class="error fontsize-" for="terms"></label>
+                                </div>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="terms" type="checkbox" id="policy" name="policy" value="individualPolicy1">
+                                <label class="form-check-label" for="policy">I have read and understood commercial communication and electronic messaging policy.</label>
+                            </div>
+                        </div>
+                    </form>
+                    <form class="sub registerForm company" method="POST" action="#">
+                        <input type="hidden" name="registerType" value="company">
+                        <div>
+                            <input type="hidden" name="tabsValue" value=".company">
+                            <div class="sub-tabs">
+                                <ul>
+                                    <li><a href="#"><span>Yeni Şirket Oluştur</span></a></li>
+                                    <li><a href="#"><span>Üye Şirkete Katıl</span></a></li>
+                                </ul>
+                            </div>
+                            <div class="sub-tabs-detay">
+                                <div class="tab-sub">
+                                    <div class="title">Kurumsal Üye Başvurusu</div>
+                                    <input id="input-b2" name="input-b2[]" type="file" multiple  data-browse-on-zone-click="true">
+                                    <div class="form-items">
+                                        <div class="items half">
+                                            <label>MARKA ADI</label>
+                                            <div class="form-group">
+                                                <input type="text" placeholder="">
+                                            </div>
+                                        </div>
+                                        <div class="items half">
+                                            <label>RESMİ ŞİRKET ÜNVANI</label>
+                                            <div class="form-group">
+                                                <input type="text" placeholder="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-items single-colm">
+                                        <div class="items">
+                                            <label>RESMİ ŞİRKET ADRESİ</label>
+                                            <div class="form-group">
+                                                <input type="text" placeholder="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-items">
+                                        <div class="items half">
+                                            <label>VERGİ DAİRESİ</label>
+                                            <div class="form-group">
+                                                <input type="text" placeholder="">
+                                            </div>
+                                        </div>
+                                        <div class="items half">
+                                            <label>VERGİ KİMLİK NUMARASI</label>
+                                            <div class="form-group">
+                                                <input type="text" placeholder="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="seperator"></div>
+                                    <div class="form-items">
+                                        <div class="items half">
+                                            <label>YETKİLİ ADI</label>
+                                            <div class="form-group">
+                                                <input type="text" placeholder="">
+                                            </div>
+                                        </div>
+                                        <div class="items half">
+                                            <label>YETKİLİ SOYADI</label>
+                                            <div class="form-group">
+                                                <input type="text" placeholder="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-items">
+                                        <div class="items half">
+                                            <label>EMAIL</label>
+                                            <div class="form-group">
+                                                <input type="text" placeholder="">
+                                            </div>
+                                        </div>
+                                        <div class="items half phone">
+                                            <label>NUMARA</label>
+                                            <div class="form-group">
+                                                <select>
+                                                    <option>+90</option>
+                                                </select>
+                                                <input type="text" placeholder="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-items single-colm">
+                                        <div class="items">
+                                            <label>ŞİFRE</label>
+                                            <div class="form-group">
+                                                <i class="passwordIcon font-icon-eye"></i>
+                                                <input type="password" name="password" placeholder="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="items">
+                                        <button type="submit" class="buttons">BAŞVUR</button>
+                                    </div>
+                                    <div class="form-check margin-top">
+                                        <input class="terms" type="checkbox" id="termsCompany" name="terms" value="companyTerms1">
+                                        <label class="form-check-label" for="termsCompany">I have read and understood terms and conditions.</label>
+                                        <div>
+                                            <label id="terms-error" class="error fontsize-" for="terms"></label>
+                                        </div>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="terms" type="checkbox" id="policyCompany" name="policy" value="companyPolicy1">
+                                        <label class="form-check-label" for="policyCompany">I have read and understood commercial communication and electronic messaging policy.</label>
+                                    </div>
+                                </div>
+                                <div class="tab-sub">
+                                    <div class="pincode">
+                                        <input type="text" id="pincode-input4"  >
+                                        <button type="button" disabled class="buttons accept">Uygula</button>
+                                        <p>Şirketinizin kurumsal Viell hesabı varsa yöneticiniz tarafından size
+                                            iletilen şirket kodunu bu alana girerek etkinleştirebilirsiniz.</p>
+                                    </div>
+                                    <div class="title">Üyelik Bilgileriniz</div>
+                                    <div class="profile-photo">
+                                        <img src="https://am24.akamaized.net/tms/cnt/uploads/2011/02/netflix-logo-square-300x300.jpg">
+                                    </div>
+                                    <div class="form-items">
+                                        <div class="items half">
+                                            <label>MARKA ADI</label>
+                                            <div class="form-group">
+                                                <input type="text" placeholder="">
+                                            </div>
+                                        </div>
+                                        <div class="items half">
+                                            <label>RESMİ ŞİRKET ÜNVANI</label>
+                                            <div class="form-group">
+                                                <input type="text" placeholder="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-items single-colm">
+                                        <div class="items">
+                                            <label>RESMİ ŞİRKET ADRESİ</label>
+                                            <div class="form-group">
+                                                <input type="text" placeholder="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-items">
+                                        <div class="items half">
+                                            <label>VERGİ DAİRESİ</label>
+                                            <div class="form-group">
+                                                <input type="text" placeholder="">
+                                            </div>
+                                        </div>
+                                        <div class="items half">
+                                            <label>VERGİ KİMLİK NUMARASI</label>
+                                            <div class="form-group">
+                                                <input type="text" placeholder="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="seperator"></div>
+                                    <div class="form-items">
+                                        <div class="items half">
+                                            <label>YETKİLİ ADI</label>
+                                            <div class="form-group">
+                                                <input type="text" placeholder="">
+                                            </div>
+                                        </div>
+                                        <div class="items half">
+                                            <label>YETKİLİ SOYADI</label>
+                                            <div class="form-group">
+                                                <input type="text" placeholder="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-items">
+                                        <div class="items half">
+                                            <label>EMAIL</label>
+                                            <div class="form-group">
+                                                <input type="text" placeholder="">
+                                            </div>
+                                        </div>
+                                        <div class="items half phone">
+                                            <label>NUMARA</label>
+                                            <div class="form-group">
+                                                <select>
+                                                    <option>+90</option>
+                                                </select>
+                                                <input type="text" placeholder="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-items single-colm">
+                                        <div class="items">
+                                            <label>ŞİFRE</label>
+                                            <div class="form-group">
+                                                <i class="passwordIcon font-icon-eye"></i>
+                                                <input type="password" name="password" placeholder="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="items">
+                                        <button type="submit" class="buttons">BAŞVUR</button>
+                                    </div>
+                                    <div class="form-check margin-top">
+                                        <input class="terms" type="checkbox" id="termsCompany2" name="terms" value="companyTerms2">
+                                        <label class="form-check-label" for="termsCompany2">I have read and understood terms and conditions.</label>
+                                        <div>
+                                            <label id="terms-error" class="error fontsize-" for="terms"></label>
+                                        </div>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="terms" type="checkbox" id="policyCompany2" name="policy" value="companyPolicy2">
+                                        <label class="form-check-label" for="policyCompany2">I have read and understood commercial communication and electronic messaging policy.</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <form class="sub registerForm agency" method="POST" action="#">
+                        <input type="hidden" name="registerType" value="agency">
+                        <div>
+                            <input type="hidden" name="tabsValue" value=".agency">
+                            <div class="sub-tabs">
+                                <ul>
+                                    <li><a href="#"><span>Yeni Şirket Oluştur</span></a></li>
+                                    <li><a href="#"><span>Üye Şirkete Katıl</span></a></li>
+                                </ul>
+                            </div>
+                            <div class="sub-tabs-detay">
+                                <div class="tab-sub">
+                                    <div class="title">Ajans Üye Başvurusu</div>
+                                    <input id="input-b3" name="input-b3[]" type="file" multiple  data-browse-on-zone-click="true">
+                                    <div class="form-items">
+                                        <div class="items half">
+                                            <label>MARKA ADI</label>
+                                            <div class="form-group">
+                                                <input type="text" placeholder="">
+                                            </div>
+                                        </div>
+                                        <div class="items half">
+                                            <label>RESMİ ŞİRKET ÜNVANI</label>
+                                            <div class="form-group">
+                                                <input type="text" placeholder="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-items single-colm">
+                                        <div class="items">
+                                            <label>RESMİ ŞİRKET ADRESİ</label>
+                                            <div class="form-group">
+                                                <input type="text" placeholder="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-items">
+                                        <div class="items half">
+                                            <label>VERGİ DAİRESİ</label>
+                                            <div class="form-group">
+                                                <input type="text" placeholder="">
+                                            </div>
+                                        </div>
+                                        <div class="items half">
+                                            <label>VERGİ KİMLİK NUMARASI</label>
+                                            <div class="form-group">
+                                                <input type="text" placeholder="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="seperator"></div>
+                                    <div class="form-items">
+                                        <div class="items half">
+                                            <label>YETKİLİ ADI</label>
+                                            <div class="form-group">
+                                                <input type="text" placeholder="">
+                                            </div>
+                                        </div>
+                                        <div class="items half">
+                                            <label>YETKİLİ SOYADI</label>
+                                            <div class="form-group">
+                                                <input type="text" placeholder="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-items">
+                                        <div class="items half">
+                                            <label>EMAIL</label>
+                                            <div class="form-group">
+                                                <input type="text" placeholder="">
+                                            </div>
+                                        </div>
+                                        <div class="items half phone">
+                                            <label>NUMARA</label>
+                                            <div class="form-group">
+                                                <select>
+                                                    <option>+90</option>
+                                                </select>
+                                                <input type="text" placeholder="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-items single-colm">
+                                        <div class="items">
+                                            <label>ŞİFRE</label>
+                                            <div class="form-group">
+                                                <i class="passwordIcon font-icon-eye"></i>
+                                                <input type="password" name="password" placeholder="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="items">
+                                        <button type="submit" class="buttons">BAŞVUR</button>
+                                    </div>
+                                    <div class="form-check margin-top">
+                                        <input class="terms" type="checkbox" id="termsAgency" name="terms" value="agencyTerms1">
+                                        <label class="form-check-label" for="termsAgency">I have read and understood terms and conditions.</label>
+                                        <div>
+                                            <label id="terms-error" class="error fontsize-" for="terms"></label>
+                                        </div>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="terms" type="checkbox" id="policyAgency" name="policy" value="agencyPolicy1">
+                                        <label class="form-check-label" for="policyAgency">I have read and understood commercial communication and electronic messaging policy.</label>
+                                    </div>
+                                </div>
+                                <div class="tab-sub">
+                                    <div class="pincode">
+                                        <input type="text" id="pincode-input-4"  >
+                                        <button type="button" disabled class="buttons accept">Uygula</button>
+                                        <p>Şirketinizin kurumsal Viell hesabı varsa yöneticiniz tarafından size
+                                            iletilen şirket kodunu bu alana girerek etkinleştirebilirsiniz.</p>
+                                    </div>
+                                    <div class="title">Üyelik Bilgileriniz</div>
+                                    <div class="profile-photo">
+                                        <img src="https://am24.akamaized.net/tms/cnt/uploads/2011/02/netflix-logo-square-300x300.jpg">
+                                    </div>
+                                    <div class="form-items">
+                                        <div class="items half">
+                                            <label>MARKA ADI</label>
+                                            <div class="form-group">
+                                                <input type="text" placeholder="">
+                                            </div>
+                                        </div>
+                                        <div class="items half">
+                                            <label>RESMİ ŞİRKET ÜNVANI</label>
+                                            <div class="form-group">
+                                                <input type="text" placeholder="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-items single-colm">
+                                        <div class="items">
+                                            <label>RESMİ ŞİRKET ADRESİ</label>
+                                            <div class="form-group">
+                                                <input type="text" placeholder="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-items">
+                                        <div class="items half">
+                                            <label>VERGİ DAİRESİ</label>
+                                            <div class="form-group">
+                                                <input type="text" placeholder="">
+                                            </div>
+                                        </div>
+                                        <div class="items half">
+                                            <label>VERGİ KİMLİK NUMARASI</label>
+                                            <div class="form-group">
+                                                <input type="text" placeholder="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="seperator"></div>
+                                    <div class="form-items">
+                                        <div class="items half">
+                                            <label>YETKİLİ ADI</label>
+                                            <div class="form-group">
+                                                <input type="text" placeholder="">
+                                            </div>
+                                        </div>
+                                        <div class="items half">
+                                            <label>YETKİLİ SOYADI</label>
+                                            <div class="form-group">
+                                                <input type="text" placeholder="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-items">
+                                        <div class="items half">
+                                            <label>EMAIL</label>
+                                            <div class="form-group">
+                                                <input type="text" placeholder="">
+                                            </div>
+                                        </div>
+                                        <div class="items half phone">
+                                            <label>NUMARA</label>
+                                            <div class="form-group">
+                                                <select>
+                                                    <option>+90</option>
+                                                </select>
+                                                <input type="text" placeholder="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-items single-colm">
+                                        <div class="items">
+                                            <label>ŞİFRE</label>
+                                            <div class="form-group">
+                                                <i class="passwordIcon font-icon-eye"></i>
+                                                <input type="password" name="password" placeholder="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="items">
+                                        <button type="submit" class="buttons">BAŞVUR</button>
+                                    </div>
+                                    <div class="form-check margin-top">
+                                        <input class="terms" type="checkbox" id="termsAgency2" name="terms" value="agencyTerms2">
+                                        <label class="form-check-label" for="termsAgency2">I have read and understood terms and conditions.</label>
+                                        <div>
+                                            <label id="terms-error" class="error fontsize-" for="terms"></label>
+                                        </div>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="terms" type="checkbox" id="policyAgency2" name="policy" value="agencyPolicy2">
+                                        <label class="form-check-label" for="policyAgency2">I have read and understood commercial communication and electronic messaging policy.</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="images">
+		<div class="head">
+			<a href="#"><i class="font-arrow-left"></i> Anasayfa</a>
+		</div>
+		<div class="logos">
+			<img src="img/group-76.png" alt="">
+		</div>
+		<div class="foot">
+			<ul>
+				<li><a href="#">About Careers</a></li>
+				<li><a href="#">Faq</a></li>
+				<li><a href="#">Privacy Policy</a></li>
+				<li><a href="#">Terms of Service</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<script src="js/jquery.js"></script>
+<script src="js/jquery.validate.js"></script>
+<script src="js/jquery.mask.js"></script>
+<script src="cdn/js/main.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/4.5.1/js/fileinput.min.js"></script>
+<script src="js/bootstrap-pincode-input.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $("#input-b1").fileinput({
+            showCaption: false,
+            dropZoneEnabled: true,
+            dropZoneTitle:"<i class='plus'>+</i>",
+            dropZoneClickTitle:"<span>Profil Fotoğrafı Ekleyin</span>",
+            showRemove: true,
+            showUpload: false, // <------ just set this from true to false
+            showCancel: true,
+            showUploadedThumbs: true,
+            showBrowse: false,
+            layoutTemplates: {footer: ""},
+
+        });
+
+        $("#input-b2,#input-b3").fileinput({
+            showCaption: false,
+            dropZoneEnabled: true,
+            dropZoneTitle:"<i class='plus'>+</i>",
+            dropZoneClickTitle:"<span>Logo Ekleyin</span>",
+            showRemove: true,
+            showUpload: false, // <------ just set this from true to false
+            showCancel: true,
+            showUploadedThumbs: true,
+            showBrowse: false,
+            layoutTemplates: {footer: ""},
+
+        });
+
+        $('#pincode-input4,#pincode-input-4').pincodeInput({
+            hidedigits:false,
+            inputs:4,
+            complete:function(value, e, errorElement){
+                $(".buttons.accept").removeAttr("disabled")
+
+            }
+        });
+    });
+</script>
+</body>
+
+</html>

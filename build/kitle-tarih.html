@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,  maximum-scale=1.0, minimum-scale=1.0, user-scalable=0"/>
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+	<meta http-equiv="content-language" content="TR"/>
+	<link rel="stylesheet" type="text/css" href="cdn/css/main.css">
+	<link rel="stylesheet" type="text/css" href="cdn/css/audience.css">
+	<link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700|Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+</head>
+<body>
+
+<div id="header"></div>
+<div class="content hundred-percent">
+	<div id="menu"></div>
+	<div class="sidebar-right  audience-page">
+		<div class="sidebar-qutter">
+			<div class="breadcrumbs">
+				<ul>
+					<li>
+						<a href="#">Anasayfa</a>
+					</li>
+					<li>
+						<a href="#">Online Ürünler</a>
+					</li>
+					<li>
+						<a href="#">Reklam Bannerları Yükleyin</a>
+					</li>
+					<li>
+						<a href="#">Kitlenizi ve Bütçenizi Belirleyin</a>
+					</li>
+				</ul>
+			</div>
+			<div class="head">
+				<h1>Kitlenizi ve Tarihlerinizi Belirleyin</h1>
+			</div>
+			<div class="sidebar-content">
+				<div class="audience-dates">
+					<div class="top">
+						<div class="left">
+							<div class="items">
+								<label>Hedef Kitle</label>
+								<select>
+									<option>İstanbul Millenials</option>
+								</select>
+							</div>
+							<div class="items">
+								<label>Kitleye Gösterim Sıklığı</label>
+								<select>
+									<option>Günde 7 Kez</option>
+								</select>
+							</div>
+							<div class="items padding-bottom-0">
+								<label>Yayın Başlangıç Tarihi</label>
+								<div class="date">
+									<input id="startPicker">
+								</div>
+							</div>
+							<div class="items padding-bottom-0">
+								<label>Yayın Bitiş Tarihi</label>
+								<div class="date">
+									<input id="endPicker">
+								</div>
+							</div>
+						</div>
+						<div class="right">
+							<div class="items">
+								<div class="item">
+									<span>Hedef Kitle</span>
+									<strong>24.827 <em>Kişi</em></strong>
+								</div>
+							</div>
+							<div class="items">
+								<div class="item">
+									<span>Reklam Birim Maliyeti</span>
+									<strong><i>₺</i> 23,9</strong>
+								</div>
+							</div>
+							<div class="action">
+								<button type="button" class="buttons">Kaydet</button>
+							</div>
+						</div>
+					</div>
+					<div class="title">
+						Bütçenizi Belirleyin
+					</div>
+					<div class="bottom">
+						<ul>
+							<li>
+								<div class="items">
+									<div class="head">
+										<input type="radio" class="budget" id="dayBudget" name="budget">
+										<label for="dayBudget">
+											Günlük Bütçe
+										</label>
+									</div>
+									<div class="foot">
+										<input type="text" data-prefix="₺" class="currency" value="₺65,00" disabled>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="items">
+									<div class="head">
+										<input type="radio" class="budget" id="totalBudget" name="budget">
+										<label for="totalBudget">
+											Toplam Bütçe
+										</label>
+									</div>
+									<div class="foot">
+										<input type="text" data-prefix="₺" class="currency" value="₺1.505,00" disabled>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="steps margin-top-180">
+						<a href="#" class="prev">
+							<i class="font-arrow-left"></i> Önceki Adım
+						</a>
+						<a href="#" class="next">
+							 Sonraki Adım <i class="font-right-arrow-2"></i>
+						</a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<script src="js/jquery.js"></script>
+<script src="cdn/js/main.js"></script>
+<script>
+    $('.audience-dates .bottom .items  input[type=radio]').on('change', function () {
+        $(".audience-dates .bottom .items").removeClass("active");
+        $(".audience-dates .bottom .items input[type=text]").attr("disabled","disabled")
+
+        var status = $(this).is(':checked');
+        if (status) {
+            $(this).closest(".items").addClass("active")
+            $(this).closest(".items").find('input').removeAttr("disabled")
+        }
+    });
+    $('.currency').maskMoney({
+        thousands:'.',
+		decimal:',',
+		allowZero:true,
+	});
+
+</script>
+</body>
+
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,  maximum-scale=1.0, minimum-scale=1.0, user-scalable=0"/>
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+	<meta http-equiv="content-language" content="TR"/>
+	<link rel="stylesheet" type="text/css" href="cdn/css/main.css">
+	<link rel="stylesheet" type="text/css" href="cdn/css/audience.css">
+	<link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700|Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+</head>
+<body>
+
+<div id="header"></div>
+<div class="content hundred-percent">
+	<div id="menu"></div>
+	<div class="sidebar-right  audience-page">
+		<div class="sidebar-qutter">
+			<div class="breadcrumbs">
+				<ul>
+					<li>
+						<a href="#">Anasayfa</a>
+					</li>
+					<li>
+						<a href="#">Kitle</a>
+					</li>
+				</ul>
+			</div>
+			<div class="head">
+				<h1>Kitlenizi Belirleyin</h1>
+			</div>
+			<div class="sidebar-content">
+				<div class="audience-choose">
+					<div class="top">
+						<div class="select-choose">
+							<div class="items">
+								<label>Ülke</label>
+								<div class="item">
+									<select>
+										<option>Türkiye</option>
+									</select>
+								</div>
+							</div>
+							<div class="items">
+								<label>Şehir</label>
+								<div class="item">
+									<select>
+										<option>İstanbul</option>
+									</select>
+								</div>
+							</div>
+							<div class="items">
+								<label>Sektör</label>
+								<div class="item">
+									<select>
+										<option>Teknoloji</option>
+									</select>
+								</div>
+							</div>
+							<div class="items">
+								<label>İlgi Alanı</label>
+								<div class="item">
+									<select>
+										<option>Moda</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="person-choose">
+							<div class="unisex">
+                                <label>Cinsiyet</label>
+								<div class="slideCheckbox">
+									<span>Kadın</span>
+									<input type="radio" name="unisex" class="pull-right"/>
+								</div>
+								<div class="slideCheckbox">
+									<span>Erkek</span>
+									<input type="radio" name="unisex" checked class="pull-right"/>
+								</div>
+
+							</div>
+							<div class="age">
+								<label>Yaş Aralığı</label>
+								<input type="text" id="demo_1">
+							</div>
+
+						</div>
+						<div class="name-choose">
+							<label>Kitlenize İsim Verin</label>
+							<input type="text" value="İstanbul Millenials">
+							<button type="submit" class="buttons">Kaydet</button>
+						</div>
+					</div>
+					<div class="bottom">
+						<div class="title">
+							Üyelik Tipi <span>?</span>
+						</div>
+						<div class="checkbox-list">
+							<div class="items">
+								<input type="checkbox" class="membership-type" id="gold" name="gold">
+								<label for="gold">
+									Gold (15.284 Üye)
+								</label>
+							</div>
+							<div class="items">
+								<input type="checkbox" class="membership-type" id="platinum" name="platinum">
+								<label for="platinum">
+									Platinum (2.473 Üye)
+								</label>
+							</div>
+							<div class="clearfix"></div>
+							<div class="items">
+								<input type="checkbox" class="membership-type" id="premium" name="premium">
+								<label for="premium">
+									Premium (6.754 Üye)
+								</label>
+							</div>
+							<div class="items">
+								<input type="checkbox" class="membership-type" id="black" name="black">
+								<label for="black">
+									Black (489 Üye)
+								</label>
+							</div>
+						</div>
+                        <div class="info">
+                            <span>Kitle Büyüklüğü</span>
+                            <strong>15.284 <em>Kişi</em></strong>
+                        </div>
+					</div>
+				</div>
+
+				<div class="audience-maps">
+					<div class="maps">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d385398.58979194483!2d28.73199371007691!3d41.00498228510965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa7040068086b%3A0xe1ccfe98bc01b0d0!2zxLBzdGFuYnVs!5e0!3m2!1str!2str!4v1548008713562" width="100%" height="415" frameborder="0" style="border:0" allowfullscreen></iframe>
+					</div>
+
+					<div class="registered">
+						<strong>Kayıtlı Kitlelerim</strong>
+						<a href="javascrip:;" data-index="1">
+							İstanbul Millenials1
+						</a>
+						<a href="javascrip:;" data-index="2">
+							İstanbul Millenials2
+						</a>
+						<a href="javascrip:;" data-index="3">
+							İstanbul Millenials3
+						</a>
+						<a href="javascrip:;" data-index="4">
+							İstanbul Millenials4
+						</a>
+						<a href="javascrip:;" data-index="5">
+							İstanbul Millenials5
+						</a>
+						<a href="javascrip:;" data-index="6">
+							İstanbul Millenials6
+						</a>
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<script src="js/jquery.js"></script>
+<script src="js/ion.rangeSlider.min.js"></script>
+<script src="cdn/js/main.js"></script>
+
+<script>
+	$(document).ready(function () {
+        $("#demo_1").ionRangeSlider({
+            type: "double",
+            grid: false,
+            min:0,
+			max:70,
+            from: 25,
+            to: 41,
+            hide_min_max: true,
+            hide_from_to: false,
+            //prefix: "$"
+        });
+
+        $(".registered a").click(function () {
+            $(".registered a").removeClass('active'); //Reset
+            $(".registered a").find('.edited').remove();//Reset
+
+            $(this).addClass('active');
+            $(this).append("<div class='edited'><label>Düzenle</label><span>Sil</span></div>");
+
+            deleteRegistered();
+        });
+
+        function deleteRegistered() {
+            $(".edited span").click(function () {
+                $(".registered a.active").remove();
+                $.ajax({
+                    url: '#',
+                    type: 'GET',
+                    dataType: "json",
+                    contentType: 'application/json;charset=utf-8',
+                    data: '',
+                    success: function (data) {
+                        if (data.success) {
+                            //$(".registered a.active").remove();
+                        }
+                    }, error: function (data) {
+                    }
+                });
+            });
+        }
+
+    });
+</script>
+</body>
+
+</html>

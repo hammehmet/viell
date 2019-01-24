@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,  maximum-scale=1.0, minimum-scale=1.0, user-scalable=0"/>
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+	<meta http-equiv="content-language" content="TR"/>
+	<link rel="stylesheet" type="text/css" href="cdn/css/main.css">
+	<link rel="stylesheet" type="text/css" href="cdn/css/login.css">
+	<link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700|Source+Sans+Pro:300,400,600,700|Titillium+Web:300,400,600" rel="stylesheet">
+</head>
+<body>
+
+<div class="login-page">
+	<div class="form">
+		<div class="head">
+			<div class="logos">
+				<a href="/">
+					<img src="img/viell-logo.svg" alt="">
+				</a>
+			</div>
+			<div class="action">
+				<a href="#" class="signup">Geri Dön</a>
+			</div>
+		</div>
+		<div class="forms">
+			<div class="forms-center">
+				<div class="login verification">
+					<div class="sub">
+						<div class="title">
+							Numaranızı Doğrulayın
+							<span></span>
+						</div>
+						<form id="verificationForm" method="POST" action="#">
+							<div class="form-items">
+								<div class="items phone">
+									<label>TELEFON NUMARASI</label>
+									<div class="form-group">
+										<select class="maxWidth-80">
+											<option>+90</option>
+										</select>
+										<input type="text" name="phone" class="phoneNumber maxWidth-320" placeholder="">
+									</div>
+								</div>
+								<div class="items repeat-code-send">
+									<a href="#">Kodu tekrar gönder</a>
+								</div>
+								<div class="items">
+									<div class="pincode-title">
+										Kodunuzu girin
+									</div>
+									<input type="text" id="pincode-input4">
+								</div>
+								<div class="items time">
+									- <span id="time"></span>
+								</div>
+								<div class="items policy">
+									Tap continue to accept terms, data policy, cookie use and
+									the privacy policy and terms of service of Viell.
+								</div>
+								<div class="items">
+									<button type="submit" id="btnResetPassword" class="buttons">DOĞRULAMA KODU GÖNDER</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="images">
+		<div class="head">
+			<a href="#"><i class="font-arrow-left"></i> Anasayfa</a>
+		</div>
+		<div class="logos">
+			<img src="img/group-76.png" alt="">
+		</div>
+		<div class="foot">
+			<ul>
+				<li><a href="#">About Careers</a></li>
+				<li><a href="#">Faq</a></li>
+				<li><a href="#">Privacy Policy</a></li>
+				<li><a href="#">Terms of Service</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<script src="js/jquery.js"></script>
+<script src="js/jquery.validate.js"></script>
+<script src="js/jquery.mask.js"></script>
+<script src="cdn/js/main.js"></script>
+<script src="js/bootstrap-pincode-input.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#pincode-input4').pincodeInput({
+            hidedigits:false,
+            inputs:4,
+            complete:function(value, e, errorElement){
+
+
+            }
+        });
+
+        function startTimer(duration, display) {
+            var start = Date.now(),
+                diff,
+                minutes,
+                seconds;
+            function timer() {
+                // get the number of seconds that have elapsed since
+                // startTimer() was called
+                diff = duration - (((Date.now() - start) / 1000) | 0);
+
+                // does the same job as parseInt truncates the float
+                minutes = (diff / 60) | 0;
+                seconds = (diff % 60) | 0;
+
+                minutes = minutes < 10 ? "0" + minutes : minutes;
+                seconds = seconds < 10 ? "0" + seconds : seconds;
+
+                display.textContent = minutes + ":" + seconds;
+
+                if (diff <= 0) {
+                    // add one second so that the count down starts at the full duration
+                    // example 05:00 not 04:59
+                    start = Date.now() + 1000;
+                }
+            };
+            // we don't want to wait a full second before the timer starts
+            timer();
+            setInterval(timer, 1000);
+        }
+
+        window.onload = function () {
+            //var fiveMinutes = 60 * 5,
+			var fiveMinutes = 60 * 3,
+                display = document.querySelector('#time');
+            startTimer(fiveMinutes, display);
+        };
+    });
+</script>
+</body>
+
+</html>

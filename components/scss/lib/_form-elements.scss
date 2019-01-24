@@ -1,0 +1,352 @@
+input[type=email],
+input[type=text],
+input[type=file],
+input[type=password]
+{
+  outline: none;
+  width: 100%;
+  padding-left: 10px;
+  height: 30px;
+  &.error{
+    border-color: #d0021b !important;
+  }
+}
+
+select{
+  width: 100%;
+  height: 50px;
+  outline: none;
+  padding-left: 10px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  @extend .selectMenuArrow;
+  background-position: top 50% right 5px;
+  background-color: #FFF;
+  background-repeat: no-repeat;
+  background-size: 16px;
+}
+
+input[type="checkbox"] {
+  &.yellow {
+    opacity: 0;
+    @include position(absolute);
+    cursor: pointer;
+    @include size(16px);
+    margin: 6px 0 0 0;
+    + label {
+      cursor: pointer;
+      color: $textColor;
+    }
+
+    + label:before {
+      display: inline-block;
+      @include size(16px);
+      @include border-radius(3px);
+      vertical-align: middle;
+      cursor: pointer;
+      background: #fff;
+      border: 1px solid $borderColor;
+      @extend %default-transition;
+      content: "";
+      color: #fff;
+      @extend %font;
+      font-size: 9px;
+      line-height: 14px;
+      text-align: center;
+      margin-right: 10px;
+      position: relative;
+      top: -2px;
+    }
+
+    &:checked {
+      + label:before {
+        border-color: $colorPink;
+        background-color: $colorPink;
+        content: font-char(check);
+      }
+    }
+  }
+  &.all-checkboxes,
+  &.dt-checkboxes{
+    @include border-radius(3px);
+    opacity: 0;
+    @include position(absolute);
+    cursor: pointer;
+    @include size(16px);
+    + label {
+      cursor: pointer;
+      @include size(16px);
+      display: inline-block;
+      @include border-radius(3px);
+      vertical-align: middle;
+      cursor: pointer;
+      background-image: linear-gradient(to bottom, #ffffff, #eff1f4);
+      border: 1px solid $borderColor;
+    }
+
+    + label:before {
+      display: inline-block;
+      @extend %default-transition;
+      content: "";
+      @extend %font;
+      position: relative;
+      top: -4px;
+      left: 2px;
+      font-size: 12px;
+    }
+
+    &:checked {
+      + label:before {
+        display: inline-block;
+        color:$companyColor;
+        content: font-char(check);
+
+      }
+    }
+  }
+  &.all-checkboxes{
+    + label:before {
+      top: -2px;
+    }
+  }
+  &.terms{
+    opacity: 0;
+    @include position(absolute);
+    cursor: pointer;
+    @include size(14px);
+    + label {
+      cursor: pointer;
+      color: $textColor;
+      position: relative;
+      padding-left: 25px;
+      font-size: 10px;
+      color:#888;
+    }
+
+    + label:before {
+      @include size(12px);
+      border: 1px solid #e3e3e3;
+      @include  border-radius(3px);
+      background: transparent;
+      content: "";
+      display: inline-block;
+      @include position(absolute, -2px null null 0px);
+    }
+    +label:after{
+      content: "";
+      display: inline-block;
+      @extend %font;
+      @include position(absolute, 1px null null 2px);
+      font-size: 8px;
+    }
+    &.error{
+      + label:before {
+        border-color: #d0021b;
+      }
+    }
+    &:checked {
+      + label:before{
+        box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1), 0 4px 8px -2px rgba(221, 187, 116, 0.6);
+        background-image: linear-gradient(to bottom, #ddbb74, #ddbb74), linear-gradient(315deg, #ddbb74, #d0aa5b);
+        border-color: $companyColor;
+      }
+      + label:after {
+        content: font-char(check);
+        color:#fff;
+      }
+    }
+  }
+  &.terms-yellow{
+    opacity: 0;
+    @include position(absolute);
+    cursor: pointer;
+    @include size(14px);
+    + label {
+      cursor: pointer;
+      color: $textColorLight;
+      position: relative;
+      padding-left: 35px;
+      font-size: 12px;
+      display: block;
+    }
+    + label:before {
+      @include size(16px);
+      background-image: linear-gradient(to bottom, #ffffff, #eff1f4);
+      @include  border-radius(3px);
+      border: 1px solid #ededed;
+      content: "";
+      display: inline-block;
+      @include position(absolute, 8px null null 0px);
+    }
+    +label:after{
+      content: "";
+      display: inline-block;
+      @extend %font;
+      @include position(absolute, 10px null null 3px);
+      font-size: 13px;
+    }
+
+    &:checked {
+      + label:after {
+        content: font-char(check);
+        color:$companyColor;
+      }
+    }
+  }
+  &.membership-type{
+    opacity: 0;
+    @include position(absolute);
+    cursor: pointer;
+    @include size(14px);
+    + label {
+      cursor: pointer;
+      color: $textColorLight;
+      position: relative;
+      padding-left: 55px;
+      font-size: 12px;
+      display: block;
+    }
+    + label:before {
+      @include size(16px);
+      background-image: linear-gradient(to bottom, #ffffff, #eff1f4);
+      @include  border-radius(3px);
+      border: 1px solid #ededed;
+      content: "";
+      display: inline-block;
+      @include position(absolute, 6px null null 16px);
+    }
+    +label:after{
+      content: "";
+      display: inline-block;
+      @extend %font;
+      @include position(absolute, 8px null null 19px);
+      font-size: 13px;
+      line-height: normal;
+    }
+
+    &:checked {
+      + label:after {
+        content: font-char(check);
+        color:$textColor;
+      }
+    }
+  }
+}
+input[type="radio"]{
+  &.budget{
+    opacity: 0;
+    @include position(absolute);
+    cursor: pointer;
+    @include size(20px);
+    + label {
+      cursor: pointer;
+      color: #9fa9ba;
+      position: relative;
+      padding-left: 35px;
+      font-size: 16px;
+      display: block;
+    }
+    + label:before {
+      @include size(20px);
+      background-image: linear-gradient(to bottom, #ffffff, #eff1f4);
+      @include  border-radius(3px);
+      border: 1px solid #c2c5cb;
+      content: "";
+      display: inline-block;
+      @include position(absolute, -1px null null 0px);
+    }
+    +label:after{
+      content: "";
+      display: inline-block;
+      @extend %font;
+      @include position(absolute, 1px null null 4px);
+      font-size: 16px;
+      line-height: normal;
+    }
+
+    &:checked {
+      + label:after {
+        content: font-char(check);
+        color:$companyColor;
+      }
+    }
+  }
+}
+
+
+.radios-check {
+  position: relative;
+  span{
+    cursor: pointer;
+    @include size(16px);
+    display: inline-block;
+    @include border-radius(3px);
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: linear-gradient(to bottom, #ffffff, #eff1f4);
+    border: 1px solid $borderColor;
+    &:before{
+      display: inline-block;
+      @extend %default-transition;
+      content: "";
+      @extend %font;
+      position: relative;
+      top: -4px;
+      left: 2px;
+      font-size: 12px;
+    }
+  }
+  input[type=radio] {
+    opacity: 0;
+    @include position(absolute);
+    cursor: pointer;
+    @include size(16px);
+  }
+  input[type=radio]:checked + span:before {
+    display: inline-block;
+    color:$companyColor;
+    content: font-char(check);
+  }
+
+}
+
+
+.slideCheckbox {
+
+  input {
+    position: relative;
+    @include border-radius(12px);
+    background: rgba(0,0,0,0.5);
+    box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.36);
+    outline: none !important;
+    -webkit-appearance: none;
+    cursor: pointer;
+    width: 48px;
+    height: 24px;
+  }
+
+  input::after {
+    content: '';
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    display: block;
+    outline: none !important;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.1), 0 2px 0 0 rgba(0, 0, 0, 0.03), inset 0 1px 0 1px #ffffff;
+    background-image: linear-gradient(to bottom, #ffffff, #eff1f4);
+    transition: all .1s linear;
+  }
+
+  input:checked {
+    background-image: linear-gradient(297deg, #f0dfac, #ddbb74);
+    outline: none !important;
+  }
+
+  input:checked::after {
+    transform: translateX(100%);
+  }
+
+}

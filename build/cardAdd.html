@@ -1,0 +1,101 @@
+<div class="card-container">
+    <form id="cardAddForm" class="formCt  forms formLg form-elements" data-toggle="validator" role="form">
+        <div class="card-container-relative">
+            <div class="card-block">
+                <div class="wrapper">
+                    <div class="manuel-entry">
+                        <div class="new-card-add">
+                            <div class="head">
+                                <strong>Yeni Kart Ekle</strong>
+                            </div>
+                            <div class="card-simulator">
+                                <div class="card-wrapper"></div>
+                            </div>
+                        </div>
+                        <div class="card-forms">
+                            <div class="head">
+                                Kart Bilgisi
+                            </div>
+                            <div class="card-form-items">
+                                <div class="form-group">
+                                    <div class="items">
+                                        <div class="form-check">
+                                            <label class="text-input-placeholder js-placeholder-text">Kart Sahibinin İsmi, Soyismi</label>
+                                            <input type="text" name="first_name" required
+                                                   class="js-placeholder placeholder-animation form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="items">
+                                        <div class="form-check">
+                                            <label class="text-input-placeholder js-placeholder-text">Kart Numarası</label>
+                                            <input type="text" name="cartNo" required
+                                                   class="js-placeholder placeholder-animation form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-form-items">
+                                <div class="form-group half">
+                                    <div class="items">
+                                        <div class="form-check">
+                                            <label class="text-input-placeholder  text-input-placeholder_pos_top">SKT</label>
+                                            <input type="text" placeholder="AA/YY" name="expiry"
+                                                   required
+                                                   class="js-placeholder placeholder-animation form-control">
+                                            <i class="font-icon-calendar-black"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group half">
+                                    <div class="items">
+                                        <div class="form-check">
+                                            <label class="text-input-placeholder js-placeholder-text">CCV Kodu</label>
+                                            <input type="text"
+                                                   class="js-placeholder placeholder-animation form-control"
+                                                   required
+                                                   name="cvv">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="items">
+                                        <div class="form-check">
+                                            <label class="text-input-placeholder js-placeholder-text">Kredi/Debit Kart Takma Adı (Opsiyonel)</label>
+                                            <input type="text" name="textBox"
+                                                   class="js-placeholder placeholder-animation form-control"
+                                                   required>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer">
+                <div class="wrapper">
+                    <div class="card-bank-icons">
+                        <ul>
+                            <li class="visa"><img src="img/logo-visa@2x.png" alt="Visa"></li>
+                            <li class="mastercard"><img src="img/logo-mastercard@2x.png" alt="Mastercard"></li>
+                            <li class="amex"><img src="img/logo-amex@2x.png" alt="Amex"></li>
+                            <li class="troy"><img src="img/logo-troy@2x.png" alt="Troy"></li>
+                            <li class="ininal"><img src="img/logo-ininal@2x.png" alt="ininal"></li>
+                            <li class="papara"><img src="img/logo-papara@2x.png" alt="papara"></li>
+                        </ul>
+                    </div>
+
+                    <div class="card-close">
+                        <a href="javascript:;" class="btn-card-close"><i class="font-cross-remove-sign"></i> Kapat</a>
+                    </div>
+
+                    <div class="card-action">
+                        <button type="submit" class="buttons">Kaydet</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,355 @@
+html
+{
+    font-family: $baseFontFamily;
+    height: 100%;
+    width: 100%;
+}
+
+body
+{
+    font-size: $baseFontSize;
+    font-family: $baseFontFamily;
+    // -webkit-tap-highlight-color: transparent;
+    background-color: $backgroundColor1;
+    color:$textColor;
+    height: 100%;
+    width: 100%;
+}
+
+ul
+{
+    list-style: none;
+    padding:0;
+    margin: 0;
+}
+
+a
+{
+    text-decoration: none;
+    @extend %default-transition;
+    color:#000;
+    cursor: pointer;
+    &:hover
+    {
+        text-decoration: none;
+      color:inherit;
+    }
+}
+
+input{
+    &:focus{
+        outline: none;
+    }
+}
+
+.wrapper{
+    max-width: $screen-wrapper;
+    margin: 0px auto;
+    position: relative;
+    padding:  0 15px;
+    @include clearfix();
+}
+
+.position-relative{
+  position: relative;
+}
+.body-no-scroll{
+    overflow: hidden;
+}
+
+.overflow-hidden-mobile{
+  overflow: hidden;
+  @media #{$query-desktop} {
+    overflow: auto;
+  }
+}
+
+.modal-backdrop.in{
+  @include opacity(.7);
+}
+h1{
+  margin: 0;
+  padding: 0;
+  color:$textColor;
+  font-size: 20px;
+  font-weight: 400;
+}
+h2{
+  margin: 0;
+  padding: 0;
+}
+h3{
+  color:#000;
+  margin: 0;
+  padding: 0;
+  @media #{$query-desktop} {
+    font-size: 36px;
+  }
+}
+.border-none{
+  border: 0 !important;
+}
+
+
+.hundred-percent{
+  height: 100%;
+}
+
+.radios-items-choose{
+  @include border-radius(4px);
+  border: 1px solid $borderColor;
+  margin-bottom: 24px;
+  .items{
+    position: relative;
+    border-bottom: 1px solid $borderColor;
+    &:last-child{
+      border-bottom: 0;
+    }
+    &.active{
+      background-color: rgba(11, 13, 54, 0.05);
+    }
+    label{
+      width: 100%;
+      display: block;
+      cursor: pointer;
+      margin: 0;
+      @include clearfix();
+      padding: 20px 24px 19px 54px;
+      strong{
+        font-size: 18px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #373737;
+        em{
+          color:$companyColor;
+          font-style: normal;
+        }
+      }
+      span{
+        display: block;
+        @include opacity(.5);
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        -webkit-transform: translate(0, -50%);
+        transform: translate(0, -50%);
+        font-size: 14px;
+        i{
+          display: inline-block;
+          font-size: 20px;
+        }
+        &.opacity-null{
+          @include opacity(1);
+        }
+      }
+    }
+    .radios{
+      &.border{
+        @include position(absolute, 50% null null 15px);
+        margin-top:-9px;
+      }
+    }
+    &.single-line-h64{
+      label{
+        padding: 21px 24px 20px 54px;
+        &.null-choose{
+          padding-left: 18px;
+        }
+      }
+    }
+  }
+}
+
+.promotion-code-list{
+  @include border-radius(4px);
+  border: 1px solid $borderColor;
+  margin-bottom: 24px;
+  .items{
+    position: relative;
+    border-bottom: 1px solid $borderColor;
+    &:last-child{
+      border-bottom: 0;
+    }
+    label{
+      width: 100%;
+      display: block;
+      cursor: pointer;
+      margin: 0;
+      @include clearfix();
+      padding: 20px 24px 19px 18px;
+      strong{
+        font-size: 18px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #373737;
+        em{
+          color:$companyColor;
+          font-style: normal;
+        }
+      }
+      span{
+        display: block;
+        @include opacity(.5);
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        -webkit-transform: translate(0, -50%);
+        transform: translate(0, -50%);
+        font-size: 14px;
+        i{
+          display: inline-block;
+          font-size: 20px;
+        }
+        &.opacity-null{
+          @include opacity(1);
+        }
+      }
+    }
+  }
+}
+.textbox-inside-label {
+  position: relative;
+  margin-bottom: 15px;
+  @media #{$query-desktop} {
+    margin-bottom: 24px;
+  }
+  label {
+    &.init {
+      display: inline-block;
+      @include position(absolute, 10px null null 20px);
+      opacity: 0.5;
+      font-size: 16px;
+      font-weight: 600;
+      color: $textColor;
+    }
+
+  }
+  input[type=text] {
+    height: 64px;
+    border: 1px solid $borderColor;
+    @include border-radius(4px);
+    padding: 25px 0 0 20px;
+    font-size: 18px;
+    color:$textColorLight;
+  }
+  .buttons{
+    &.position-absolute{
+      position: absolute;
+      top: 8px;
+      right: 8px;
+    }
+    &.maxWidth-240{
+     width: 100%;
+      max-width: 240px;
+    }
+  }
+}
+
+.text-input-placeholder {
+  font-size: 18px;
+  @include opacity(.5);
+  font-weight: 500;
+  color: $textColorLight;
+  @include position(absolute, 50% null null 20px);
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  @include transition(all, .2s);
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.text-input-placeholder_pos_top {
+  font-size: 14px;
+  font-weight: 500;
+  top: 10px;
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+  @include transition(all, .5s);
+}
+
+.placeholder-animation {
+  padding-top: 20px;
+}
+.tabs-detay{
+  .sub{
+    display: none;
+  }
+}
+.sub-tabs-detay{
+  .tab-sub{
+    display: none;
+  }
+}
+.modal{
+  display: none;
+}
+
+label{
+  &.error{
+    color:#d0021b !important;
+  }
+}
+
+.pincode-input-container{
+    text-align: center;
+    .pincode-input-text{
+      display: inline-block;
+      @include size(60px);
+      @include border-radius(4px);
+      border:1px solid $companyColor;
+      margin: 0 5px;
+      text-align: center;
+      font-size: 26px;
+      font-family: $baseFontFamily;
+      color: $textColorLight;
+    }
+  }
+
+.steps{
+  @include clearfix();
+  &.margin-top-180{
+    margin-top: 180px;
+  }
+  a{
+    display: block;
+    max-width: 211px;
+    line-height: 47px;
+    width: 100%;
+    font-size:20px;
+    text-align: center;
+    @include border-radius(3px);
+    box-shadow: 0 8px 17px 0 #dbe1f1, 0 1px 4px 0 #d9dbdf;
+
+    &.prev{
+      float: left;
+      background-color: #ffffff;
+      color:$companyColor;
+      i{
+        margin-right: 10px;
+      }
+    }
+    &.next{
+      float: right;
+      background-color: $companyColor;
+      color:#fff;
+      i{
+        margin-left: 10px;
+      }
+    }
+    i{
+      font-size: 21px;
+      position: relative;
+      top:-1px;
+    }
+  }
+}

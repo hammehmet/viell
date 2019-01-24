@@ -1,0 +1,44 @@
+@font-face {
+	font-family: "<%= fontName %>";
+	src: url('<%= fontPath %><%= fontName %>.eot');
+	src: url('<%= fontPath %><%= fontName %>.eot?#iefix') format('eot'),
+		url('<%= fontPath %><%= fontName %>.woff') format('woff'),
+		url('<%= fontPath %><%= fontName %>.ttf') format('truetype'),
+		url('<%= fontPath %><%= fontName %>.svg#<%= fontName %>') format('svg');
+}
+
+%font {
+	font-family: "<%= fontName %>";
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	// speak: none; // only necessary if not using the private unicode range (firstGlyph option)
+	text-decoration: none;
+	text-transform: none;
+	vertical-align: middle;
+	display: inline-block;
+}
+
+@function font-char($filename) {
+	$char: "";
+<% _.each(glyphs, function(glyph) { %>
+	@if $filename == <%= glyph.fileName %> {
+		$char: "\<%= glyph.codePoint %>";
+	}<% }); %>
+
+	@return $char;
+}
+
+@mixin font($filename, $insert: before) {
+	&:#{$insert} {
+		@extend %font;
+		content: font-char($filename);
+	}
+}
+
+<% _.each(glyphs, function(glyph) { %>.font-<%= glyph.fileName %> {
+	@include font(<%= glyph.fileName %>);
+}
+<% }); %>

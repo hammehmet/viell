@@ -1,0 +1,61 @@
+// z-index elements
+$elements:  mobile-background,
+            mobile-menu,
+            top-header
+
+            ;
+
+//defaults
+$colorBlack:        #000;
+$colorGray:         #1f263e;
+$colorWhite:        #fff;
+$colorRed:          #e43a3d;
+$colorgreen:        #54c925;
+$colorPink:         #061332;
+$colorDarkBlue:     #061332;
+$companyColor:      #ddbb74;
+//scaffolding
+$textColor:         #2b3445;
+$textColorLight:    #373737;
+$bodyBgColor:		#fff;
+$colorTitle:        #38393c;
+
+
+//borders	border: 2px solid #E5E5E5;
+$borderColor: 		#E5E5E5;
+$borderLineColor: 	#757777;
+$borderPinkColor:   #c284ae;
+$borderDarkPinkColor:#81014f;
+$borderRadius: 		2px;
+
+//backgroundColor
+$backgroundColor1:   #f3f6fe;
+$backgroundColor2:   #fbfbfb;
+
+
+//fonts
+$baseFontSize:      	13px;
+
+//header
+$headerHeight:          70px;
+$mobileHeaderHeight:    60px;
+//responsive-layout
+$gutter:				20px;
+$screen-small:			768px;
+$screen-normal:			992px;
+$screen-large:			1140px;
+$screen-wrapper:		1200px;
+$sidebarWidth: 220px;
+
+$query-mobile:          "( max-width : #{$screen-small} )";
+$query-tablet: 			"( min-width : #{$screen-small} )";
+$query-tabletLarge: 	"( min-width : #{$screen-small} )";
+$query-desktop:			"( min-width : #{$screen-normal} )";
+$query-large:			"( min-width : #{$screen-large} )";
+$baseFontFamily: 'Rubik', sans-serif;
+$helveticaFontFamily: 'Helvetica','Arial';
+$sourceSansFontFamily: 'Source Sans Pro', sans-serif;
+$Titillium: 'Titillium Web', sans-serif;
+
+
+

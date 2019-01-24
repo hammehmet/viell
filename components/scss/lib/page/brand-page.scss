@@ -1,0 +1,269 @@
+@import "../font-icons";
+.sidebar-right{
+  &.brand-page{
+    .sidebar-qutter{
+      .head{
+        .report-time{
+          display: inline-block;
+          width: 140px;
+          position: relative;
+          margin-left: 40px;
+          top:-3px;
+          &:after{
+            content: "";
+            width: 1px;
+            height: 100%;
+            @include position(absolute,0px 33px null null);
+            background: #c2c5cb;
+          }
+          select{
+            width: 100%;
+            height: 27px;
+            border-radius: 2.4px;
+            background-color: #eff1f4;
+            font-size: 11.2px;
+            color: #7c7c7c;
+            padding: 0 33px 0px 7px;
+          }
+        }
+        .choose-delete{
+          float: right;
+          a{
+            font-size: 14px;
+            color:$companyColor;
+            margin-right: 24px;
+            display: block;
+            padding-top: 15px;
+            i{
+              font-size: 16px;
+              margin-right: 4px;
+            }
+          }
+          &.margin-right-0{
+            a{
+              margin-right: 0px;
+            }
+          }
+        }
+      }
+      .sidebar-content{
+        @include border-radius(4px);
+        box-shadow: 0 9px 30px 0 #dbe1f1;
+        background-color: #ffffff;
+        padding: 30px;
+        margin-top: 15px;
+        .form{
+          width: 45%;
+          position: relative;
+          .logos{
+            float: left;
+          }
+          .action{
+            display: inline-block;
+            float: right;
+            a{
+              border: 1px solid $companyColor;
+              @include border-radius(6px);
+              color:$companyColor;
+              font-size: 17px;
+              font-family: $Titillium;
+              font-weight: normal;
+              display: block;
+              text-align: center;
+              &:hover{
+                background: $companyColor;
+                color:$textColor;
+              }
+              &.signup{
+                width: 155px;
+                height: 50px;
+                line-height: 50px;
+              }
+            }
+          }
+          .title{
+            font-family: $Titillium;
+            font-size: 34px;
+            text-align: left;
+            color: #000000;
+            margin: 30px 0 18px 0;
+            span{
+              display: block;
+              font-size: 15px;
+              color: #9b9b9b;
+              margin-top: 5px;
+              padding-bottom: 12px;
+            }
+          }
+          .form-items{
+            margin: 0 -10px;
+            @include clearfix();
+            &.single-colm{
+              margin: 0;
+            }
+            .items{
+              padding-bottom: 25px;
+              @include clearfix();
+              &.half{
+                width: 50%;
+                float: left;
+                padding-left:10px;
+                padding-right: 10px;
+              }
+
+
+              &.phone{
+                select{
+                  width: 30%;
+                  float: left;
+                  @include border-radius(3px 0 0 3px);
+                  margin-right: -1px;
+                  font-size: 15px;
+                  padding-left: 10px;
+                }
+                input[type=text]{
+                  width: 70%;
+                  float: left;
+                  @include border-radius(0px 3px 3px 0px);
+                }
+              }
+              .form-group{
+                position: relative;
+                margin: 0;
+              }
+              label{
+                font-family: $Titillium;
+                font-size: 15px;
+                color: #9b9b9b;
+                display: block;
+                margin-bottom: 5px;
+              }
+              input[type=password],
+              input[type=text]{
+                @include border-radius(3px);
+                border: 1px solid #c5cdd7;
+                background: #fff;
+                height: 50px;
+                line-height: 50px;
+                padding-left: 15px;
+              }
+              select{
+                width: 100%;
+                height: 50px;
+                @include border-radius(3px);
+                border-color: #c5cdd7;
+              }
+              .passwordIcon{
+                @include position(absolute, 50% 17px null null);
+                font-size: 18px;
+                color:#c5cdd7;
+                margin-top: -9px;
+                display:inline-block;
+                &.font-icon-eye-clicked{
+                  color:$companyColor;
+                }
+                &:before{
+                  display: block;
+                }
+              }
+              .buttons{
+                margin-top: 15px;
+              }
+            }
+          }
+          .seperator{
+            height: 1px;
+            background: $companyColor;
+            margin-top: 5px;
+            margin-bottom: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.file-input{
+  width: 191px;
+  max-width: 320px;
+  margin-bottom: 30px;
+  text-align: center;
+  .file-preview{
+    padding: 0;
+    border: 0;
+    .close{
+      &.fileinput-remove{
+        display: none;
+      }
+    }
+    .file-drop-zone{
+      margin: 0;
+      padding: 0;
+      border-color: $companyColor;
+      overflow: hidden;
+      .file-drop-zone-title{
+        padding: 48px 0 32px 0;
+        i{
+          width: 48px;
+          height: 48px;
+          @include border-radius(50%);
+          background: $companyColor;
+          color:#fff;
+          text-align: center;
+          line-height: 48px;
+          font-size: 35px;
+          display: inline-block;
+          font-style: normal;
+        }
+        span{
+          display: block;
+          font-size: 14px;
+          color: #000000;
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+  .btn{
+    &.btn-file{
+      @include position(absolute, 10px 10px null null);
+      cursor: pointer;
+      z-index: 1;
+      i{
+        @include size(30px);
+        @include border-radius(50%);
+        color:#fff;
+        text-align: center;
+        display: inline-block;
+        background: $companyColor;
+        line-height: 30px;
+        cursor: pointer;
+        &:after{
+          @extend %font;
+          content: font-char(add);
+          display: block;
+          cursor: pointer;
+        }
+      }
+      span{
+        display: none;
+      }
+    }
+  }
+}
+.krajee-default.file-preview-frame .kv-file-content{
+  width: auto;
+  height: auto;
+}
+.krajee-default.file-preview-frame {
+  margin: 0;
+  border: 0;
+  box-shadow: none;
+  padding: 0;
+}
+.fileinput-remove-button{
+  background: $textColorLight;
+  color:#fff;
+  padding: 5px 10px;
+  @include border-radius(3px);
+}

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,  maximum-scale=1.0, minimum-scale=1.0, user-scalable=0"/>
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+	<meta http-equiv="content-language" content="TR"/>
+	<link rel="stylesheet" type="text/css" href="cdn/css/main.css">
+	<link rel="stylesheet" type="text/css" href="cdn/css/homePage.css">
+	<link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700|Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+</head>
+<body>
+<div id="header"></div>
+<div id="card-add-content">
+
+</div>
+<div class="content hundred-percent">
+	<div id="menu"></div>
+	<div class="sidebar-right  billfold-page">
+		<div class="sidebar-qutter">
+			<div class="breadcrumbs">
+				<ul>
+					<li>
+						<a href="#">Anasayfa</a>
+					</li>
+					<li>
+						<a href="#">Cüzdan</a>
+					</li>
+				</ul>
+			</div>
+			<div class="head">
+				<h1>Cüzdan</h1>
+			</div>
+			<div class="sidebar-content">
+				<div class="radios-items">
+					<div class="title">
+						Kart Yönetimi
+					</div>
+					<div class="radios-content">
+						<div class="sub-title">
+							Kredi/Debit Kartlarınız
+						</div>
+						<div class="radios-items-choose">
+							<div class="items single-line-h64">
+								<label for="radios-items-choose-3">
+									<strong>Garanti Bankası - Kredi Kartı</strong>
+									<span class="opacity-null hidden-xs"><img src="img/logo-visa@2x.png" width="46"></span>
+								</label>
+								<div class="radios radios-check border">
+									<input type="radio" id="radios-items-choose-3" name="choose">
+									<span></span>
+								</div>
+							</div>
+
+							<div class="items single-line-h64">
+								<label for="radios-items-choose-4">
+									<strong>Akbank - Debit Kart</strong>
+									<span class="opacity-null hidden-xs"><img src="img/logo-mastercard@2x.png" width="40"></span>
+								</label>
+								<div class="radios radios-check border">
+									<input type="radio" id="radios-items-choose-4" name="choose">
+									<span></span>
+								</div>
+							</div>
+						</div>
+						<div class="action">
+							<a href="#" class="buttons border delete">Sil</a>
+							<a href="#" class="buttons add card-add-btn"><i>+</i> Kredi/Debit Kart Ekle</a>
+						</div>
+					</div>
+				</div>
+				<div class="radios-items">
+					<div class="title">
+						Promosyon Yönetimi
+					</div>
+					<div class="radios-content">
+						<div class="sub-title">
+							Promosyon kodunuzu girin, Viell avantajlarından faydalanın
+						</div>
+						<div class="promotionBtn">
+							<div class="textbox-inside-label">
+								<label class="text-input-placeholder js-placeholder-text">Promosyon Kodu</label>
+								<input type="text" value="KRTLODE87" class="js-placeholder placeholder-animation">
+								<a href="#" class="buttons position-absolute maxWidth-240">
+									<i>+</i> Promosyon Kodu Ekle
+								</a>
+							</div>
+						</div>
+						<div class="sub-title">
+							Promosyon Kodlarınız
+						</div>
+						<div class="promotion-code-list">
+							<div class="items">
+								<label>
+									<strong>Hoşgeldin Kampanyası <em>25 TL Hediye</em></strong>
+									<span class="hidden-xs"><i  class="font-icon-promosyon-gray"></i></span>
+								</label>
+							</div>
+							<div class="items">
+								<label>
+									<strong>İstanbul Millenials <em>%10 İndirim</em></strong>
+									<span class="hidden-xs"><i  class="font-icon-promosyon-gray"></i></span>
+								</label>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="js/jquery.js"></script>
+<script src="js/jquery.placeholder.js"></script>
+<script src="cdn/js/main.js"></script>
+<script src="js/card.js"></script>
+<script>
+    ///Kart Ekleme sayfası. Butona tıklandığında append edilir.
+    $(".card-add-btn a, a.card-add-btn").click(function () {
+        $.ajax({
+            type: "GET",
+            url: "cardAdd.html",
+            dataType : 'html',
+            cache: false,
+            success : function(data){
+
+                $('#card-add-content').append(data);
+                $("body").addClass("body-no-scroll");
+                $('.placeholder-animation').placeholder({
+                    activeClass: 'text-input-placeholder_pos_top'
+                });
+                new Card({
+                    form: document.querySelector('form'),
+                    container: '.card-wrapper'
+                });
+                cardClose();
+            }
+        });
+    });
+
+    function cardClose() {
+        //Kart alanını kapatmak için.
+        $(".card-close a.btn-card-close").click(function () {
+            $('#card-add-content .card-container-relative').addClass("hot");
+            $("body").removeClass("body-no-scroll");
+
+            setTimeout(function () {
+                $('#card-add-content').html("");
+            },1000);
+        });
+    }
+</script>
+
+</body>
+
+</html>

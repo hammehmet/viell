@@ -1,0 +1,319 @@
+@font-face {
+	font-family: "icons";
+	src: url('../fonts/icons/icons.eot');
+	src: url('../fonts/icons/icons.eot?#iefix') format('eot'),
+		url('../fonts/icons/icons.woff') format('woff'),
+		url('../fonts/icons/icons.ttf') format('truetype'),
+		url('../fonts/icons/icons.svg#icons') format('svg');
+}
+
+%font {
+	font-family: "icons";
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	// speak: none; // only necessary if not using the private unicode range (firstGlyph option)
+	text-decoration: none;
+	text-transform: none;
+	vertical-align: middle;
+	display: inline-block;
+}
+
+@function font-char($filename) {
+	$char: "";
+
+	@if $filename == add {
+		$char: "\E001";
+	}
+	@if $filename == arrow-down-sign-to-navigate {
+		$char: "\E002";
+	}
+	@if $filename == arrow-left {
+		$char: "\E003";
+	}
+	@if $filename == building {
+		$char: "\E004";
+	}
+	@if $filename == cancel {
+		$char: "\E005";
+	}
+	@if $filename == check {
+		$char: "\E006";
+	}
+	@if $filename == cross-remove-sign {
+		$char: "\E007";
+	}
+	@if $filename == davet-et {
+		$char: "\E008";
+	}
+	@if $filename == delete {
+		$char: "\E009";
+	}
+	@if $filename == dil {
+		$char: "\E00A";
+	}
+	@if $filename == down-arrow {
+		$char: "\E00B";
+	}
+	@if $filename == download {
+		$char: "\E00C";
+	}
+	@if $filename == icon-calendar-black {
+		$char: "\E00D";
+	}
+	@if $filename == icon-copy-big {
+		$char: "\E00E";
+	}
+	@if $filename == icon-eye-clicked {
+		$char: "\E00F";
+	}
+	@if $filename == icon-eye {
+		$char: "\E010";
+	}
+	@if $filename == icon-promosyon-gray {
+		$char: "\E011";
+	}
+	@if $filename == invitation {
+		$char: "\E012";
+	}
+	@if $filename == kullanıcılar {
+		$char: "\E013";
+	}
+	@if $filename == language {
+		$char: "\E014";
+	}
+	@if $filename == menu-dots {
+		$char: "\E015";
+	}
+	@if $filename == multiple-users-silhouette {
+		$char: "\E016";
+	}
+	@if $filename == navigate-up-arrow {
+		$char: "\E017";
+	}
+	@if $filename == power-off {
+		$char: "\E018";
+	}
+	@if $filename == profile {
+		$char: "\E019";
+	}
+	@if $filename == profilim {
+		$char: "\E01A";
+	}
+	@if $filename == right-arrow-2 {
+		$char: "\E01B";
+	}
+	@if $filename == right-arrow {
+		$char: "\E01C";
+	}
+	@if $filename == search {
+		$char: "\E01D";
+	}
+	@if $filename == sirket-profili {
+		$char: "\E01E";
+	}
+	@if $filename == takvim {
+		$char: "\E01F";
+	}
+	@if $filename == verified-copy-10 {
+		$char: "\E020";
+	}
+	@if $filename == verified {
+		$char: "\E021";
+	}
+	@if $filename == facebook-app-logo {
+		$char: "\E022";
+	}
+	@if $filename == icon-mail2 {
+		$char: "\E023";
+	}
+	@if $filename == icon-sms {
+		$char: "\E024";
+	}
+	@if $filename == icon-whatsapp {
+		$char: "\E025";
+	}
+	@if $filename == instagram {
+		$char: "\E026";
+	}
+	@if $filename == linkedin-logo {
+		$char: "\E027";
+	}
+	@if $filename == twitter-logo-silhouette {
+		$char: "\E028";
+	}
+	@if $filename == m_ayarlar {
+		$char: "\E029";
+	}
+	@if $filename == m_cuzdan {
+		$char: "\E02A";
+	}
+	@if $filename == m_iletisim {
+		$char: "\E02B";
+	}
+	@if $filename == m_kampanya {
+		$char: "\E02C";
+	}
+	@if $filename == m_kitle {
+		$char: "\E02D";
+	}
+	@if $filename == m_raporlar {
+		$char: "\E02E";
+	}
+	@if $filename == m_sepet-odeme {
+		$char: "\E02F";
+	}
+
+	@return $char;
+}
+
+@mixin font($filename, $insert: before) {
+	&:#{$insert} {
+		@extend %font;
+		content: font-char($filename);
+	}
+}
+
+.font-add {
+	@include font(add);
+}
+.font-arrow-down-sign-to-navigate {
+	@include font(arrow-down-sign-to-navigate);
+}
+.font-arrow-left {
+	@include font(arrow-left);
+}
+.font-building {
+	@include font(building);
+}
+.font-cancel {
+	@include font(cancel);
+}
+.font-check {
+	@include font(check);
+}
+.font-cross-remove-sign {
+	@include font(cross-remove-sign);
+}
+.font-davet-et {
+	@include font(davet-et);
+}
+.font-delete {
+	@include font(delete);
+}
+.font-dil {
+	@include font(dil);
+}
+.font-down-arrow {
+	@include font(down-arrow);
+}
+.font-download {
+	@include font(download);
+}
+.font-icon-calendar-black {
+	@include font(icon-calendar-black);
+}
+.font-icon-copy-big {
+	@include font(icon-copy-big);
+}
+.font-icon-eye-clicked {
+	@include font(icon-eye-clicked);
+}
+.font-icon-eye {
+	@include font(icon-eye);
+}
+.font-icon-promosyon-gray {
+	@include font(icon-promosyon-gray);
+}
+.font-invitation {
+	@include font(invitation);
+}
+.font-kullanıcılar {
+	@include font(kullanıcılar);
+}
+.font-language {
+	@include font(language);
+}
+.font-menu-dots {
+	@include font(menu-dots);
+}
+.font-multiple-users-silhouette {
+	@include font(multiple-users-silhouette);
+}
+.font-navigate-up-arrow {
+	@include font(navigate-up-arrow);
+}
+.font-power-off {
+	@include font(power-off);
+}
+.font-profile {
+	@include font(profile);
+}
+.font-profilim {
+	@include font(profilim);
+}
+.font-right-arrow-2 {
+	@include font(right-arrow-2);
+}
+.font-right-arrow {
+	@include font(right-arrow);
+}
+.font-search {
+	@include font(search);
+}
+.font-sirket-profili {
+	@include font(sirket-profili);
+}
+.font-takvim {
+	@include font(takvim);
+}
+.font-verified-copy-10 {
+	@include font(verified-copy-10);
+}
+.font-verified {
+	@include font(verified);
+}
+.font-facebook-app-logo {
+	@include font(facebook-app-logo);
+}
+.font-icon-mail2 {
+	@include font(icon-mail2);
+}
+.font-icon-sms {
+	@include font(icon-sms);
+}
+.font-icon-whatsapp {
+	@include font(icon-whatsapp);
+}
+.font-instagram {
+	@include font(instagram);
+}
+.font-linkedin-logo {
+	@include font(linkedin-logo);
+}
+.font-twitter-logo-silhouette {
+	@include font(twitter-logo-silhouette);
+}
+.font-m_ayarlar {
+	@include font(m_ayarlar);
+}
+.font-m_cuzdan {
+	@include font(m_cuzdan);
+}
+.font-m_iletisim {
+	@include font(m_iletisim);
+}
+.font-m_kampanya {
+	@include font(m_kampanya);
+}
+.font-m_kitle {
+	@include font(m_kitle);
+}
+.font-m_raporlar {
+	@include font(m_raporlar);
+}
+.font-m_sepet-odeme {
+	@include font(m_sepet-odeme);
+}

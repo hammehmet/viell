@@ -1,0 +1,81 @@
+
+.sidebar-right {
+  &.contact-page {
+    .sidebar-qutter {
+      .sidebar-content {
+        background: #fff;
+        box-shadow: 0 8px 28px 0 rgba(72, 89, 102, 0.1);
+        min-height: 400px;
+        @include  border-radius(4px);
+        margin-top: 15px;
+        padding: 80px 70px;
+        .info{
+          @include clearfix();
+          .text{
+            width: 50%;
+            float: left;
+            padding-right: 80px;
+            .logo{
+              margin-bottom: 30px;
+            }
+            .title{
+              strong{
+                display: block;
+                font-size: 16px;
+                font-weight: bold;
+                color: $companyColor;
+                margin-bottom: 20px;
+              }
+              label{
+                display: block;
+                font-size: 16px;
+                font-weight: bold;
+                color: $textColor;
+                margin-bottom: 20px;
+              }
+            }
+            .items{
+              margin-bottom: 20px;
+              font-size: 15px;
+              color: $textColor;
+            }
+          }
+          .form{
+            width: 50%;
+            float: left;
+            padding-left: 20px;
+            .form-items{
+              @include clearfix();
+              margin-bottom: 15px;
+              label{
+                display: block;
+                font-size: 15px;
+                color:$textColor;
+                margin-bottom: 5px;
+              }
+              textarea,
+              select,
+              input[type=text]{
+                width: 100%;
+                height: 50px;
+                @include border-radius(6px);
+                box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.16);
+                background-color: #e3e3e3;
+                border: 0px;
+                padding-left: 18px;
+                font-size: 15px;
+                outline: none;
+              }
+              textarea{
+                height: 165px;
+                resize: none;
+                text-align: left;
+                padding-top: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

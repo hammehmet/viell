@@ -1,0 +1,49 @@
+.buttons{
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #fff;
+  border: 1px solid $companyColor;
+  outline: none;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  background: $companyColor;
+  height: 48px;
+  line-height: 46px;
+  font-size: 16px;
+  vertical-align: middle;
+  @include  border-radius(3px);
+  i{
+    font-size: 20px;
+    font-style: normal;
+  }
+  &:disabled{
+    background: #f1e8d5;
+    border-color: #f1e8d5;
+    &:hover{
+      color:#fff;
+    }
+  }
+  &:hover{
+    color:$textColor;
+  }
+  &.border{
+    background: transparent;
+    border:1px solid $companyColor;
+    color:$companyColor;
+    &:hover{
+      background: $companyColor;
+      color:$textColor;
+    }
+  }
+  &.maxWidth-240{
+    max-width: 240px;
+  }
+  &.margin-auto{
+    margin:  0 auto;
+  }
+}

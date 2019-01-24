@@ -1,0 +1,172 @@
+// Opacity
+@mixin opacity($opacity) {
+    opacity: $opacity;
+    // IE8 filter
+    $opacity-ie: ($opacity * 100);
+    filter: #{alpha(opacity=$opacity-ie)};
+}
+
+@mixin getPercentage($column) {
+    width: percentage((100/$column)/100);
+}
+
+.clearfix
+{
+	@include clearfix();
+}
+.selectMenuArrow {
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAANCAYAAADISGwcAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDE0IDc5LjE1Njc5NywgMjAxNC8wOC8yMC0wOTo1MzowMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NTU5M0Y5RENDQzczMTFFNEI1MTk5NEYxNTJCNDU2NEQiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NTU5M0Y5REJDQzczMTFFNEI1MTk5NEYxNTJCNDU2NEQiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTQgKE1hY2ludG9zaCkiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4REU4OTYwNUNDNzExMUU0QjUxOTk0RjE1MkI0NTY0RCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4REU4OTYwNkNDNzExMUU0QjUxOTk0RjE1MkI0NTY0RCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pthz4o8AAACNSURBVHjaYvz//z/DQAImhgEGow5gYmRknA7E/8nAs6jlCDYg3gvE/0nAIPVsoARMKYYBISC+TaTlIHWiIE3UdAAIqAHxBwKWg+Q1YRqo7QAQcAbiPzgsB4m7ISumhQNAIBOHA7LRFdLKASAwFc3yadgU0dIBzEC8GynFs9DbASDAD8RboDQDrRwAEGAAxeLdCRAeyL8AAAAASUVORK5CYII=');
+}
+.gradient {
+  background-image: linear-gradient(to right, #220a3c, #7d034d 75%, #870052);
+  -webkit-box-shadow: 0px 9px 12px -7px rgba(129,1,80,0.4);
+  -moz-box-shadow: 0px 9px 12px -7px rgba(129,1,80,0.4);
+}
+
+%uiElementBoxShadow
+{
+    box-shadow: 0 0 2px 0 rgba(0,0,0,.14), 0 1px 2px 0 rgba(0,0,0,.14);
+}
+
+%float-left
+{
+	float: left;
+}
+
+%default-transition
+{
+	@include transition(all,.2s);
+}
+
+
+@mixin transition($transition...) {
+  transition: $transition;
+}
+
+@mixin  placeholder($opacity){
+  &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    @include opacity($opacity);
+  }
+  &::-moz-placeholder { /* Firefox 19+ */
+    @include opacity($opacity);
+  }
+  &:-ms-input-placeholder { /* IE 10+ */
+    @include opacity($opacity);
+  }
+  &:-moz-placeholder { /* Firefox 18- */
+    @include opacity($opacity);
+  }
+}
+
+@mixin translate ($x, $y) {
+  @include transform(translate($x, $y));
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+
+
+
+
+
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} {
+    @content
+  }
+  @-moz-keyframes #{$name} {
+    @content
+  }
+  @-ms-keyframes #{$name} {
+    @content
+  }
+  @-o-keyframes #{$name} {
+    @content
+  }
+  @keyframes #{$name} {
+    @content
+  }
+}
+
+@mixin animation($value) {
+  -webkit-animation: $value;
+  -moz-animation: $value;
+  -ms-animation: $value;
+  -o-animation: $value;
+  animation: $value;
+}
+
+
+
+
+@mixin iconfont {
+  font-family: "icons";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  // speak: none; // only necessary if not using the private unicode range (firstGlyph option)
+  text-decoration: none;
+  text-transform: none;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+@mixin animation($animate) {
+  $max: length($animate);
+  $animations: '';
+
+  @for $i from 1 through $max {
+    $animations: #{$animations + nth($animate, $i)};
+
+    @if $i < $max {
+      $animations: #{$animations + ", "};
+    }
+  }
+  -webkit-animation: $animations;
+  -moz-animation:    $animations;
+  -o-animation:      $animations;
+  animation:         $animations;
+}
+
+// generic transform
+@mixin transform($transforms) {
+  -moz-transform: $transforms;
+  -o-transform: $transforms;
+  -ms-transform: $transforms;
+  -webkit-transform: $transforms;
+  transform: $transforms;
+}
+// rotate
+@mixin rotate ($deg) {
+  @include transform(rotate(#{$deg}deg));
+}
+
+// scale
+@mixin scale ($deg) {
+  @include transform(scale(#{$deg}));
+}
+
+
+@keyframes slide-down{
+  0% {
+    top: 0px;
+  }
+  100% {
+    top: 70px;
+  }
+}
+
+@keyframes slide-up{
+  0% {
+
+  }
+  100% {
+    top: -999px;
+  }
+}

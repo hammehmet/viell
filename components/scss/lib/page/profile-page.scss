@@ -1,0 +1,98 @@
+
+.sidebar-right {
+  &.profile-page {
+    .sidebar-qutter {
+      .sidebar-content {
+        background: #fff;
+        box-shadow: 0 8px 28px 0 rgba(72, 89, 102, 0.1);
+        min-height: 400px;
+        @include  border-radius(4px);
+        margin-top: 15px;
+        .list{
+          display: table;
+          width: 100%;
+          .items{
+            display: inline-block;
+            padding: 30px;
+            a{
+              display: block;
+              background: #f6f6f6;
+              border: 1px solid #e6eaee;
+              @include border-radius(4px);
+              padding: 30px;
+              width: 300px;
+              &:hover{
+                border-color: $companyColor;
+              }
+              .icons,
+              .logo{
+                width: 67px;
+                height: 67px;
+                display: inline-block;
+                @include border-radius(50%);
+                border: 1px solid $companyColor;
+                overflow: hidden;
+                vertical-align: middle;
+                position: relative;
+                background: #fff;
+                img{
+                  width: 100%;
+                  position: absolute;
+                  left: 50%;
+                  top: 50%;
+                  -webkit-transform: translate(-50%, -50%);
+                  -ms-transform: translate(-50%, -50%);
+                  transform: translate(-50%, -50%);
+                }
+              }
+              .icons{
+                background: transparent;
+                text-align: center;
+                line-height: 67px;
+                i{
+                  font-size: 30px;
+                  color:$companyColor;
+                  display: inline-block;
+                  &.font-building{
+                    font-size: 36px;
+                  }
+                  &.font-multiple-users-silhouette{
+                    font-size: 36px;
+                  }
+                  &.font-language{
+                    font-size: 40px;
+                  }
+                  &:before{
+                    display: block;
+                  }
+                }
+              }
+              .text{
+                font-size: 20px;
+                color:$textColor;
+                display: inline-block;
+                vertical-align: middle;
+                padding-left:30px;
+                position: relative;
+                select{
+                  background: transparent;
+                  border: 0;
+                  padding-right: 20px;
+                }
+                i{
+                  @include position(absolute, 50% 0px null null);
+                  display: inline-block;
+                  margin-top: -8px;
+                  font-size: 16px;
+                  &:before{
+                    display: block;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

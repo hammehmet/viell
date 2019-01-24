@@ -1,0 +1,60 @@
+<div class="header">
+	<div class="header-center">
+		<div class="logo">
+			<a href="/"><img src="img/viell-logo.svg" alt="Viell"></a>
+		</div>
+		<div class="search">
+			<input type="text" class="txt-search" id="txtSearch" name="search" placeholder="Arama">
+			<button type="submit" class="btn-search" id="btnSearch"><i class="font-search"></i></button>
+		</div>
+	</div>
+</div>
+<script src="js/jquery.easy-autocomplete.js"></script>
+<script>
+    var options = {
+
+        url: "js/heroes.json",
+
+        categories: [{
+            listLocation: "reports",
+            maxNumberOfElements: 4,
+            header: "Raporlar/Faturalar"
+        }, {
+            listLocation: "audience",
+            maxNumberOfElements: 4,
+            header: "Kitle"
+        }, {
+            listLocation: "payment",
+            maxNumberOfElements: 4,
+            header: "Ödeme"
+        }],
+
+        getValue: function(element) {
+            return element.character;
+        },
+
+        template: {
+            type: "description",
+            fields: {
+                description: "realName"
+            }
+        },
+
+        list: {
+            maxNumberOfElements: 8,
+            match: {
+                enabled: true,
+                caseSensitive: false,
+            },
+            sort: {
+                enabled: true
+            }
+        },
+        adjustWidth: false,
+        theme: "square"
+    };
+
+    setTimeout(function () {
+        $("#txtSearch").easyAutocomplete(options);
+    },100);
+</script>

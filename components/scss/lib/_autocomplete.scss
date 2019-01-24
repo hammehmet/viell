@@ -1,0 +1,45 @@
+.easy-autocomplete-container{
+  width: 466px;
+  min-width: 240px;
+  @include position(absolute, 35px 0px null null);
+  ul{
+    @include border-radius(3px);
+    box-shadow: 0 6px 19px 0 #dbe1f1;
+    background-color: #f6f6f6;
+    border: 1px solid $companyColor;
+    padding: 17px;
+    display: none;
+
+    .eac-category{
+      font-size: 15px;
+      font-weight: 500;
+      display: block;
+      color: $companyColor;
+      margin-bottom: 15px;
+      &:first-child{
+        &:before{
+          content: none;
+        }
+      }
+      &:before{
+        width: 100%;
+        height: 1px;
+        content: "";
+        background: #dbe1f1;
+        display: block;
+        margin: 15px 0;
+      }
+    }
+    li{
+      font-size: 14px;
+      line-height: 20px;
+      .eac-item{
+        b{
+          font-style: normal;
+          font-weight: normal;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

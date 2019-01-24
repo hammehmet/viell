@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,  maximum-scale=1.0, minimum-scale=1.0, user-scalable=0"/>
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+	<meta http-equiv="content-language" content="TR"/>
+	<link rel="stylesheet" type="text/css" href="cdn/css/main.css">
+	<link rel="stylesheet" type="text/css" href="cdn/css/login.css">
+	<link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700|Source+Sans+Pro:300,400,600,700|Titillium+Web:300,400,600" rel="stylesheet">
+</head>
+<body>
+
+<div class="login-page">
+	<div class="form">
+		<div class="head">
+			<div class="logos">
+				<a href="/">
+					<img src="img/viell-logo.svg" alt="">
+				</a>
+			</div>
+			<div class="action">
+				<a href="#" class="signup">Üye Ol</a>
+			</div>
+		</div>
+		<div class="forms">
+			<div class="forms-center">
+				<div class="tabs">
+					<ul>
+						<li><a href="#"><span>Bireysel Üye</span></a></li>
+						<li><a href="#"><span>Kurumsal Üye</span></a></li>
+						<li><a href="#"><span>Ajans</span></a></li>
+					</ul>
+				</div>
+				<div class="tabs-detay login">
+					<form class="loginForm sub"  id="personal" method="POST" action="#">
+						<div>
+							<div class="title">Bireysel Üye Girişi</div>
+							<input type="hidden" name="loginType" value="individual">
+							<div class="form-items">
+								<div class="items phone">
+									<label>TELEFON NUMARASI</label>
+									<div class="form-group">
+										<select class="maxWidth-80">
+											<option>+90</option>
+										</select>
+										<input type="text" name="phone" class="phoneNumber maxWidth-320" placeholder="">
+									</div>
+								</div>
+								<div class="items">
+									<label>ŞİFRE</label>
+									<div class="form-group">
+										<i class="passwordIcon font-icon-eye"></i>
+										<input type="password" name="password" placeholder="ŞİFRENİZİ GİRİNİZ">
+									</div>
+								</div>
+								<div class="items">
+									<button type="submit" class="buttons">GİRİŞ YAP</button>
+								</div>
+							</div>
+							<div class="forgot-password-link">
+								<a href="#">ŞİFREMİ UNUTTUM!</a>
+							</div>
+						</div>
+					</form>
+					<form class="loginForm sub"  id="company" method="POST" action="#">
+						<div>
+							<div class="title">Kurumsal Üye Girişi</div>
+							<input type="hidden" name="loginType" value="company">
+
+							<div class="form-items">
+								<div class="items phone">
+									<label>TELEFON NUMARASI</label>
+									<div class="form-group">
+										<select class="maxWidth-80">
+											<option>+90</option>
+										</select>
+										<input type="text" class="phoneNumber maxWidth-320"  name="phone" placeholder="">
+									</div>
+								</div>
+								<div class="items">
+									<label>ŞİFRE</label>
+									<div class="form-group">
+										<i class="passwordIcon font-icon-eye"></i>
+										<input type="password" name="password"placeholder="ŞİFRENİZİ GİRİNİZ">
+									</div>
+								</div>
+								<div class="items">
+									<button type="submit" class="buttons">GİRİŞ YAP</button>
+								</div>
+							</div>
+							<div class="forgot-password-link">
+								<a href="#">ŞİFREMİ UNUTTUM!</a>
+							</div>
+						</div>
+					</form>
+					<form class="loginForm sub" id="ajans" method="POST" action="#">
+						<div>
+							<div class="title">Ajans Üye Girişi</div>
+							<input type="hidden" name="loginType" value="agency">
+							<div class="form-items">
+								<div class="items phone">
+									<label>TELEFON NUMARASI</label>
+									<div class="form-group">
+										<select class="maxWidth-80">
+											<option>+90</option>
+										</select>
+										<input type="text" class="phoneNumber maxWidth-320" placeholder="">
+									</div>
+								</div>
+								<div class="items">
+									<label>ŞİFRE</label>
+									<div class="form-group">
+										<i class="passwordIcon font-icon-eye"></i>
+										<input type="password" name="password" placeholder="ŞİFRENİZİ GİRİNİZ">
+									</div>
+								</div>
+								<div class="items">
+									<button type="submit" class="buttons">GİRİŞ YAP</button>
+								</div>
+							</div>
+							<div class="forgot-password-link">
+								<a href="#">ŞİFREMİ UNUTTUM!</a>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="images">
+		<div class="head">
+			<a href="#"><i class="font-arrow-left"></i> Anasayfa</a>
+		</div>
+		<div class="logos">
+			<img src="img/group-76.png" alt="">
+		</div>
+		<div class="foot">
+			<ul>
+				<li><a href="#">About Careers</a></li>
+				<li><a href="#">Faq</a></li>
+				<li><a href="#">Privacy Policy</a></li>
+				<li><a href="#">Terms of Service</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<script src="js/jquery.js"></script>
+<script src="js/jquery.validate.js"></script>
+<script src="js/jquery.mask.js"></script>
+<script src="cdn/js/main.js"></script>
+
+
+</body>
+
+</html>
