@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,  maximum-scale=1.0, minimum-scale=1.0, user-scalable=0"/>
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+	<meta http-equiv="content-language" content="TR"/>
+	<link rel="stylesheet" type="text/css" href="cdn/css/main.css">
+	<link rel="stylesheet" type="text/css" href="cdn/css/campaign.css">
+	<link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700|Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+</head>
+<body>
+
+<div id="header"></div>
+<div class="content hundred-percent">
+	<div id="menu"></div>
+	<div class="sidebar-right  banner-loading-page">
+		<div class="sidebar-qutter">
+			<div class="breadcrumbs">
+				<ul>
+					<li>
+						<a href="#">Anasayfa</a>
+					</li>
+					<li>
+						<a href="#">Online Ürünler</a>
+					</li>
+					<li>
+						<a href="javascript:;">Reklam Bannerları Yükleyin</a>
+					</li>
+				</ul>
+			</div>
+			<div class="head">
+				<h1>Anasayfa Masthead</h1>
+			</div>
+			<div class="sidebar-content">
+				<div class="banner-loading">
+					<div class="images">
+						<img src="img/anasayfa-masthead-copy@2x.jpg" alt="">
+					</div>
+					<div class="forms">
+						<form id="bannerForm" method="post" action="#">
+							<div class="banner">
+								<div class="wrap-custom-file big">
+									<input type="file" name="image1" id="image1" accept=".gif, .jpg, .png" />
+									<label  for="image1">
+										<span>300x300</span>
+										<a href="javascript:;"><i class="font-cross-remove-sign"></i> </a>
+
+									</label>
+								</div>
+
+								<div class="wrap-custom-file">
+									<input type="file" name="image2" id="image2" accept=".gif, .jpg, .png" />
+									<label  for="image2">
+										<i class="font-plus-black-symbol"></i>
+										<span>300x300</span>
+										<a href="javascript:;"><i class="font-cross-remove-sign"></i> </a>
+									</label>
+								</div>
+
+								<div class="wrap-custom-file">
+									<input type="file" name="image3" id="image3" accept=".gif, .jpg, .png" />
+									<label  for="image3">
+										<i class="font-plus-black-symbol"></i>
+										<span>300x300</span>
+										<a href="javascript:;"><i class="font-cross-remove-sign"></i> </a>
+									</label>
+								</div>
+
+								<div class="wrap-custom-file">
+									<input type="file" name="image4" id="image4" accept=".gif, .jpg, .png" />
+									<label  for="image4">
+										<i class="font-plus-black-symbol"></i>
+										<span>300x300</span>
+										<a href="javascript:;"><i class="font-cross-remove-sign"></i> </a>
+									</label>
+								</div>
+							</div>
+							<div class="clearfix"></div>
+							<div class="items">
+								<label>Başlık</label>
+								<input type="text" name="title" placeholder="*Maksimum 45 karakter kullanabilirsiniz." maxlength="45">
+							</div>
+							<div class="items">
+								<label>Açıklama</label>
+								<textarea name="description" placeholder="*Maksimum 160 karakter kullanabilirsiniz."></textarea>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="steps margin-top-180">
+					<a href="#" class="prev">
+						<i class="font-arrow-left"></i> Önceki Adım
+					</a>
+					<a href="javascript:;" class="next btnFormSubmit">
+						Sonraki Adım <i class="font-right-arrow-2"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<script src="js/jquery.js"></script>
+<script src="js/jquery.validate.js"></script>
+<script src="js/jquery.mask.js"></script>
+<script src="cdn/js/main.js"></script>
+
+
+
+<script>
+
+   $(document).ready(function () {
+       $(".btnFormSubmit").click(function () {
+           $("#bannerForm").submit();
+       });
+
+       $("#bannerForm").validate({
+           ignore:[],
+           rules: {
+               image1 : {required : true},
+               title : {required : true},
+               description : {required : true}
+           },
+           messages: {
+               image1: "Lütfen Kampanya Görseli Yükleyiniz.",
+               title: "Lütfen Bir Başlık Giriniz.",
+               description: "Lütfen Bir Açıklama Metni Giriniz."
+
+           },
+           submitHandler: function() {
+               var bannerForm = $("#bannerForm").serialize();
+               $.ajax({
+                   type:'POST',
+                   url: '#',
+                   data: $.param(bannerForm),
+                   beforeSend: function() {
+
+                   },
+                   success: function(response) {
+                       if(response.success == true){
+
+                       }
+                       else{
+                       }
+                   },
+                   failure: function() {
+
+                   },
+                   error: function() {
+
+                   }
+               });
+               return false;
+           }
+       });
+
+       $('input[type="file"]').each(function(){
+           // Refs
+           var $file = $(this),
+               $label = $file.next('label'),
+               $labelText = $label.find('span'),
+               labelDefault = $labelText.text();
+
+           // When a new file is selected
+           $file.on('change', function(event){
+               var fileName = $file.val().split( '\\' ).pop(),
+                   tmppath = URL.createObjectURL(event.target.files[0]);
+               //Check successfully selection
+               if( fileName ){
+                   $label
+                       .addClass('file-ok')
+                       .css('background-image', 'url(' + tmppath + ')');
+                   //$labelText.text(fileName);
+               }else{
+                   $label.removeClass('file-ok');
+                   //$labelText.text(labelDefault);
+
+               }
+           });
+
+// End loop of file input elements
+       });
+
+       $('.wrap-custom-file a').click(function () {
+           $(this).closest('.wrap-custom-file').find('input').val('');
+           $(this).closest('.wrap-custom-file').find('label').attr('style','').removeClass('file-ok');
+       });
+   })
+</script>
+</body>
+
+</html>
