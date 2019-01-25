@@ -2306,7 +2306,7 @@ label.error {
   src: url("../fonts/icons/icons.eot");
   src: url("../fonts/icons/icons.eot?#iefix") format("eot"), url("../fonts/icons/icons.woff") format("woff"), url("../fonts/icons/icons.ttf") format("truetype"), url("../fonts/icons/icons.svg#icons") format("svg"); }
 
-.font-add:before, .font-arrow-down-sign-to-navigate:before, .font-arrow-left:before, .font-building:before, .font-cancel:before, .font-check:before, .font-cross-remove-sign:before, .font-davet-et:before, .font-delete:before, .font-dil:before, .font-down-arrow:before, .font-download:before, .font-icon-calendar-black:before, .font-icon-copy-big:before, .font-icon-eye-clicked:before, .font-icon-eye:before, .font-icon-promosyon-gray:before, .font-invitation:before, .font-kullanıcılar:before, .font-language:before, .font-menu-dots:before, .font-multiple-users-silhouette:before, .font-navigate-up-arrow:before, .font-power-off:before, .font-profile:before, .font-profilim:before, .font-right-arrow-2:before, .font-right-arrow:before, .font-search:before, .font-sirket-profili:before, .font-takvim:before, .font-verified-copy-10:before, .font-verified:before, .font-facebook-app-logo:before, .font-icon-mail2:before, .font-icon-sms:before, .font-icon-whatsapp:before, .font-instagram:before, .font-linkedin-logo:before, .font-twitter-logo-silhouette:before, .font-m_ayarlar:before, .font-m_cuzdan:before, .font-m_iletisim:before, .font-m_kampanya:before, .font-m_kitle:before, .font-m_raporlar:before, .font-m_sepet-odeme:before, input[type="checkbox"].yellow + label:before, input[type="checkbox"].all-checkboxes + label:before, input[type="checkbox"].dt-checkboxes + label:before, input[type="checkbox"].terms + label:after, input[type="checkbox"].terms-yellow + label:after, input[type="checkbox"].membership-type + label:after, input[type="radio"].budget + label:after, .radios-check span:before {
+.font-add:before, .font-arrow-down-sign-to-navigate:before, .font-arrow-left:before, .font-building:before, .font-cancel:before, .font-check:before, .font-cross-remove-sign:before, .font-davet-et:before, .font-delete:before, .font-dil:before, .font-down-arrow:before, .font-download:before, .font-icon-calendar-black:before, .font-icon-copy-big:before, .font-icon-eye-clicked:before, .font-icon-eye:before, .font-icon-promosyon-gray:before, .font-invitation:before, .font-kullanıcılar:before, .font-language:before, .font-menu-dots:before, .font-multiple-users-silhouette:before, .font-navigate-up-arrow:before, .font-plus-black-symbol:before, .font-power-off:before, .font-profile:before, .font-profilim:before, .font-right-arrow-2:before, .font-right-arrow:before, .font-search:before, .font-sirket-profili:before, .font-takvim:before, .font-verified-copy-10:before, .font-verified:before, .font-m_ayarlar:before, .font-m_cuzdan:before, .font-m_iletisim:before, .font-m_kampanya:before, .font-m_kitle:before, .font-m_raporlar:before, .font-m_sepet-odeme:before, .font-facebook-app-logo:before, .font-icon-mail2:before, .font-icon-sms:before, .font-icon-whatsapp:before, .font-instagram:before, .font-linkedin-logo:before, .font-twitter-logo-silhouette:before, input[type="checkbox"].yellow + label:before, input[type="checkbox"].all-checkboxes + label:before, input[type="checkbox"].dt-checkboxes + label:before, input[type="checkbox"].terms + label:after, input[type="checkbox"].terms-yellow + label:after, input[type="checkbox"].membership-type + label:after, input[type="radio"].budget + label:after, .radios-check span:before {
   font-family: "icons";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -2387,77 +2387,80 @@ label.error {
 .font-navigate-up-arrow:before {
   content: ""; }
 
-.font-power-off:before {
+.font-plus-black-symbol:before {
   content: ""; }
 
-.font-profile:before {
+.font-power-off:before {
   content: ""; }
 
-.font-profilim:before {
+.font-profile:before {
   content: ""; }
 
-.font-right-arrow-2:before {
+.font-profilim:before {
   content: ""; }
 
-.font-right-arrow:before {
+.font-right-arrow-2:before {
   content: ""; }
 
-.font-search:before {
+.font-right-arrow:before {
   content: ""; }
 
-.font-sirket-profili:before {
+.font-search:before {
   content: ""; }
 
-.font-takvim:before {
+.font-sirket-profili:before {
   content: ""; }
 
-.font-verified-copy-10:before {
+.font-takvim:before {
   content: ""; }
 
-.font-verified:before {
+.font-verified-copy-10:before {
   content: ""; }
 
-.font-facebook-app-logo:before {
+.font-verified:before {
   content: ""; }
 
-.font-icon-mail2:before {
+.font-m_ayarlar:before {
   content: ""; }
 
-.font-icon-sms:before {
+.font-m_cuzdan:before {
   content: ""; }
 
-.font-icon-whatsapp:before {
+.font-m_iletisim:before {
   content: ""; }
 
-.font-instagram:before {
+.font-m_kampanya:before {
   content: ""; }
 
-.font-linkedin-logo:before {
+.font-m_kitle:before {
   content: ""; }
 
-.font-twitter-logo-silhouette:before {
+.font-m_raporlar:before {
   content: ""; }
 
-.font-m_ayarlar:before {
+.font-m_sepet-odeme:before {
   content: ""; }
 
-.font-m_cuzdan:before {
+.font-facebook-app-logo:before {
   content: ""; }
 
-.font-m_iletisim:before {
+.font-icon-mail2:before {
   content: ""; }
 
-.font-m_kampanya:before {
+.font-icon-sms:before {
   content: ""; }
 
-.font-m_kitle:before {
+.font-icon-whatsapp:before {
   content: ""; }
 
-.font-m_raporlar:before {
+.font-instagram:before {
   content: ""; }
 
-.font-m_sepet-odeme:before {
+.font-linkedin-logo:before {
   content: ""; }
+
+.font-twitter-logo-silhouette:before {
+  content: ""; }
 
 input[type=email],
 input[type=text],
@@ -2894,7 +2897,7 @@ input[type="radio"].budget {
   src: url("../fonts/icons/icons.eot");
   src: url("../fonts/icons/icons.eot?#iefix") format("eot"), url("../fonts/icons/icons.woff") format("woff"), url("../fonts/icons/icons.ttf") format("truetype"), url("../fonts/icons/icons.svg#icons") format("svg"); }
 
-.font-add:before, .font-arrow-down-sign-to-navigate:before, .font-arrow-left:before, .font-building:before, .font-cancel:before, .font-check:before, .font-cross-remove-sign:before, .font-davet-et:before, .font-delete:before, .font-dil:before, .font-down-arrow:before, .font-download:before, .font-icon-calendar-black:before, .font-icon-copy-big:before, .font-icon-eye-clicked:before, .font-icon-eye:before, .font-icon-promosyon-gray:before, .font-invitation:before, .font-kullanıcılar:before, .font-language:before, .font-menu-dots:before, .font-multiple-users-silhouette:before, .font-navigate-up-arrow:before, .font-power-off:before, .font-profile:before, .font-profilim:before, .font-right-arrow-2:before, .font-right-arrow:before, .font-search:before, .font-sirket-profili:before, .font-takvim:before, .font-verified-copy-10:before, .font-verified:before, .font-facebook-app-logo:before, .font-icon-mail2:before, .font-icon-sms:before, .font-icon-whatsapp:before, .font-instagram:before, .font-linkedin-logo:before, .font-twitter-logo-silhouette:before, .font-m_ayarlar:before, .font-m_cuzdan:before, .font-m_iletisim:before, .font-m_kampanya:before, .font-m_kitle:before, .font-m_raporlar:before, .font-m_sepet-odeme:before, input[type="checkbox"].yellow + label:before, input[type="checkbox"].all-checkboxes + label:before, input[type="checkbox"].dt-checkboxes + label:before, input[type="checkbox"].terms + label:after, input[type="checkbox"].terms-yellow + label:after, input[type="checkbox"].membership-type + label:after, input[type="radio"].budget + label:after, .radios-check span:before {
+.font-add:before, .font-arrow-down-sign-to-navigate:before, .font-arrow-left:before, .font-building:before, .font-cancel:before, .font-check:before, .font-cross-remove-sign:before, .font-davet-et:before, .font-delete:before, .font-dil:before, .font-down-arrow:before, .font-download:before, .font-icon-calendar-black:before, .font-icon-copy-big:before, .font-icon-eye-clicked:before, .font-icon-eye:before, .font-icon-promosyon-gray:before, .font-invitation:before, .font-kullanıcılar:before, .font-language:before, .font-menu-dots:before, .font-multiple-users-silhouette:before, .font-navigate-up-arrow:before, .font-plus-black-symbol:before, .font-power-off:before, .font-profile:before, .font-profilim:before, .font-right-arrow-2:before, .font-right-arrow:before, .font-search:before, .font-sirket-profili:before, .font-takvim:before, .font-verified-copy-10:before, .font-verified:before, .font-m_ayarlar:before, .font-m_cuzdan:before, .font-m_iletisim:before, .font-m_kampanya:before, .font-m_kitle:before, .font-m_raporlar:before, .font-m_sepet-odeme:before, .font-facebook-app-logo:before, .font-icon-mail2:before, .font-icon-sms:before, .font-icon-whatsapp:before, .font-instagram:before, .font-linkedin-logo:before, .font-twitter-logo-silhouette:before, input[type="checkbox"].yellow + label:before, input[type="checkbox"].all-checkboxes + label:before, input[type="checkbox"].dt-checkboxes + label:before, input[type="checkbox"].terms + label:after, input[type="checkbox"].terms-yellow + label:after, input[type="checkbox"].membership-type + label:after, input[type="radio"].budget + label:after, .radios-check span:before {
   font-family: "icons";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -2975,77 +2978,80 @@ input[type="radio"].budget {
 .font-navigate-up-arrow:before {
   content: ""; }
 
-.font-power-off:before {
+.font-plus-black-symbol:before {
   content: ""; }
 
-.font-profile:before {
+.font-power-off:before {
   content: ""; }
 
-.font-profilim:before {
+.font-profile:before {
   content: ""; }
 
-.font-right-arrow-2:before {
+.font-profilim:before {
   content: ""; }
 
-.font-right-arrow:before {
+.font-right-arrow-2:before {
   content: ""; }
 
-.font-search:before {
+.font-right-arrow:before {
   content: ""; }
 
-.font-sirket-profili:before {
+.font-search:before {
   content: ""; }
 
-.font-takvim:before {
+.font-sirket-profili:before {
   content: ""; }
 
-.font-verified-copy-10:before {
+.font-takvim:before {
   content: ""; }
 
-.font-verified:before {
+.font-verified-copy-10:before {
   content: ""; }
 
-.font-facebook-app-logo:before {
+.font-verified:before {
   content: ""; }
 
-.font-icon-mail2:before {
+.font-m_ayarlar:before {
   content: ""; }
 
-.font-icon-sms:before {
+.font-m_cuzdan:before {
   content: ""; }
 
-.font-icon-whatsapp:before {
+.font-m_iletisim:before {
   content: ""; }
 
-.font-instagram:before {
+.font-m_kampanya:before {
   content: ""; }
 
-.font-linkedin-logo:before {
+.font-m_kitle:before {
   content: ""; }
 
-.font-twitter-logo-silhouette:before {
+.font-m_raporlar:before {
   content: ""; }
 
-.font-m_ayarlar:before {
+.font-m_sepet-odeme:before {
   content: ""; }
 
-.font-m_cuzdan:before {
+.font-facebook-app-logo:before {
   content: ""; }
 
-.font-m_iletisim:before {
+.font-icon-mail2:before {
   content: ""; }
 
-.font-m_kampanya:before {
+.font-icon-sms:before {
   content: ""; }
 
-.font-m_kitle:before {
+.font-icon-whatsapp:before {
   content: ""; }
 
-.font-m_raporlar:before {
+.font-instagram:before {
   content: ""; }
 
-.font-m_sepet-odeme:before {
+.font-linkedin-logo:before {
   content: ""; }
+
+.font-twitter-logo-silhouette:before {
+  content: ""; }
 
 .sidebar-right.campaign-page .sidebar-qutter .sidebar-content {
   background: #fff;
@@ -3194,5 +3200,162 @@ input[type="radio"].budget {
   box-shadow: 0 9px 30px 0 #dbe1f1;
   margin-top: 15px;
   padding-bottom: 100px; }
+
+.sidebar-right.banner-loading-page .sidebar-qutter .sidebar-content {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
+  box-shadow: 0 9px 30px 0 #dbe1f1;
+  background-color: #ffffff;
+  margin-top: 15px;
+  padding: 50px; }
+  .sidebar-right.banner-loading-page .sidebar-qutter .sidebar-content .banner-loading::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .sidebar-right.banner-loading-page .sidebar-qutter .sidebar-content .banner-loading .images {
+    width: 32%;
+    float: left;
+    max-width: 333px; }
+    .sidebar-right.banner-loading-page .sidebar-qutter .sidebar-content .banner-loading .images img {
+      width: 100%; }
+  .sidebar-right.banner-loading-page .sidebar-qutter .sidebar-content .banner-loading .forms {
+    width: 60%;
+    float: left;
+    padding-left: 54px; }
+    .sidebar-right.banner-loading-page .sidebar-qutter .sidebar-content .banner-loading .forms .banner {
+      max-width: 570px; }
+      .sidebar-right.banner-loading-page .sidebar-qutter .sidebar-content .banner-loading .forms .banner .wrap-custom-file {
+        position: relative;
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        margin-bottom: 10px; }
+        .sidebar-right.banner-loading-page .sidebar-qutter .sidebar-content .banner-loading .forms .banner .wrap-custom-file.big {
+          max-width: 440px;
+          width: 100%;
+          height: 345px;
+          float: left;
+          border: 1px solid #e0e0e0;
+          -webkit-border-radius: 4px;
+          -moz-border-radius: 4px;
+          -ms-border-radius: 4px;
+          border-radius: 4px;
+          box-shadow: 0 1px 4px 0 #dbe1f1;
+          background-color: #ffffff;
+          padding: 20px;
+          margin-right: 20px; }
+          .sidebar-right.banner-loading-page .sidebar-qutter .sidebar-content .banner-loading .forms .banner .wrap-custom-file.big.error {
+            border-color: #d0021b; }
+          .sidebar-right.banner-loading-page .sidebar-qutter .sidebar-content .banner-loading .forms .banner .wrap-custom-file.big label {
+            border: 0;
+            background: url(../../img/image-area.png) no-repeat center center;
+            background-size: cover;
+            padding: 0; }
+            .sidebar-right.banner-loading-page .sidebar-qutter .sidebar-content .banner-loading .forms .banner .wrap-custom-file.big label.error {
+              background: transparent;
+              position: absolute;
+              top: 0;
+              left: 0;
+              border: 1px solid #ff0000;
+              height: 100%;
+              width: 100%;
+              font-style: italic;
+              padding-top: 60%;
+              font-size: 12px; }
+            .sidebar-right.banner-loading-page .sidebar-qutter .sidebar-content .banner-loading .forms .banner .wrap-custom-file.big label span {
+              font-size: 21px;
+              line-height: 303px; }
+        .sidebar-right.banner-loading-page .sidebar-qutter .sidebar-content .banner-loading .forms .banner .wrap-custom-file input[type="file"] {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 2px;
+          height: 2px;
+          overflow: hidden;
+          opacity: 0; }
+        .sidebar-right.banner-loading-page .sidebar-qutter .sidebar-content .banner-loading .forms .banner .wrap-custom-file label {
+          width: 100%;
+          height: 100%;
+          display: block;
+          overflow: hidden;
+          cursor: pointer;
+          position: relative;
+          padding: 25px 0;
+          text-align: center;
+          border: 1px dashed #2b3445;
+          -webkit-border-radius: 4px;
+          -moz-border-radius: 4px;
+          -ms-border-radius: 4px;
+          border-radius: 4px; }
+          .sidebar-right.banner-loading-page .sidebar-qutter .sidebar-content .banner-loading .forms .banner .wrap-custom-file label.file-ok {
+            background-size: cover;
+            background-position: center;
+            border: 0; }
+            .sidebar-right.banner-loading-page .sidebar-qutter .sidebar-content .banner-loading .forms .banner .wrap-custom-file label.file-ok i.font-plus-black-symbol,
+            .sidebar-right.banner-loading-page .sidebar-qutter .sidebar-content .banner-loading .forms .banner .wrap-custom-file label.file-ok span {
+              display: none; }
+            .sidebar-right.banner-loading-page .sidebar-qutter .sidebar-content .banner-loading .forms .banner .wrap-custom-file label.file-ok .font-cross-remove-sign {
+              display: inline-block; }
+            .sidebar-right.banner-loading-page .sidebar-qutter .sidebar-content .banner-loading .forms .banner .wrap-custom-file label.file-ok .error {
+              display: none; }
+          .sidebar-right.banner-loading-page .sidebar-qutter .sidebar-content .banner-loading .forms .banner .wrap-custom-file label i.font-plus-black-symbol {
+            font-size: 20px;
+            margin-bottom: 10px;
+            display: inline-block; }
+          .sidebar-right.banner-loading-page .sidebar-qutter .sidebar-content .banner-loading .forms .banner .wrap-custom-file label i.font-cross-remove-sign {
+            display: none; }
+          .sidebar-right.banner-loading-page .sidebar-qutter .sidebar-content .banner-loading .forms .banner .wrap-custom-file label a {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            color: #fff;
+            z-index: 1;
+            cursor: pointer; }
+            .sidebar-right.banner-loading-page .sidebar-qutter .sidebar-content .banner-loading .forms .banner .wrap-custom-file label a i {
+              font-size: 16px; }
+          .sidebar-right.banner-loading-page .sidebar-qutter .sidebar-content .banner-loading .forms .banner .wrap-custom-file label span {
+            display: block;
+            font-size: 14px; }
+    .sidebar-right.banner-loading-page .sidebar-qutter .sidebar-content .banner-loading .forms .items {
+      max-width: 440px;
+      width: 100%;
+      margin-top: 25px; }
+      .sidebar-right.banner-loading-page .sidebar-qutter .sidebar-content .banner-loading .forms .items label {
+        display: block;
+        font-size: 15px;
+        margin-bottom: 2px; }
+      .sidebar-right.banner-loading-page .sidebar-qutter .sidebar-content .banner-loading .forms .items input {
+        height: 50px;
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+        -ms-border-radius: 6px;
+        border-radius: 6px;
+        box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.16);
+        border: 0;
+        background-color: #e3e3e3;
+        padding-left: 15px;
+        font-size: 15px; }
+        .sidebar-right.banner-loading-page .sidebar-qutter .sidebar-content .banner-loading .forms .items input.error {
+          border: 1px solid #d0021b; }
+      .sidebar-right.banner-loading-page .sidebar-qutter .sidebar-content .banner-loading .forms .items textarea {
+        width: 100%;
+        resize: none;
+        height: 150px;
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+        -ms-border-radius: 6px;
+        border-radius: 6px;
+        box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.16);
+        border: 0;
+        background-color: #e3e3e3;
+        color: #2b3445;
+        text-align: left;
+        outline: none;
+        padding: 15px 0 0 15px;
+        font-size: 15px; }
+        .sidebar-right.banner-loading-page .sidebar-qutter .sidebar-content .banner-loading .forms .items textarea.error {
+          border: 1px solid #d0021b; }
 
 /*# sourceMappingURL=campaign.css.map */

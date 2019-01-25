@@ -93,77 +93,80 @@
 	@if $filename == navigate-up-arrow {
 		$char: "\E017";
 	}
-	@if $filename == power-off {
+	@if $filename == plus-black-symbol {
 		$char: "\E018";
 	}
-	@if $filename == profile {
+	@if $filename == power-off {
 		$char: "\E019";
 	}
-	@if $filename == profilim {
+	@if $filename == profile {
 		$char: "\E01A";
 	}
-	@if $filename == right-arrow-2 {
+	@if $filename == profilim {
 		$char: "\E01B";
 	}
-	@if $filename == right-arrow {
+	@if $filename == right-arrow-2 {
 		$char: "\E01C";
 	}
-	@if $filename == search {
+	@if $filename == right-arrow {
 		$char: "\E01D";
 	}
-	@if $filename == sirket-profili {
+	@if $filename == search {
 		$char: "\E01E";
 	}
-	@if $filename == takvim {
+	@if $filename == sirket-profili {
 		$char: "\E01F";
 	}
-	@if $filename == verified-copy-10 {
+	@if $filename == takvim {
 		$char: "\E020";
 	}
-	@if $filename == verified {
+	@if $filename == verified-copy-10 {
 		$char: "\E021";
 	}
-	@if $filename == facebook-app-logo {
+	@if $filename == verified {
 		$char: "\E022";
 	}
-	@if $filename == icon-mail2 {
+	@if $filename == m_ayarlar {
 		$char: "\E023";
 	}
-	@if $filename == icon-sms {
+	@if $filename == m_cuzdan {
 		$char: "\E024";
 	}
-	@if $filename == icon-whatsapp {
+	@if $filename == m_iletisim {
 		$char: "\E025";
 	}
-	@if $filename == instagram {
+	@if $filename == m_kampanya {
 		$char: "\E026";
 	}
-	@if $filename == linkedin-logo {
+	@if $filename == m_kitle {
 		$char: "\E027";
 	}
-	@if $filename == twitter-logo-silhouette {
+	@if $filename == m_raporlar {
 		$char: "\E028";
 	}
-	@if $filename == m_ayarlar {
+	@if $filename == m_sepet-odeme {
 		$char: "\E029";
 	}
-	@if $filename == m_cuzdan {
+	@if $filename == facebook-app-logo {
 		$char: "\E02A";
 	}
-	@if $filename == m_iletisim {
+	@if $filename == icon-mail2 {
 		$char: "\E02B";
 	}
-	@if $filename == m_kampanya {
+	@if $filename == icon-sms {
 		$char: "\E02C";
 	}
-	@if $filename == m_kitle {
+	@if $filename == icon-whatsapp {
 		$char: "\E02D";
 	}
-	@if $filename == m_raporlar {
+	@if $filename == instagram {
 		$char: "\E02E";
 	}
-	@if $filename == m_sepet-odeme {
+	@if $filename == linkedin-logo {
 		$char: "\E02F";
+	}
+	@if $filename == twitter-logo-silhouette {
+		$char: "\E030";
 	}
 
 	@return $char;
@@ -245,6 +248,9 @@
 .font-navigate-up-arrow {
 	@include font(navigate-up-arrow);
 }
+.font-plus-black-symbol {
+	@include font(plus-black-symbol);
+}
 .font-power-off {
 	@include font(power-off);
 }
@@ -275,27 +281,6 @@
 .font-verified {
 	@include font(verified);
 }
-.font-facebook-app-logo {
-	@include font(facebook-app-logo);
-}
-.font-icon-mail2 {
-	@include font(icon-mail2);
-}
-.font-icon-sms {
-	@include font(icon-sms);
-}
-.font-icon-whatsapp {
-	@include font(icon-whatsapp);
-}
-.font-instagram {
-	@include font(instagram);
-}
-.font-linkedin-logo {
-	@include font(linkedin-logo);
-}
-.font-twitter-logo-silhouette {
-	@include font(twitter-logo-silhouette);
-}
 .font-m_ayarlar {
 	@include font(m_ayarlar);
 }
@@ -316,4 +301,25 @@
 }
 .font-m_sepet-odeme {
 	@include font(m_sepet-odeme);
+}
+.font-facebook-app-logo {
+	@include font(facebook-app-logo);
+}
+.font-icon-mail2 {
+	@include font(icon-mail2);
+}
+.font-icon-sms {
+	@include font(icon-sms);
+}
+.font-icon-whatsapp {
+	@include font(icon-whatsapp);
+}
+.font-instagram {
+	@include font(instagram);
+}
+.font-linkedin-logo {
+	@include font(linkedin-logo);
+}
+.font-twitter-logo-silhouette {
+	@include font(twitter-logo-silhouette);
 }
