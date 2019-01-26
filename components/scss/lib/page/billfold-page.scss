@@ -43,6 +43,28 @@
             }
           }
         }
+        .total-promotion{
+          border:1px solid #d7d7d7;
+          @include clearfix();
+          padding: 20px 15px 19px 15px;
+          @include border-radius(4px);
+          label{
+            float: left;
+            display: inline-block;
+            font-size: 18px;
+            font-weight: bold;
+            font-family: $sourceSansFontFamily;
+            color:$companyColor;
+          }
+          span{
+            float: right;
+            display: inline-block;
+            font-family: $sourceSansFontFamily;
+            font-size: 14px;
+            font-weight: 600;
+            color: #9b9b9b;
+          }
+        }
       }
     }
   }

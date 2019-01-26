@@ -319,4 +319,82 @@
       }
     }
   }
+  &.campaign-edit{
+    .sidebar-qutter{
+      .sidebar-content{
+        @include border-radius(4px);
+        box-shadow: 0 9px 30px 0 #dbe1f1;
+        background-color: #ffffff;
+        margin-top: 15px;
+        padding: 50px 30px;
+
+        .sub-title{
+          font-size: 20px;
+          padding: 20px 0;
+          border-bottom: 1px solid $companyColor;
+          margin-bottom: 30px;
+          text-align: center;
+        }
+        .banner-loading{
+          @include border-radius(4px);
+          box-shadow: 0 9px 29px 0 #dbe1f1;
+          background-color: #ffffff;
+          border: 1px solid $companyColor;
+          .banner-loading-center{
+            padding: 0 50px 50px 50px;
+            @include clearfix();
+          }
+          .forms{
+            width: 67%;
+            .action{
+              margin-top: 40px;
+              padding-left: 30px;
+              .buttons{
+                max-width: 206px;
+              }
+            }
+          }
+        }
+        .chart-content{
+          @include border-radius(4px);
+          box-shadow: 0 9px 29px 0 #dbe1f1;
+          background-color: #ffffff;
+          border: 1px solid $companyColor;
+          margin-top: 60px;
+          @include clearfix();
+          .chart{
+            padding: 0 40px 40px 40px;
+            width: 83%;
+            float: left;
+          }
+          .info{
+            float: right;
+            width: 17%;
+            padding-right: 25px;
+            .items{
+              background: #fff;
+              border: 1px solid $companyColor;
+              @include border-radius(2px);
+              text-align: center;
+              margin-bottom: 20px;
+              padding: 10px 0;
+              box-shadow: 0 4px 9px 0 rgba(219, 225, 241, 0.5);
+              min-height: 95px;
+              span{
+                display: block;
+                font-size: 16px;
+                margin-bottom: 10px;
+              }
+              strong{
+                display: block;
+                font-size: 21px;
+                font-weight: bold;
+                color:$companyColor;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }

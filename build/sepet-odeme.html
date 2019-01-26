@@ -275,6 +275,12 @@
 								<span>₺ -500</span>
 							</div>
 						</div>
+						<div class="items">
+							<label>Promosyon Kredisi Kullan</label>
+							<div class="item">
+								<input type="text" value="₺35,00"  data-prefix="₺" class="currency">
+							</div>
+						</div>
 						<div class="items total">
 							<div class="item">
 								<strong>Toplam Tutar :</strong>
@@ -320,6 +326,11 @@
                 $(".buttons").removeAttr("disabled")
 
             }
+        });
+        $('.currency').maskMoney({
+            thousands:'.',
+            decimal:',',
+            allowZero:true,
         });
     });
 </script>

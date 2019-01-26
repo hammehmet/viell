@@ -2286,7 +2286,8 @@ label.error {
     text-align: center;
     font-size: 26px;
     font-family: "Rubik", sans-serif;
-    color: #373737; }
+    color: #373737;
+    padding: 0; }
 
 .steps::after {
   clear: both;
@@ -3859,26 +3860,24 @@ input[type="radio"].budget {
             font-size: 22px;
             font-weight: normal;
             color: #373737; }
+          .sidebar-right.basket-page .sidebar-qutter .sidebar-content .basket .basket-center .items .item input[type=text],
           .sidebar-right.basket-page .sidebar-qutter .sidebar-content .basket .basket-center .items .item select {
             height: 64px;
             font-size: 18px;
             color: #373737;
-            border-color: #d7d7d7;
+            border: 1px solid  #d7d7d7;
             -webkit-border-radius: 4px;
             -moz-border-radius: 4px;
             -ms-border-radius: 4px;
             border-radius: 4px; }
-        .sidebar-right.basket-page .sidebar-qutter .sidebar-content .basket .basket-center .items.discount {
-          border-bottom: 1px solid #d7d7d7;
-          padding-bottom: 20px; }
-          .sidebar-right.basket-page .sidebar-qutter .sidebar-content .basket .basket-center .items.discount .item strong {
-            -webkit-box-flex: 2;
-            -moz-box-flex: 2;
-            box-flex: 2;
-            -webkit-flex: 2;
-            -moz-flex: 2;
-            -ms-flex: 2;
-            flex: 2; }
+        .sidebar-right.basket-page .sidebar-qutter .sidebar-content .basket .basket-center .items.discount .item strong {
+          -webkit-box-flex: 2;
+          -moz-box-flex: 2;
+          box-flex: 2;
+          -webkit-flex: 2;
+          -moz-flex: 2;
+          -ms-flex: 2;
+          flex: 2; }
         .sidebar-right.basket-page .sidebar-qutter .sidebar-content .basket .basket-center .items.total {
           border-bottom: 1px solid #d7d7d7;
           padding-bottom: 20px; }

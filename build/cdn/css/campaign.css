@@ -2286,7 +2286,8 @@ label.error {
     text-align: center;
     font-size: 26px;
     font-family: "Rubik", sans-serif;
-    color: #373737; }
+    color: #373737;
+    padding: 0; }
 
 .steps::after {
   clear: both;
@@ -3389,5 +3390,84 @@ input[type="radio"].budget {
         font-size: 15px; }
         .sidebar-right.banner-loading-page .sidebar-qutter .sidebar-content .banner-loading .forms .items textarea.error {
           border: 1px solid #d0021b; }
+
+.sidebar-right.campaign-edit .sidebar-qutter .sidebar-content {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
+  box-shadow: 0 9px 30px 0 #dbe1f1;
+  background-color: #ffffff;
+  margin-top: 15px;
+  padding: 50px 30px; }
+  .sidebar-right.campaign-edit .sidebar-qutter .sidebar-content .sub-title {
+    font-size: 20px;
+    padding: 20px 0;
+    border-bottom: 1px solid #ddbb74;
+    margin-bottom: 30px;
+    text-align: center; }
+  .sidebar-right.campaign-edit .sidebar-qutter .sidebar-content .banner-loading {
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    border-radius: 4px;
+    box-shadow: 0 9px 29px 0 #dbe1f1;
+    background-color: #ffffff;
+    border: 1px solid #ddbb74; }
+    .sidebar-right.campaign-edit .sidebar-qutter .sidebar-content .banner-loading .banner-loading-center {
+      padding: 0 50px 50px 50px; }
+      .sidebar-right.campaign-edit .sidebar-qutter .sidebar-content .banner-loading .banner-loading-center::after {
+        clear: both;
+        content: "";
+        display: table; }
+    .sidebar-right.campaign-edit .sidebar-qutter .sidebar-content .banner-loading .forms {
+      width: 67%; }
+      .sidebar-right.campaign-edit .sidebar-qutter .sidebar-content .banner-loading .forms .action {
+        margin-top: 40px;
+        padding-left: 30px; }
+        .sidebar-right.campaign-edit .sidebar-qutter .sidebar-content .banner-loading .forms .action .buttons {
+          max-width: 206px; }
+  .sidebar-right.campaign-edit .sidebar-qutter .sidebar-content .chart-content {
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    border-radius: 4px;
+    box-shadow: 0 9px 29px 0 #dbe1f1;
+    background-color: #ffffff;
+    border: 1px solid #ddbb74;
+    margin-top: 60px; }
+    .sidebar-right.campaign-edit .sidebar-qutter .sidebar-content .chart-content::after {
+      clear: both;
+      content: "";
+      display: table; }
+    .sidebar-right.campaign-edit .sidebar-qutter .sidebar-content .chart-content .chart {
+      padding: 0 40px 40px 40px;
+      width: 83%;
+      float: left; }
+    .sidebar-right.campaign-edit .sidebar-qutter .sidebar-content .chart-content .info {
+      float: right;
+      width: 17%;
+      padding-right: 25px; }
+      .sidebar-right.campaign-edit .sidebar-qutter .sidebar-content .chart-content .info .items {
+        background: #fff;
+        border: 1px solid #ddbb74;
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        -ms-border-radius: 2px;
+        border-radius: 2px;
+        text-align: center;
+        margin-bottom: 20px;
+        padding: 10px 0;
+        box-shadow: 0 4px 9px 0 rgba(219, 225, 241, 0.5);
+        min-height: 95px; }
+        .sidebar-right.campaign-edit .sidebar-qutter .sidebar-content .chart-content .info .items span {
+          display: block;
+          font-size: 16px;
+          margin-bottom: 10px; }
+        .sidebar-right.campaign-edit .sidebar-qutter .sidebar-content .chart-content .info .items strong {
+          display: block;
+          font-size: 21px;
+          font-weight: bold;
+          color: #ddbb74; }
 
 /*# sourceMappingURL=campaign.css.map */

@@ -2286,7 +2286,8 @@ label.error {
     text-align: center;
     font-size: 26px;
     font-family: "Rubik", sans-serif;
-    color: #373737; }
+    color: #373737;
+    padding: 0; }
 
 .steps::after {
   clear: both;
