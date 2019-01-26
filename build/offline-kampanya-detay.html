@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,  maximum-scale=1.0, minimum-scale=1.0, user-scalable=0"/>
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+	<meta http-equiv="content-language" content="TR"/>
+	<link rel="stylesheet" type="text/css" href="cdn/css/main.css">
+	<link rel="stylesheet" type="text/css" href="cdn/css/product.css">
+	<link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700|Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+</head>
+<body>
+
+<div id="header"></div>
+<div class="content hundred-percent">
+	<div id="menu"></div>
+	<div class="sidebar-right product-page">
+		<div class="sidebar-qutter">
+			<div class="breadcrumbs">
+				<ul>
+					<li>
+						<a href="#">Anasayfa</a>
+					</li>
+					<li>
+						<a href="#">Offline Ürünler</a>
+					</li>
+					<li>
+						<a href="javascript:;">The Roaring 1920’s Event</a>
+					</li>
+				</ul>
+			</div>
+			<div class="head">
+				<h1>The Highrise Event</h1>
+			</div>
+			<div class="sidebar-content">
+				<div class="offline-campaign-detail">
+					<div class="images">
+                        <div class="big">
+                            <div id="slideshow"></div>
+                        </div>
+
+                        <div class="thumb">
+                            <ul id="slideshow_thumbs" class="desoslide-thumbs-horizontal list-inline text-center">
+                                <li>
+                                    <a href="https://www.jqueryscript.net/demo/jQuery-Plugin-For-Pretty-Image-Slider-With-Thumbnails-desoSlide/assets/img/demos/demo4/dolmens.jpg">
+                                        <img src="https://www.jqueryscript.net/demo/jQuery-Plugin-For-Pretty-Image-Slider-With-Thumbnails-desoSlide/assets/img/demos/demo4/dolmens_thumb.jpg" class="img-responsive"
+                                             alt="tortoise" data-desoslide-caption-title="A tortoise">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.jqueryscript.net/demo/jQuery-Plugin-For-Pretty-Image-Slider-With-Thumbnails-desoSlide/assets/img/demos/demo4/lighthouse.jpg">
+                                        <img src="https://www.jqueryscript.net/demo/jQuery-Plugin-For-Pretty-Image-Slider-With-Thumbnails-desoSlide/assets/img/demos/demo4/lighthouse_thumb.jpg" class="img-responsive"
+                                             alt="tiger" data-desoslide-caption-title="A tiger">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.jqueryscript.net/demo/jQuery-Plugin-For-Pretty-Image-Slider-With-Thumbnails-desoSlide/assets/img/demos/demo4/road.jpg">
+                                        <img src="https://www.jqueryscript.net/demo/jQuery-Plugin-For-Pretty-Image-Slider-With-Thumbnails-desoSlide/assets/img/demos/demo4/road_thumb.jpg" class="img-responsive"
+                                             alt="lynx" data-desoslide-caption-title="A lynx">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.jqueryscript.net/demo/jQuery-Plugin-For-Pretty-Image-Slider-With-Thumbnails-desoSlide/assets/img/demos/demo4/wheat.jpg">
+                                        <img src="https://www.jqueryscript.net/demo/jQuery-Plugin-For-Pretty-Image-Slider-With-Thumbnails-desoSlide/assets/img/demos/demo4/wheat_thumb.jpg" class="img-responsive"
+                                             alt="dog" data-desoslide-caption-title="A dog">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+					</div>
+					<div class="forms">
+						<div class="items">
+							<span>Davet Adı</span>
+							<input type="text" placeholder="" value="The Highrise Event">
+						</div>
+						<div class="items">
+							<span>Davet Tarihi</span>
+							<input type="text" placeholder="" value="14.02.2019">
+						</div>
+						<div class="items">
+							<span>Davet Yeri</span>
+							<input type="text" placeholder="" value="Ferko Signature">
+						</div>
+						<div class="items">
+							<span>Katılımcı Sayısı</span>
+							<input type="text" placeholder="" value="430 Kişi">
+						</div>
+						<div class="items">
+							<span>Reklam Tipi</span>
+							<select>
+								<option>Presswall</option>
+							</select>
+						</div>
+						<div class="items">
+							<span>Reklam Tutarı</span>
+							<input type="text" placeholder="" value="₺15.000+KDV">
+						</div>
+
+						<div class="clearfix"></div>
+						<div class="text">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ornare blandit pulvinar. Phasellus vitae risus sodales, lobortis est at, accumsan risus. Donec aliquam, nisi vitae blandit consequat, leo leo fermentum odio, quis elementum nisl erat in lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+						</div>
+					</div>
+
+					<div class="clearfix"></div>
+					<div class="steps margin-top-180">
+						<a href="#" class="prev">
+							<i class="font-arrow-left"></i> Önceki Adım
+						</a>
+						<a href="#" class="next">
+							Sonraki Adım <i class="font-right-arrow-2"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="js/jquery.js"></script>
+<script src="js/jquery.validate.js"></script>
+<script src="js/jquery.mask.js"></script>
+<script src="js/jquery.desoslide.min.js"></script>
+<script src="cdn/js/main.js"></script>
+<script>
+    $('#slideshow').desoSlide({
+        thumbs: $('#slideshow_thumbs li > a'),
+
+        overlay: 'none',
+        controls: {
+            show: false,
+            keys: true
+        }
+    });
+</script>
+</body>
+
+</html>

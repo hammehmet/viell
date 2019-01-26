@@ -213,6 +213,30 @@ a {
   100% {
     top: -999px; } }
 
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
 html {
   font-family: "Rubik", sans-serif;
   height: 100%;
@@ -532,6 +556,14 @@ label.error {
     font-size: 21px;
     position: relative;
     top: -1px; }
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn; }
+
+.fadeOut {
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut; }
 
 .sidebar-right.profile-page .sidebar-qutter .sidebar-content {
   background: #fff;

@@ -252,6 +252,190 @@
             }
           }
         }
+        .offline-campaign-detail{
+          @include clearfix();
+          .images{
+            width: 40%;
+            float: left;
+            .big{
+              @include border-radius(4px);
+              box-shadow: 0 1px 4px 0 #dbe1f1;
+              background-color: #ffffff;
+              border: 1px solid #e0e0e0;
+              padding: 20px;
+              img{
+                width: 100%;
+              }
+            }
+            .thumb{
+              @include clearfix();
+              margin-top: 15px;
+              ul{
+                li{
+                  float: left;
+                  width: 25%;
+                  padding: 0 5px;
+                  a{
+                    display: block;
+                    @include border-radius(4px);
+                    overflow: hidden;
+                    img{
+                      width: 100%;
+                      float: left;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .forms{
+            width: 60%;
+            float: right;
+            padding-left: 50px;
+            .items{
+              width: 50%;
+              float: left;
+              padding: 0 12px;
+              margin-bottom: 25px;
+              span{
+                display: block;
+                color:$companyColor;
+                font-size: 15px;
+                margin-bottom: 2px;
+              }
+              input[type=text]{
+                height: 40px;
+                @include border-radius(6px);
+                box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.16);
+                background-color: #e3e3e3;
+                border: 0px;
+                padding-left: 13px;
+                font-size: 16px;
+                color: #4a4a4a;
+              }
+              select{
+                height: 40px;
+                @include border-radius(6px);
+                box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.16);
+                background-color: #e3e3e3;
+                border: 0px;
+                font-size: 16px;
+                color: #4a4a4a;
+                background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAQAAAAAYLlVAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAHdElNRQfjARkUOQxQaDgUAAABR0lEQVRo3u3WMU7DQBBG4WeQOARSihQgi8CJcgpylkgpkHKRFIg6NVdAMQUUFJHSDIWNwIrX3vXOmGb+JtLGyvc2RRTw+Xw+n++fd9m8ziiBr4nUa0qKX+2WFwRB2DE3x+fsGu2Zm/ruVXMgCBULU/6OQ0ubwfbPgXVCmxeELa372yac80IFx7NDm4QuXjjCvuNYP6GbF/aw7HxDNyHEC0uAtXFCmF/XDxTBhHcesvmSt8CnP3Hx85BdQhRvlxDN2yQk8foJyfxQwr09359QJSSM5nUSsvj8hGw+L0GFH5+gxo9LUOXTE9T5tAQTPj7BjI9LMOWHE8z5OmETQA7BfzsbCi2+/1swv/2YBAM+JcGIj00w5GMSjPmhhAn4voSJ+FDChHyd0P5pUv7ZiUtY8YkgfPA4ns/rvmIBvHKa+vY+n8/n8ynuG3ee9EDQM3KsAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE5LTAxLTI1VDE5OjU3OjEyKzAxOjAwxw368QAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxOS0wMS0yNVQxOTo1NzoxMiswMTowMLZQQk0AAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwaAAAAAElFTkSuQmCC');
+                background-position: top 50% right 15px;
+                background-size: 13px;
+              }
+            }
+            .text{
+              padding: 0 12px;
+              font-size: 15px;
+              margin-top: 40px;
+            }
+          }
+        }
+        .event-ticket-detail{
+          @include clearfix();
+          .images{
+            width: 40%;
+            float: left;
+            .big{
+              @include border-radius(4px);
+              box-shadow: 0 1px 4px 0 #dbe1f1;
+              background-color: #ffffff;
+              border: 1px solid #e0e0e0;
+              padding: 20px;
+              img{
+                width: 100%;
+              }
+            }
+            .thumb{
+              @include clearfix();
+              margin-top: 15px;
+              ul{
+                li{
+                  float: left;
+                  width: 25%;
+                  padding: 0 5px;
+                  a{
+                    display: block;
+                    @include border-radius(4px);
+                    overflow: hidden;
+                    img{
+                      width: 100%;
+                      float: left;
+                    }
+                  }
+                }
+              }
+            }
+            .text{
+              padding: 0 5px;
+              font-size: 15px;
+              margin-top: 30px;
+            }
+          }
+          .forms{
+            width: 60%;
+            float: right;
+            padding-left: 30px;
+            .invitation{
+              width: 50%;
+              float: left;
+              .item{
+                border-right: 1px solid #979797;
+              }
+            }
+            .buy-ticket{
+              width: 50%;
+              float: left;
+              padding: 0 20px;
+            }
+            strong{
+              display: block;
+              font-size: 20px;
+              color:$companyColor;
+              font-weight: normal;
+              margin-bottom: 20px;
+              text-align: center;
+              text-decoration: underline;
+            }
+            .item{
+              padding: 0 20px;
+            }
+            .items{
+              margin-bottom: 25px;
+              span{
+                display: block;
+                color:$companyColor;
+                font-size: 15px;
+                margin-bottom: 2px;
+              }
+              input[type=text]{
+                height: 40px;
+                @include border-radius(6px);
+                box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.16);
+                background-color: #e3e3e3;
+                border: 0px;
+                padding-left: 13px;
+                font-size: 16px;
+                color: #4a4a4a;
+              }
+              select{
+                height: 40px;
+                @include border-radius(6px);
+                box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.16);
+                background-color: #e3e3e3;
+                border: 0px;
+                font-size: 16px;
+                color: #4a4a4a;
+                background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAQAAAAAYLlVAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAHdElNRQfjARkUOQxQaDgUAAABR0lEQVRo3u3WMU7DQBBG4WeQOARSihQgi8CJcgpylkgpkHKRFIg6NVdAMQUUFJHSDIWNwIrX3vXOmGb+JtLGyvc2RRTw+Xw+n++fd9m8ziiBr4nUa0qKX+2WFwRB2DE3x+fsGu2Zm/ruVXMgCBULU/6OQ0ubwfbPgXVCmxeELa372yac80IFx7NDm4QuXjjCvuNYP6GbF/aw7HxDNyHEC0uAtXFCmF/XDxTBhHcesvmSt8CnP3Hx85BdQhRvlxDN2yQk8foJyfxQwr09359QJSSM5nUSsvj8hGw+L0GFH5+gxo9LUOXTE9T5tAQTPj7BjI9LMOWHE8z5OmETQA7BfzsbCi2+/1swv/2YBAM+JcGIj00w5GMSjPmhhAn4voSJ+FDChHyd0P5pUv7ZiUtY8YkgfPA4ns/rvmIBvHKa+vY+n8/n8ynuG3ee9EDQM3KsAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE5LTAxLTI1VDE5OjU3OjEyKzAxOjAwxw368QAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxOS0wMS0yNVQxOTo1NzoxMiswMTowMLZQQk0AAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwaAAAAAElFTkSuQmCC');
+                background-position: top 50% right 15px;
+                background-size: 13px;
+              }
+            }
+
+          }
+        }
       }
     }
   }
