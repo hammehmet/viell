@@ -1,0 +1,86 @@
+@import "bourbon";
+
+@import "lib/normalize";
+@import "lib/variables";
+@import "lib/mixins";
+@import "lib/scaffoldings";
+
+
+body{
+  background: url(../../img/background.jpg) no-repeat top center;
+  background-size: cover;
+  height: 100%;
+  .intro{
+    height: 100%;
+    .wrapper{
+      height: 100%;
+      position: relative;
+      .head{
+        @include clearfix();
+        padding: 20px 0;
+        .logo{
+          float: left;
+        }
+        .links{
+          float: right;
+          a{
+            display: inline-block;
+            color:$companyColor;
+            font-family: $Titillium;
+            font-size: 17px;
+            vertical-align: middle;
+            margin-left: 25px;
+            &.buttons{
+              width: 125px;
+              &:hover{
+                color:$textColor
+              }
+            }
+          }
+        }
+      }
+      .text{
+        color:#ffF;
+        max-width: 400px;
+        position: absolute;
+        top: 50%;
+        left: 170px;
+        -webkit-transform: translate(0, -50%);
+        transform: translate(0, -50%);
+        h1{
+          font-size: 32px;
+          font-weight: normal;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          color:#ffF;
+          margin:  0 0 20px 0;
+        }
+        span{
+          display: block;
+          font-size: 17px;
+        }
+      }
+      .app{
+        position: absolute;
+        bottom: 60px;
+        left: 170px;
+      }
+      .phone{
+        max-width: 307px;
+        position: absolute;
+        bottom: 0;
+        right: 130px;
+        img{
+          max-width: 100%;
+        }
+      }
+    }
+  }
+
+}
+
+
+
+

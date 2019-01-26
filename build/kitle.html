@@ -137,22 +137,22 @@
 
 					<div class="registered">
 						<strong>Kayıtlı Kitlelerim</strong>
-						<a href="javascrip:;" data-index="1">
+						<a href="javascrip:;" class="delete" data-index="1">
 							İstanbul Millenials1
 						</a>
-						<a href="javascrip:;" data-index="2">
+						<a href="javascrip:;" class="delete" data-index="2">
 							İstanbul Millenials2
 						</a>
-						<a href="javascrip:;" data-index="3">
+						<a href="javascrip:;" class="delete" data-index="3">
 							İstanbul Millenials3
 						</a>
-						<a href="javascrip:;" data-index="4">
+						<a href="javascrip:;" class="delete" data-index="4">
 							İstanbul Millenials4
 						</a>
-						<a href="javascrip:;" data-index="5">
+						<a href="javascrip:;" class="delete" data-index="5">
 							İstanbul Millenials5
 						</a>
-						<a href="javascrip:;" data-index="6">
+						<a href="javascrip:;" class="delete" data-index="6">
 							İstanbul Millenials6
 						</a>
 					</div>
@@ -183,11 +183,12 @@
             //prefix: "$"
         });
 
-        $(".registered a").click(function () {
+        $(document).on('click','a.delete',function () {
             $(".registered a").removeClass('active'); //Reset
             $(".registered a").find('.edited').remove();//Reset
 
             $(this).addClass('active');
+            $('body').addClass('close-tooltip');
             $(this).append("<div class='edited'><label>Düzenle</label><span>Sil</span></div>");
 
             deleteRegistered();
@@ -209,6 +210,11 @@
                     }, error: function (data) {
                     }
                 });
+            });
+
+            $(document).on('click','.close-tooltip',function () {
+                $(".registered a").find('.edited').remove();//Reset
+                $('body').removeClass('close-tooltip');
             });
         }
 
