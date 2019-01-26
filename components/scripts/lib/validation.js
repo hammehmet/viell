@@ -236,7 +236,7 @@ module.exports = function () {
                         },
                         success: function(response) {
                             if(response.success == true){
-
+                                $(".passwordSuccess").trigger('click'); //Başarılı popup ı acılır.
                             }
                             else{
                             }

@@ -4316,7 +4316,7 @@ Build date: 2018-12-12 00:07:25
       font-size: 16px;
       margin-bottom: 10px;
       padding-left: 7px; }
-      .sidebar-right.audience-page .sidebar-qutter .sidebar-content .audience-choose .bottom .title span {
+      .sidebar-right.audience-page .sidebar-qutter .sidebar-content .audience-choose .bottom .title a {
         display: inline-block;
         height: 21px;
         width: 21px;
@@ -4666,5 +4666,18 @@ Build date: 2018-12-12 00:07:25
               .sidebar-right.audience-page .sidebar-qutter .sidebar-content .audience-dates .bottom ul li .items .foot input[type=text]:disabled {
                 opacity: 0.5;
                 filter: alpha(opacity=50); }
+
+.modal.audience {
+  font-family: "Rubik", sans-serif;
+  max-width: 840px;
+  padding: 40px; }
+  .modal.audience strong {
+    display: block;
+    font-size: 25px;
+    font-weight: normal;
+    color: #ddbb74;
+    margin-top: 5px; }
+  .modal.audience p {
+    margin-bottom: 30px; }
 
 /*# sourceMappingURL=audience.css.map */

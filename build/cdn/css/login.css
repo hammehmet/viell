@@ -3453,6 +3453,21 @@ input[type="radio"].budget {
             font-family: "Titillium Web", sans-serif;
             font-size: 15px; }
 
+.modal.change-password {
+  text-align: center;
+  padding: 40px; }
+  .modal.change-password .close-modal {
+    display: none; }
+  .modal.change-password strong {
+    display: block;
+    font-size: 20px;
+    font-weight: 500;
+    color: #ddbb74;
+    margin: 40px 0; }
+  .modal.change-password .buttons {
+    max-width: 265px;
+    margin: 0 auto; }
+
 .file-input {
   width: 191px;
   max-width: 320px;

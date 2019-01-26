@@ -113,7 +113,7 @@
               font-size: 16px;
               margin-bottom: 10px;
               padding-left: 7px;
-              span{
+              a{
                 display: inline-block;
                 @include size(21px);
                 @include border-radius(50%);
@@ -459,6 +459,23 @@
           }
         }
       }
+    }
+  }
+}
+.modal{
+  &.audience{
+    font-family: $baseFontFamily;
+    max-width: 840px;
+    padding: 40px;
+    strong{
+      display: block;
+      font-size: 25px;
+      font-weight: normal;
+      color:$companyColor;
+      margin-top: 5px;
+    }
+    p{
+      margin-bottom: 30px;
     }
   }
 }

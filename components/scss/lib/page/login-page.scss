@@ -410,7 +410,26 @@
     }
   }
 }
-
+.modal{
+  &.change-password{
+    text-align: center;
+    padding: 40px;
+    .close-modal{
+      display: none;
+    }
+    strong{
+      display: block;
+      font-size: 20px;
+      font-weight: 500;
+      color:$companyColor;
+      margin: 40px 0;
+    }
+    .buttons{
+      max-width: 265px;
+      margin: 0 auto;
+    }
+  }
+}
 .file-input{
   width: 191px;
   max-width: 320px;
