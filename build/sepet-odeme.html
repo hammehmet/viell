@@ -301,6 +301,7 @@
 						</div>
 						<div class="action">
 							<button type="submit" class="buttons" disabled>Öde</button>
+
 						</div>
 					</div>
 				</div>
@@ -309,11 +310,17 @@
 		</div>
 	</div>
 </div>
-
+<a href="#ex1" rel="modal:open"></a> <!--Başarılıysa Popup tetiklenir-->
+<div id="ex1" class="modal success">
+	<img src="img/onay.png" width="130" alt="">
+	<strong>Ödemeniz başarıyla gerçekleşti.</strong>
+	<a href="#close-modal" rel="modal:close" class="buttons">TAMAM</a>
+</div>
 
 <script src="js/jquery.js"></script>
 <script src="js/jquery.placeholder.js"></script>
 <script src="js/jquery.validate.js"></script>
+<script src="js/jquery-modal.js"></script>
 <script src="js/jquery.mask.js"></script>
 <script src="cdn/js/main.js"></script>
 <script src="js/bootstrap-pincode-input.js"></script>

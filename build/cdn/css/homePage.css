@@ -658,7 +658,7 @@ label.error {
   src: url("../fonts/icons/icons.eot");
   src: url("../fonts/icons/icons.eot?#iefix") format("eot"), url("../fonts/icons/icons.woff") format("woff"), url("../fonts/icons/icons.ttf") format("truetype"), url("../fonts/icons/icons.svg#icons") format("svg"); }
 
-.font-add:before, .font-arrow-down-sign-to-navigate:before, .font-arrow-left:before, .font-building:before, .font-cancel:before, .font-check:before, .font-cross-remove-sign:before, .font-davet-et:before, .font-delete:before, .font-dil:before, .font-down-arrow:before, .font-download:before, .font-icon-calendar-black:before, .font-icon-copy-big:before, .font-icon-eye-clicked:before, .font-icon-eye:before, .font-icon-promosyon-gray:before, .font-invitation:before, .font-kullanıcılar:before, .font-language:before, .font-menu-dots:before, .font-multiple-users-silhouette:before, .font-navigate-up-arrow:before, .font-plus-black-symbol:before, .font-power-off:before, .font-profile:before, .font-profilim:before, .font-right-arrow-2:before, .font-right-arrow:before, .font-search:before, .font-sirket-profili:before, .font-takvim:before, .font-verified-copy-10:before, .font-verified:before, .font-m_ayarlar:before, .font-m_cuzdan:before, .font-m_iletisim:before, .font-m_kampanya:before, .font-m_kitle:before, .font-m_raporlar:before, .font-m_sepet-odeme:before, .font-facebook-app-logo:before, .font-icon-mail2:before, .font-icon-sms:before, .font-icon-whatsapp:before, .font-instagram:before, .font-linkedin-logo:before, .font-twitter-logo-silhouette:before, .sidebar-right.users-page .sidebar-qutter .sidebar-content .dataTables_wrapper .dataTables_scroll .dataTables_scrollHead table thead tr th.sorting_asc:after, .sidebar-right.users-page .sidebar-qutter .sidebar-content .dataTables_wrapper .dataTables_scroll .dataTables_scrollHead table thead tr th.sorting:after, .sidebar-right.users-page .sidebar-qutter .sidebar-content .dataTables_wrapper .dataTables_scroll .dataTables_scrollHead table thead tr th.sorting_desc:after {
+.font-add:before, .font-arrow-down-sign-to-navigate:before, .font-arrow-left:before, .font-building:before, .font-cancel:before, .font-check:before, .font-cross-remove-sign:before, .font-davet-et:before, .font-delete:before, .font-dil:before, .font-down-arrow:before, .font-download:before, .font-icon-calendar-black:before, .font-icon-copy-big:before, .font-icon-eye-clicked:before, .font-icon-eye:before, .font-icon-promosyon-gray:before, .font-invitation:before, .font-kullanıcılar:before, .font-language:before, .font-menu-dots:before, .font-multiple-users-silhouette:before, .font-navigate-up-arrow:before, .font-plus-black-symbol:before, .font-power-off:before, .font-profile:before, .font-profilim:before, .font-right-arrow-2:before, .font-right-arrow:before, .font-search:before, .font-sirket-profili:before, .font-takvim:before, .font-urunler:before, .font-verified-copy-10:before, .font-verified:before, .font-m_ayarlar:before, .font-m_cuzdan:before, .font-m_iletisim:before, .font-m_kampanya:before, .font-m_kitle:before, .font-m_raporlar:before, .font-m_sepet-odeme:before, .font-facebook-app-logo:before, .font-icon-mail2:before, .font-icon-sms:before, .font-icon-whatsapp:before, .font-instagram:before, .font-linkedin-logo:before, .font-twitter-logo-silhouette:before, .sidebar-right.users-page .sidebar-qutter .sidebar-content .dataTables_wrapper .dataTables_scroll .dataTables_scrollHead table thead tr th.sorting_asc:after, .sidebar-right.users-page .sidebar-qutter .sidebar-content .dataTables_wrapper .dataTables_scroll .dataTables_scrollHead table thead tr th.sorting:after, .sidebar-right.users-page .sidebar-qutter .sidebar-content .dataTables_wrapper .dataTables_scroll .dataTables_scrollHead table thead tr th.sorting_desc:after {
   font-family: "icons";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -766,53 +766,56 @@ label.error {
 .font-takvim:before {
   content: ""; }
 
-.font-verified-copy-10:before {
+.font-urunler:before {
   content: ""; }
 
-.font-verified:before {
+.font-verified-copy-10:before {
   content: ""; }
 
-.font-m_ayarlar:before {
+.font-verified:before {
   content: ""; }
 
-.font-m_cuzdan:before {
+.font-m_ayarlar:before {
   content: ""; }
 
-.font-m_iletisim:before {
+.font-m_cuzdan:before {
   content: ""; }
 
-.font-m_kampanya:before {
+.font-m_iletisim:before {
   content: ""; }
 
-.font-m_kitle:before {
+.font-m_kampanya:before {
   content: ""; }
 
-.font-m_raporlar:before {
+.font-m_kitle:before {
   content: ""; }
 
-.font-m_sepet-odeme:before {
+.font-m_raporlar:before {
   content: ""; }
 
-.font-facebook-app-logo:before {
+.font-m_sepet-odeme:before {
   content: ""; }
 
-.font-icon-mail2:before {
+.font-facebook-app-logo:before {
   content: ""; }
 
-.font-icon-sms:before {
+.font-icon-mail2:before {
   content: ""; }
 
-.font-icon-whatsapp:before {
+.font-icon-sms:before {
   content: ""; }
 
-.font-instagram:before {
+.font-icon-whatsapp:before {
   content: ""; }
 
-.font-linkedin-logo:before {
+.font-instagram:before {
   content: ""; }
 
-.font-twitter-logo-silhouette:before {
+.font-linkedin-logo:before {
   content: ""; }
+
+.font-twitter-logo-silhouette:before {
+  content: ""; }
 
 .sidebar-right.users-page .sidebar-qutter .head .report-time {
   display: inline-block;
@@ -1024,6 +1027,27 @@ label.error {
       .sidebar-right.users-page-add .sidebar-qutter .sidebar-content .form .form-items select {
         padding-left: 10px; }
 
+.modal.delete {
+  text-align: center;
+  padding: 40px 30px; }
+  .modal.delete .close-modal {
+    display: none; }
+  .modal.delete strong {
+    font-size: 20px;
+    font-weight: 500;
+    display: block;
+    color: #ddbb74;
+    margin: 40px 0; }
+  .modal.delete a.cancel {
+    font-size: 14px;
+    font-weight: bold;
+    color: #4a4a4a;
+    margin-top: 20px;
+    display: inline-block; }
+  .modal.delete a.buttons {
+    max-width: 260px;
+    margin: 0 auto; }
+
 .sidebar-right.contact-page .sidebar-qutter .sidebar-content {
   background: #fff;
   box-shadow: 0 8px 28px 0 rgba(72, 89, 102, 0.1);
@@ -1096,12 +1120,27 @@ label.error {
         text-align: left;
         padding-top: 10px; }
 
+.modal.success {
+  text-align: center;
+  padding: 40px 30px; }
+  .modal.success .close-modal {
+    display: none; }
+  .modal.success strong {
+    font-size: 20px;
+    font-weight: 500;
+    display: block;
+    color: #ddbb74;
+    margin: 40px 0; }
+  .modal.success a.buttons {
+    max-width: 260px;
+    margin: 0 auto; }
+
 @font-face {
   font-family: "icons";
   src: url("../fonts/icons/icons.eot");
   src: url("../fonts/icons/icons.eot?#iefix") format("eot"), url("../fonts/icons/icons.woff") format("woff"), url("../fonts/icons/icons.ttf") format("truetype"), url("../fonts/icons/icons.svg#icons") format("svg"); }
 
-.font-add:before, .font-arrow-down-sign-to-navigate:before, .font-arrow-left:before, .font-building:before, .font-cancel:before, .font-check:before, .font-cross-remove-sign:before, .font-davet-et:before, .font-delete:before, .font-dil:before, .font-down-arrow:before, .font-download:before, .font-icon-calendar-black:before, .font-icon-copy-big:before, .font-icon-eye-clicked:before, .font-icon-eye:before, .font-icon-promosyon-gray:before, .font-invitation:before, .font-kullanıcılar:before, .font-language:before, .font-menu-dots:before, .font-multiple-users-silhouette:before, .font-navigate-up-arrow:before, .font-plus-black-symbol:before, .font-power-off:before, .font-profile:before, .font-profilim:before, .font-right-arrow-2:before, .font-right-arrow:before, .font-search:before, .font-sirket-profili:before, .font-takvim:before, .font-verified-copy-10:before, .font-verified:before, .font-m_ayarlar:before, .font-m_cuzdan:before, .font-m_iletisim:before, .font-m_kampanya:before, .font-m_kitle:before, .font-m_raporlar:before, .font-m_sepet-odeme:before, .font-facebook-app-logo:before, .font-icon-mail2:before, .font-icon-sms:before, .font-icon-whatsapp:before, .font-instagram:before, .font-linkedin-logo:before, .font-twitter-logo-silhouette:before, .sidebar-right.users-page .sidebar-qutter .sidebar-content .dataTables_wrapper .dataTables_scroll .dataTables_scrollHead table thead tr th.sorting_asc:after, .sidebar-right.users-page .sidebar-qutter .sidebar-content .dataTables_wrapper .dataTables_scroll .dataTables_scrollHead table thead tr th.sorting:after, .sidebar-right.users-page .sidebar-qutter .sidebar-content .dataTables_wrapper .dataTables_scroll .dataTables_scrollHead table thead tr th.sorting_desc:after {
+.font-add:before, .font-arrow-down-sign-to-navigate:before, .font-arrow-left:before, .font-building:before, .font-cancel:before, .font-check:before, .font-cross-remove-sign:before, .font-davet-et:before, .font-delete:before, .font-dil:before, .font-down-arrow:before, .font-download:before, .font-icon-calendar-black:before, .font-icon-copy-big:before, .font-icon-eye-clicked:before, .font-icon-eye:before, .font-icon-promosyon-gray:before, .font-invitation:before, .font-kullanıcılar:before, .font-language:before, .font-menu-dots:before, .font-multiple-users-silhouette:before, .font-navigate-up-arrow:before, .font-plus-black-symbol:before, .font-power-off:before, .font-profile:before, .font-profilim:before, .font-right-arrow-2:before, .font-right-arrow:before, .font-search:before, .font-sirket-profili:before, .font-takvim:before, .font-urunler:before, .font-verified-copy-10:before, .font-verified:before, .font-m_ayarlar:before, .font-m_cuzdan:before, .font-m_iletisim:before, .font-m_kampanya:before, .font-m_kitle:before, .font-m_raporlar:before, .font-m_sepet-odeme:before, .font-facebook-app-logo:before, .font-icon-mail2:before, .font-icon-sms:before, .font-icon-whatsapp:before, .font-instagram:before, .font-linkedin-logo:before, .font-twitter-logo-silhouette:before, .sidebar-right.users-page .sidebar-qutter .sidebar-content .dataTables_wrapper .dataTables_scroll .dataTables_scrollHead table thead tr th.sorting_asc:after, .sidebar-right.users-page .sidebar-qutter .sidebar-content .dataTables_wrapper .dataTables_scroll .dataTables_scrollHead table thead tr th.sorting:after, .sidebar-right.users-page .sidebar-qutter .sidebar-content .dataTables_wrapper .dataTables_scroll .dataTables_scrollHead table thead tr th.sorting_desc:after {
   font-family: "icons";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -1209,53 +1248,56 @@ label.error {
 .font-takvim:before {
   content: ""; }
 
-.font-verified-copy-10:before {
+.font-urunler:before {
   content: ""; }
 
-.font-verified:before {
+.font-verified-copy-10:before {
   content: ""; }
 
-.font-m_ayarlar:before {
+.font-verified:before {
   content: ""; }
 
-.font-m_cuzdan:before {
+.font-m_ayarlar:before {
   content: ""; }
 
-.font-m_iletisim:before {
+.font-m_cuzdan:before {
   content: ""; }
 
-.font-m_kampanya:before {
+.font-m_iletisim:before {
   content: ""; }
 
-.font-m_kitle:before {
+.font-m_kampanya:before {
   content: ""; }
 
-.font-m_raporlar:before {
+.font-m_kitle:before {
   content: ""; }
 
-.font-m_sepet-odeme:before {
+.font-m_raporlar:before {
   content: ""; }
 
-.font-facebook-app-logo:before {
+.font-m_sepet-odeme:before {
   content: ""; }
 
-.font-icon-mail2:before {
+.font-facebook-app-logo:before {
   content: ""; }
 
-.font-icon-sms:before {
+.font-icon-mail2:before {
   content: ""; }
 
-.font-icon-whatsapp:before {
+.font-icon-sms:before {
   content: ""; }
 
-.font-instagram:before {
+.font-icon-whatsapp:before {
   content: ""; }
 
-.font-linkedin-logo:before {
+.font-instagram:before {
   content: ""; }
 
-.font-twitter-logo-silhouette:before {
+.font-linkedin-logo:before {
   content: ""; }
+
+.font-twitter-logo-silhouette:before {
+  content: ""; }
 
 .sidebar-right.billfold-page .sidebar-qutter .sidebar-content .radios-items {
   background: #fff;
@@ -1321,7 +1363,7 @@ label.error {
   src: url("../fonts/icons/icons.eot");
   src: url("../fonts/icons/icons.eot?#iefix") format("eot"), url("../fonts/icons/icons.woff") format("woff"), url("../fonts/icons/icons.ttf") format("truetype"), url("../fonts/icons/icons.svg#icons") format("svg"); }
 
-.font-add:before, .font-arrow-down-sign-to-navigate:before, .font-arrow-left:before, .font-building:before, .font-cancel:before, .font-check:before, .font-cross-remove-sign:before, .font-davet-et:before, .font-delete:before, .font-dil:before, .font-down-arrow:before, .font-download:before, .font-icon-calendar-black:before, .font-icon-copy-big:before, .font-icon-eye-clicked:before, .font-icon-eye:before, .font-icon-promosyon-gray:before, .font-invitation:before, .font-kullanıcılar:before, .font-language:before, .font-menu-dots:before, .font-multiple-users-silhouette:before, .font-navigate-up-arrow:before, .font-plus-black-symbol:before, .font-power-off:before, .font-profile:before, .font-profilim:before, .font-right-arrow-2:before, .font-right-arrow:before, .font-search:before, .font-sirket-profili:before, .font-takvim:before, .font-verified-copy-10:before, .font-verified:before, .font-m_ayarlar:before, .font-m_cuzdan:before, .font-m_iletisim:before, .font-m_kampanya:before, .font-m_kitle:before, .font-m_raporlar:before, .font-m_sepet-odeme:before, .font-facebook-app-logo:before, .font-icon-mail2:before, .font-icon-sms:before, .font-icon-whatsapp:before, .font-instagram:before, .font-linkedin-logo:before, .font-twitter-logo-silhouette:before, .sidebar-right.users-page .sidebar-qutter .sidebar-content .dataTables_wrapper .dataTables_scroll .dataTables_scrollHead table thead tr th.sorting_asc:after, .sidebar-right.users-page .sidebar-qutter .sidebar-content .dataTables_wrapper .dataTables_scroll .dataTables_scrollHead table thead tr th.sorting:after, .sidebar-right.users-page .sidebar-qutter .sidebar-content .dataTables_wrapper .dataTables_scroll .dataTables_scrollHead table thead tr th.sorting_desc:after {
+.font-add:before, .font-arrow-down-sign-to-navigate:before, .font-arrow-left:before, .font-building:before, .font-cancel:before, .font-check:before, .font-cross-remove-sign:before, .font-davet-et:before, .font-delete:before, .font-dil:before, .font-down-arrow:before, .font-download:before, .font-icon-calendar-black:before, .font-icon-copy-big:before, .font-icon-eye-clicked:before, .font-icon-eye:before, .font-icon-promosyon-gray:before, .font-invitation:before, .font-kullanıcılar:before, .font-language:before, .font-menu-dots:before, .font-multiple-users-silhouette:before, .font-navigate-up-arrow:before, .font-plus-black-symbol:before, .font-power-off:before, .font-profile:before, .font-profilim:before, .font-right-arrow-2:before, .font-right-arrow:before, .font-search:before, .font-sirket-profili:before, .font-takvim:before, .font-urunler:before, .font-verified-copy-10:before, .font-verified:before, .font-m_ayarlar:before, .font-m_cuzdan:before, .font-m_iletisim:before, .font-m_kampanya:before, .font-m_kitle:before, .font-m_raporlar:before, .font-m_sepet-odeme:before, .font-facebook-app-logo:before, .font-icon-mail2:before, .font-icon-sms:before, .font-icon-whatsapp:before, .font-instagram:before, .font-linkedin-logo:before, .font-twitter-logo-silhouette:before, .sidebar-right.users-page .sidebar-qutter .sidebar-content .dataTables_wrapper .dataTables_scroll .dataTables_scrollHead table thead tr th.sorting_asc:after, .sidebar-right.users-page .sidebar-qutter .sidebar-content .dataTables_wrapper .dataTables_scroll .dataTables_scrollHead table thead tr th.sorting:after, .sidebar-right.users-page .sidebar-qutter .sidebar-content .dataTables_wrapper .dataTables_scroll .dataTables_scrollHead table thead tr th.sorting_desc:after {
   font-family: "icons";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -1429,53 +1471,56 @@ label.error {
 .font-takvim:before {
   content: ""; }
 
-.font-verified-copy-10:before {
+.font-urunler:before {
   content: ""; }
 
-.font-verified:before {
+.font-verified-copy-10:before {
   content: ""; }
 
-.font-m_ayarlar:before {
+.font-verified:before {
   content: ""; }
 
-.font-m_cuzdan:before {
+.font-m_ayarlar:before {
   content: ""; }
 
-.font-m_iletisim:before {
+.font-m_cuzdan:before {
   content: ""; }
 
-.font-m_kampanya:before {
+.font-m_iletisim:before {
   content: ""; }
 
-.font-m_kitle:before {
+.font-m_kampanya:before {
   content: ""; }
 
-.font-m_raporlar:before {
+.font-m_kitle:before {
   content: ""; }
 
-.font-m_sepet-odeme:before {
+.font-m_raporlar:before {
   content: ""; }
 
-.font-facebook-app-logo:before {
+.font-m_sepet-odeme:before {
   content: ""; }
 
-.font-icon-mail2:before {
+.font-facebook-app-logo:before {
   content: ""; }
 
-.font-icon-sms:before {
+.font-icon-mail2:before {
   content: ""; }
 
-.font-icon-whatsapp:before {
+.font-icon-sms:before {
   content: ""; }
 
-.font-instagram:before {
+.font-icon-whatsapp:before {
   content: ""; }
 
-.font-linkedin-logo:before {
+.font-instagram:before {
   content: ""; }
 
-.font-twitter-logo-silhouette:before {
+.font-linkedin-logo:before {
   content: ""; }
+
+.font-twitter-logo-silhouette:before {
+  content: ""; }
 
 .sidebar-right.gift-page .sidebar-qutter .sidebar-content .content {
   max-width: 1147px;
@@ -1557,7 +1602,7 @@ label.error {
   src: url("../fonts/icons/icons.eot");
   src: url("../fonts/icons/icons.eot?#iefix") format("eot"), url("../fonts/icons/icons.woff") format("woff"), url("../fonts/icons/icons.ttf") format("truetype"), url("../fonts/icons/icons.svg#icons") format("svg"); }
 
-.font-add:before, .font-arrow-down-sign-to-navigate:before, .font-arrow-left:before, .font-building:before, .font-cancel:before, .font-check:before, .font-cross-remove-sign:before, .font-davet-et:before, .font-delete:before, .font-dil:before, .font-down-arrow:before, .font-download:before, .font-icon-calendar-black:before, .font-icon-copy-big:before, .font-icon-eye-clicked:before, .font-icon-eye:before, .font-icon-promosyon-gray:before, .font-invitation:before, .font-kullanıcılar:before, .font-language:before, .font-menu-dots:before, .font-multiple-users-silhouette:before, .font-navigate-up-arrow:before, .font-plus-black-symbol:before, .font-power-off:before, .font-profile:before, .font-profilim:before, .font-right-arrow-2:before, .font-right-arrow:before, .font-search:before, .font-sirket-profili:before, .font-takvim:before, .font-verified-copy-10:before, .font-verified:before, .font-m_ayarlar:before, .font-m_cuzdan:before, .font-m_iletisim:before, .font-m_kampanya:before, .font-m_kitle:before, .font-m_raporlar:before, .font-m_sepet-odeme:before, .font-facebook-app-logo:before, .font-icon-mail2:before, .font-icon-sms:before, .font-icon-whatsapp:before, .font-instagram:before, .font-linkedin-logo:before, .font-twitter-logo-silhouette:before, .sidebar-right.users-page .sidebar-qutter .sidebar-content .dataTables_wrapper .dataTables_scroll .dataTables_scrollHead table thead tr th.sorting_asc:after, .sidebar-right.users-page .sidebar-qutter .sidebar-content .dataTables_wrapper .dataTables_scroll .dataTables_scrollHead table thead tr th.sorting:after, .sidebar-right.users-page .sidebar-qutter .sidebar-content .dataTables_wrapper .dataTables_scroll .dataTables_scrollHead table thead tr th.sorting_desc:after {
+.font-add:before, .font-arrow-down-sign-to-navigate:before, .font-arrow-left:before, .font-building:before, .font-cancel:before, .font-check:before, .font-cross-remove-sign:before, .font-davet-et:before, .font-delete:before, .font-dil:before, .font-down-arrow:before, .font-download:before, .font-icon-calendar-black:before, .font-icon-copy-big:before, .font-icon-eye-clicked:before, .font-icon-eye:before, .font-icon-promosyon-gray:before, .font-invitation:before, .font-kullanıcılar:before, .font-language:before, .font-menu-dots:before, .font-multiple-users-silhouette:before, .font-navigate-up-arrow:before, .font-plus-black-symbol:before, .font-power-off:before, .font-profile:before, .font-profilim:before, .font-right-arrow-2:before, .font-right-arrow:before, .font-search:before, .font-sirket-profili:before, .font-takvim:before, .font-urunler:before, .font-verified-copy-10:before, .font-verified:before, .font-m_ayarlar:before, .font-m_cuzdan:before, .font-m_iletisim:before, .font-m_kampanya:before, .font-m_kitle:before, .font-m_raporlar:before, .font-m_sepet-odeme:before, .font-facebook-app-logo:before, .font-icon-mail2:before, .font-icon-sms:before, .font-icon-whatsapp:before, .font-instagram:before, .font-linkedin-logo:before, .font-twitter-logo-silhouette:before, .sidebar-right.users-page .sidebar-qutter .sidebar-content .dataTables_wrapper .dataTables_scroll .dataTables_scrollHead table thead tr th.sorting_asc:after, .sidebar-right.users-page .sidebar-qutter .sidebar-content .dataTables_wrapper .dataTables_scroll .dataTables_scrollHead table thead tr th.sorting:after, .sidebar-right.users-page .sidebar-qutter .sidebar-content .dataTables_wrapper .dataTables_scroll .dataTables_scrollHead table thead tr th.sorting_desc:after {
   font-family: "icons";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -1665,53 +1710,56 @@ label.error {
 .font-takvim:before {
   content: ""; }
 
-.font-verified-copy-10:before {
+.font-urunler:before {
   content: ""; }
 
-.font-verified:before {
+.font-verified-copy-10:before {
   content: ""; }
 
-.font-m_ayarlar:before {
+.font-verified:before {
   content: ""; }
 
-.font-m_cuzdan:before {
+.font-m_ayarlar:before {
   content: ""; }
 
-.font-m_iletisim:before {
+.font-m_cuzdan:before {
   content: ""; }
 
-.font-m_kampanya:before {
+.font-m_iletisim:before {
   content: ""; }
 
-.font-m_kitle:before {
+.font-m_kampanya:before {
   content: ""; }
 
-.font-m_raporlar:before {
+.font-m_kitle:before {
   content: ""; }
 
-.font-m_sepet-odeme:before {
+.font-m_raporlar:before {
   content: ""; }
 
-.font-facebook-app-logo:before {
+.font-m_sepet-odeme:before {
   content: ""; }
 
-.font-icon-mail2:before {
+.font-facebook-app-logo:before {
   content: ""; }
 
-.font-icon-sms:before {
+.font-icon-mail2:before {
   content: ""; }
 
-.font-icon-whatsapp:before {
+.font-icon-sms:before {
   content: ""; }
 
-.font-instagram:before {
+.font-icon-whatsapp:before {
   content: ""; }
 
-.font-linkedin-logo:before {
+.font-instagram:before {
   content: ""; }
 
-.font-twitter-logo-silhouette:before {
+.font-linkedin-logo:before {
   content: ""; }
+
+.font-twitter-logo-silhouette:before {
+  content: ""; }
 
 .card-container {
   position: absolute;

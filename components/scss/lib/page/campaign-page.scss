@@ -397,4 +397,33 @@
       }
     }
   }
+  &.campaign-result{
+    .sidebar-qutter{
+      .sidebar-content{
+        @include border-radius(4px);
+        box-shadow: 0 9px 30px 0 #dbe1f1;
+        background-color: #ffffff;
+        margin-top: 15px;
+        .result{
+          text-align: center;
+          padding: 170px 50px ;
+          strong{
+            display: block;
+            font-size: 17px;
+            font-weight: 500;
+            color:$companyColor;
+            padding: 60px 0 15px 0;
+          }
+          p{
+            font-size: 14px;
+
+          }
+          .buttons{
+            max-width: 230px;
+            margin: 55px auto 0 auto;
+          }
+        }
+      }
+    }
+  }
 }

@@ -35,7 +35,7 @@
 			<div class="head">
 				<h1>Kullanıcı Ayarları</h1>
 				<div class="choose-delete margin-right-0">
-					<a href="#"><i class="font-delete"></i> <u>Kullanıcıyı Sil</u></a>
+					<a href="#ex1" rel="modal:open"><i class="font-delete"></i> <u>Kullanıcıyı Sil</u></a>
 				</div>
 			</div>
 			<div class="sidebar-content">
@@ -80,10 +80,16 @@
 			</div>
 		</div>
 	</div>
-
+</div>
+<div id="ex1" class="modal delete">
+	<img src="img/delete.png" width="130" alt="">
+	<strong>Kullanıcıyı silmek istediğinizden emin misiniz?</strong>
+	<a href="#" class="buttons">Sil</a>
+	<a href="#close-modal" rel="modal:close" class="cancel">Vazgeç</a>
 </div>
 <script src="js/jquery.js"></script>
 <script src="js/jquery.validate.js"></script>
+<script src="js/jquery-modal.js"></script>
 <script src="js/jquery.mask.js"></script>
 <script src="cdn/js/main.js"></script>
 

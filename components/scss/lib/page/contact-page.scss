@@ -79,3 +79,26 @@
     }
   }
 }
+.modal{
+  &.success{
+    text-align: center;
+    padding: 40px 30px;
+    .close-modal{
+      display: none;
+    }
+    strong{
+      font-size: 20px;
+      font-weight: 500;
+      display: block;
+      color:$companyColor;
+      margin: 40px 0;
+    }
+    a{
+      &.buttons{
+        max-width: 260px;
+        margin: 0 auto;
+      }
+    }
+
+  }
+}

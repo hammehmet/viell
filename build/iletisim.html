@@ -84,6 +84,7 @@
 						</div>
 						<div class="form-items">
 							<button type="submit" class="buttons">Gönder</button>
+							<a href="#ex1" rel="modal:open">Tıkadadla</a>
 						</div>
 					</div>
 				</div>
@@ -91,7 +92,14 @@
 		</div>
 	</div>
 </div>
+<a href="#ex1" rel="modal:open"></a> <!--Başarılıysa Popup tetiklenir-->
+<div id="ex1" class="modal success">
+	<img src="img/mesaj.png" width="130" alt="">
+	<strong>Mesajınız başarıyla alınmıştır.</strong>
+	<a href="#close-modal" rel="modal:close" class="buttons">TAMAM</a>
+</div>
 <script src="js/jquery.js"></script>
+<script src="js/jquery-modal.js"></script>
 <script src="cdn/js/main.js"></script>
 
 </body>

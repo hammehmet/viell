@@ -2339,7 +2339,7 @@ label.error {
   src: url("../fonts/icons/icons.eot");
   src: url("../fonts/icons/icons.eot?#iefix") format("eot"), url("../fonts/icons/icons.woff") format("woff"), url("../fonts/icons/icons.ttf") format("truetype"), url("../fonts/icons/icons.svg#icons") format("svg"); }
 
-.font-add:before, .font-arrow-down-sign-to-navigate:before, .font-arrow-left:before, .font-building:before, .font-cancel:before, .font-check:before, .font-cross-remove-sign:before, .font-davet-et:before, .font-delete:before, .font-dil:before, .font-down-arrow:before, .font-download:before, .font-icon-calendar-black:before, .font-icon-copy-big:before, .font-icon-eye-clicked:before, .font-icon-eye:before, .font-icon-promosyon-gray:before, .font-invitation:before, .font-kullanıcılar:before, .font-language:before, .font-menu-dots:before, .font-multiple-users-silhouette:before, .font-navigate-up-arrow:before, .font-plus-black-symbol:before, .font-power-off:before, .font-profile:before, .font-profilim:before, .font-right-arrow-2:before, .font-right-arrow:before, .font-search:before, .font-sirket-profili:before, .font-takvim:before, .font-verified-copy-10:before, .font-verified:before, .font-m_ayarlar:before, .font-m_cuzdan:before, .font-m_iletisim:before, .font-m_kampanya:before, .font-m_kitle:before, .font-m_raporlar:before, .font-m_sepet-odeme:before, .font-facebook-app-logo:before, .font-icon-mail2:before, .font-icon-sms:before, .font-icon-whatsapp:before, .font-instagram:before, .font-linkedin-logo:before, .font-twitter-logo-silhouette:before, input[type="checkbox"].yellow + label:before, input[type="checkbox"].all-checkboxes + label:before, input[type="checkbox"].dt-checkboxes + label:before, input[type="checkbox"].terms + label:after, input[type="checkbox"].terms-yellow + label:after, input[type="checkbox"].membership-type + label:after, input[type="radio"].budget + label:after, .radios-check span:before {
+.font-add:before, .font-arrow-down-sign-to-navigate:before, .font-arrow-left:before, .font-building:before, .font-cancel:before, .font-check:before, .font-cross-remove-sign:before, .font-davet-et:before, .font-delete:before, .font-dil:before, .font-down-arrow:before, .font-download:before, .font-icon-calendar-black:before, .font-icon-copy-big:before, .font-icon-eye-clicked:before, .font-icon-eye:before, .font-icon-promosyon-gray:before, .font-invitation:before, .font-kullanıcılar:before, .font-language:before, .font-menu-dots:before, .font-multiple-users-silhouette:before, .font-navigate-up-arrow:before, .font-plus-black-symbol:before, .font-power-off:before, .font-profile:before, .font-profilim:before, .font-right-arrow-2:before, .font-right-arrow:before, .font-search:before, .font-sirket-profili:before, .font-takvim:before, .font-urunler:before, .font-verified-copy-10:before, .font-verified:before, .font-m_ayarlar:before, .font-m_cuzdan:before, .font-m_iletisim:before, .font-m_kampanya:before, .font-m_kitle:before, .font-m_raporlar:before, .font-m_sepet-odeme:before, .font-facebook-app-logo:before, .font-icon-mail2:before, .font-icon-sms:before, .font-icon-whatsapp:before, .font-instagram:before, .font-linkedin-logo:before, .font-twitter-logo-silhouette:before, input[type="checkbox"].yellow + label:before, input[type="checkbox"].all-checkboxes + label:before, input[type="checkbox"].dt-checkboxes + label:before, input[type="checkbox"].terms + label:after, input[type="checkbox"].terms-yellow + label:after, input[type="checkbox"].membership-type + label:after, input[type="radio"].budget + label:after, .radios-check span:before {
   font-family: "icons";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -2447,53 +2447,56 @@ label.error {
 .font-takvim:before {
   content: ""; }
 
-.font-verified-copy-10:before {
+.font-urunler:before {
   content: ""; }
 
-.font-verified:before {
+.font-verified-copy-10:before {
   content: ""; }
 
-.font-m_ayarlar:before {
+.font-verified:before {
   content: ""; }
 
-.font-m_cuzdan:before {
+.font-m_ayarlar:before {
   content: ""; }
 
-.font-m_iletisim:before {
+.font-m_cuzdan:before {
   content: ""; }
 
-.font-m_kampanya:before {
+.font-m_iletisim:before {
   content: ""; }
 
-.font-m_kitle:before {
+.font-m_kampanya:before {
   content: ""; }
 
-.font-m_raporlar:before {
+.font-m_kitle:before {
   content: ""; }
 
-.font-m_sepet-odeme:before {
+.font-m_raporlar:before {
   content: ""; }
 
-.font-facebook-app-logo:before {
+.font-m_sepet-odeme:before {
   content: ""; }
 
-.font-icon-mail2:before {
+.font-facebook-app-logo:before {
   content: ""; }
 
-.font-icon-sms:before {
+.font-icon-mail2:before {
   content: ""; }
 
-.font-icon-whatsapp:before {
+.font-icon-sms:before {
   content: ""; }
 
-.font-instagram:before {
+.font-icon-whatsapp:before {
   content: ""; }
 
-.font-linkedin-logo:before {
+.font-instagram:before {
   content: ""; }
 
-.font-twitter-logo-silhouette:before {
+.font-linkedin-logo:before {
   content: ""; }
+
+.font-twitter-logo-silhouette:before {
+  content: ""; }
 
 input[type=email],
 input[type=text],
@@ -2930,7 +2933,7 @@ input[type="radio"].budget {
   src: url("../fonts/icons/icons.eot");
   src: url("../fonts/icons/icons.eot?#iefix") format("eot"), url("../fonts/icons/icons.woff") format("woff"), url("../fonts/icons/icons.ttf") format("truetype"), url("../fonts/icons/icons.svg#icons") format("svg"); }
 
-.font-add:before, .font-arrow-down-sign-to-navigate:before, .font-arrow-left:before, .font-building:before, .font-cancel:before, .font-check:before, .font-cross-remove-sign:before, .font-davet-et:before, .font-delete:before, .font-dil:before, .font-down-arrow:before, .font-download:before, .font-icon-calendar-black:before, .font-icon-copy-big:before, .font-icon-eye-clicked:before, .font-icon-eye:before, .font-icon-promosyon-gray:before, .font-invitation:before, .font-kullanıcılar:before, .font-language:before, .font-menu-dots:before, .font-multiple-users-silhouette:before, .font-navigate-up-arrow:before, .font-plus-black-symbol:before, .font-power-off:before, .font-profile:before, .font-profilim:before, .font-right-arrow-2:before, .font-right-arrow:before, .font-search:before, .font-sirket-profili:before, .font-takvim:before, .font-verified-copy-10:before, .font-verified:before, .font-m_ayarlar:before, .font-m_cuzdan:before, .font-m_iletisim:before, .font-m_kampanya:before, .font-m_kitle:before, .font-m_raporlar:before, .font-m_sepet-odeme:before, .font-facebook-app-logo:before, .font-icon-mail2:before, .font-icon-sms:before, .font-icon-whatsapp:before, .font-instagram:before, .font-linkedin-logo:before, .font-twitter-logo-silhouette:before, input[type="checkbox"].yellow + label:before, input[type="checkbox"].all-checkboxes + label:before, input[type="checkbox"].dt-checkboxes + label:before, input[type="checkbox"].terms + label:after, input[type="checkbox"].terms-yellow + label:after, input[type="checkbox"].membership-type + label:after, input[type="radio"].budget + label:after, .radios-check span:before {
+.font-add:before, .font-arrow-down-sign-to-navigate:before, .font-arrow-left:before, .font-building:before, .font-cancel:before, .font-check:before, .font-cross-remove-sign:before, .font-davet-et:before, .font-delete:before, .font-dil:before, .font-down-arrow:before, .font-download:before, .font-icon-calendar-black:before, .font-icon-copy-big:before, .font-icon-eye-clicked:before, .font-icon-eye:before, .font-icon-promosyon-gray:before, .font-invitation:before, .font-kullanıcılar:before, .font-language:before, .font-menu-dots:before, .font-multiple-users-silhouette:before, .font-navigate-up-arrow:before, .font-plus-black-symbol:before, .font-power-off:before, .font-profile:before, .font-profilim:before, .font-right-arrow-2:before, .font-right-arrow:before, .font-search:before, .font-sirket-profili:before, .font-takvim:before, .font-urunler:before, .font-verified-copy-10:before, .font-verified:before, .font-m_ayarlar:before, .font-m_cuzdan:before, .font-m_iletisim:before, .font-m_kampanya:before, .font-m_kitle:before, .font-m_raporlar:before, .font-m_sepet-odeme:before, .font-facebook-app-logo:before, .font-icon-mail2:before, .font-icon-sms:before, .font-icon-whatsapp:before, .font-instagram:before, .font-linkedin-logo:before, .font-twitter-logo-silhouette:before, input[type="checkbox"].yellow + label:before, input[type="checkbox"].all-checkboxes + label:before, input[type="checkbox"].dt-checkboxes + label:before, input[type="checkbox"].terms + label:after, input[type="checkbox"].terms-yellow + label:after, input[type="checkbox"].membership-type + label:after, input[type="radio"].budget + label:after, .radios-check span:before {
   font-family: "icons";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -3038,53 +3041,56 @@ input[type="radio"].budget {
 .font-takvim:before {
   content: ""; }
 
-.font-verified-copy-10:before {
+.font-urunler:before {
   content: ""; }
 
-.font-verified:before {
+.font-verified-copy-10:before {
   content: ""; }
 
-.font-m_ayarlar:before {
+.font-verified:before {
   content: ""; }
 
-.font-m_cuzdan:before {
+.font-m_ayarlar:before {
   content: ""; }
 
-.font-m_iletisim:before {
+.font-m_cuzdan:before {
   content: ""; }
 
-.font-m_kampanya:before {
+.font-m_iletisim:before {
   content: ""; }
 
-.font-m_kitle:before {
+.font-m_kampanya:before {
   content: ""; }
 
-.font-m_raporlar:before {
+.font-m_kitle:before {
   content: ""; }
 
-.font-m_sepet-odeme:before {
+.font-m_raporlar:before {
   content: ""; }
 
-.font-facebook-app-logo:before {
+.font-m_sepet-odeme:before {
   content: ""; }
 
-.font-icon-mail2:before {
+.font-facebook-app-logo:before {
   content: ""; }
 
-.font-icon-sms:before {
+.font-icon-mail2:before {
   content: ""; }
 
-.font-icon-whatsapp:before {
+.font-icon-sms:before {
   content: ""; }
 
-.font-instagram:before {
+.font-icon-whatsapp:before {
   content: ""; }
 
-.font-linkedin-logo:before {
+.font-instagram:before {
   content: ""; }
 
-.font-twitter-logo-silhouette:before {
+.font-linkedin-logo:before {
   content: ""; }
+
+.font-twitter-logo-silhouette:before {
+  content: ""; }
 
 .sidebar-right.campaign-page .sidebar-qutter .sidebar-content {
   background: #fff;
@@ -3469,5 +3475,28 @@ input[type="radio"].budget {
           font-size: 21px;
           font-weight: bold;
           color: #ddbb74; }
+
+.sidebar-right.campaign-result .sidebar-qutter .sidebar-content {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
+  box-shadow: 0 9px 30px 0 #dbe1f1;
+  background-color: #ffffff;
+  margin-top: 15px; }
+  .sidebar-right.campaign-result .sidebar-qutter .sidebar-content .result {
+    text-align: center;
+    padding: 170px 50px; }
+    .sidebar-right.campaign-result .sidebar-qutter .sidebar-content .result strong {
+      display: block;
+      font-size: 17px;
+      font-weight: 500;
+      color: #ddbb74;
+      padding: 60px 0 15px 0; }
+    .sidebar-right.campaign-result .sidebar-qutter .sidebar-content .result p {
+      font-size: 14px; }
+    .sidebar-right.campaign-result .sidebar-qutter .sidebar-content .result .buttons {
+      max-width: 230px;
+      margin: 55px auto 0 auto; }
 
 /*# sourceMappingURL=campaign.css.map */

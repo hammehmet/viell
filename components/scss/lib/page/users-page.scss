@@ -257,3 +257,34 @@
     }
   }
 }
+
+.modal{
+  &.delete{
+    text-align: center;
+    padding: 40px 30px;
+    .close-modal{
+      display: none;
+    }
+    strong{
+      font-size: 20px;
+      font-weight: 500;
+      display: block;
+      color:$companyColor;
+      margin: 40px 0;
+    }
+    a{
+      &.cancel{
+        font-size: 14px;
+        font-weight: bold;
+        color: #4a4a4a;
+        margin-top: 20px;
+        display: inline-block;
+      }
+      &.buttons{
+        max-width: 260px;
+        margin: 0 auto;
+      }
+    }
+
+  }
+}

@@ -120,53 +120,56 @@
 	@if $filename == takvim {
 		$char: "\E020";
 	}
-	@if $filename == verified-copy-10 {
+	@if $filename == urunler {
 		$char: "\E021";
 	}
-	@if $filename == verified {
+	@if $filename == verified-copy-10 {
 		$char: "\E022";
 	}
-	@if $filename == m_ayarlar {
+	@if $filename == verified {
 		$char: "\E023";
 	}
-	@if $filename == m_cuzdan {
+	@if $filename == m_ayarlar {
 		$char: "\E024";
 	}
-	@if $filename == m_iletisim {
+	@if $filename == m_cuzdan {
 		$char: "\E025";
 	}
-	@if $filename == m_kampanya {
+	@if $filename == m_iletisim {
 		$char: "\E026";
 	}
-	@if $filename == m_kitle {
+	@if $filename == m_kampanya {
 		$char: "\E027";
 	}
-	@if $filename == m_raporlar {
+	@if $filename == m_kitle {
 		$char: "\E028";
 	}
-	@if $filename == m_sepet-odeme {
+	@if $filename == m_raporlar {
 		$char: "\E029";
 	}
-	@if $filename == facebook-app-logo {
+	@if $filename == m_sepet-odeme {
 		$char: "\E02A";
 	}
-	@if $filename == icon-mail2 {
+	@if $filename == facebook-app-logo {
 		$char: "\E02B";
 	}
-	@if $filename == icon-sms {
+	@if $filename == icon-mail2 {
 		$char: "\E02C";
 	}
-	@if $filename == icon-whatsapp {
+	@if $filename == icon-sms {
 		$char: "\E02D";
 	}
-	@if $filename == instagram {
+	@if $filename == icon-whatsapp {
 		$char: "\E02E";
 	}
-	@if $filename == linkedin-logo {
+	@if $filename == instagram {
 		$char: "\E02F";
 	}
-	@if $filename == twitter-logo-silhouette {
+	@if $filename == linkedin-logo {
 		$char: "\E030";
+	}
+	@if $filename == twitter-logo-silhouette {
+		$char: "\E031";
 	}
 
 	@return $char;
@@ -274,6 +277,9 @@
 }
 .font-takvim {
 	@include font(takvim);
+}
+.font-urunler {
+	@include font(urunler);
 }
 .font-verified-copy-10 {
 	@include font(verified-copy-10);
