@@ -14,6 +14,119 @@
       display: inline-block;
       padding-top: 11px;
     }
+    .notification{
+      float: right;
+      padding: 20px 30px 0 0;
+      position: relative;
+      a{
+        font-size: 30px;
+        color:$companyColor;
+        position: relative;
+        span{
+          @include position(absolute, 5px 0px null null);
+          font-size: 8px;
+          border: 1px solid $companyColor;
+          @include border-radius(50%);
+          width: 12px;
+          height: 12px;
+          text-align: center;
+          display: inline-block;
+          line-height: 12px;
+          background: #fff;
+        }
+        i{
+          display: inline-block;
+          &:before{
+            display: block;
+          }
+        }
+      }
+    }
+    .notification-list{
+      width: 340px;
+      height: 525px;
+      @include position(absolute, $headerHeight null null -45px);
+      display: none;
+      &.show{
+        display: block;
+      }
+      &:after{
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 10px 10px 10px;
+        border-color: transparent transparent $companyColor transparent;
+        content: "";
+        display: inline-block;
+        @include position(absolute, -9px null null 50px);
+      }
+      .title{
+        line-height: 45px;
+        text-align: center;
+        height: 45px;
+        background-color: #ddbb74;
+        color:#fff;
+        font-size: 16px;
+        @include border-radius(4px 4px 0 0);
+      }
+      .center{
+        background: #f6f6f6;
+        @include border-radius(4px);
+        border: 1px solid #e6eaee;
+        box-shadow: 0 0 10px 0 rgba(197, 205, 215, 0.76);
+        overflow-y:scroll;
+        height: 100%;
+
+        .items-list{
+          padding: 0 10px;
+          .items{
+            padding: 20px 0;
+            border-bottom: 1px solid #c5cdd7;
+            @include clearfix();
+            position: relative;
+            @include display(flex);
+            align-items: center;
+            -webkit-align-items: center;
+            .logos{
+              width: 40px;
+              height: 40px;
+              @include border-radius(50%);
+              overflow: hidden;
+              border: 1px solid #c5cdd7;
+              display: inline-block;
+              vertical-align: middle;
+              background: #fff;
+              img{
+                max-width: 100%;
+                max-height: 100%;
+              }
+            }
+            .text{
+              font-family: $sourceSansFontFamily;
+              font-size: 16px;
+              color:$textColorLight;
+              padding: 0 18px;
+              display: inline-block;
+              vertical-align: middle;
+              @include flex(1);
+            }
+            a{
+              color:$companyColor;
+              text-decoration: underline;
+              font-size: 16px;
+              &.delete-notification{
+                @include position(absolute, 50% 0px null null);
+                margin-top: -9px;
+                font-size: 18px;
+              }
+            }
+            &:last-child{
+              border-bottom: 0;
+            }
+          }
+        }
+      }
+    }
     .search{
       float: right;
       max-width: 240px;
@@ -41,6 +154,22 @@
           font-size: 18px;
         }
       }
+    }
+  }
+}
+.modal{
+  &.notification-result{
+    padding: 30px;
+    max-width: 840px;
+    .close-modal{
+      top: 10px;
+      right: 10px;
+      background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyNpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQwIDc5LjE2MDQ1MSwgMjAxNy8wNS8wNi0wMTowODoyMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChNYWNpbnRvc2gpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjA5NTQ4ODdEMjA5RDExRTlBRDMxOEQ1QTlDOTdCNDczIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjA5NTQ4ODdFMjA5RDExRTlBRDMxOEQ1QTlDOTdCNDczIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MDk1NDg4N0IyMDlEMTFFOUFEMzE4RDVBOUM5N0I0NzMiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MDk1NDg4N0MyMDlEMTFFOUFEMzE4RDVBOUM5N0I0NzMiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4XwoFgAAAD9UlEQVR42uSbPU8bQRCGBxRsCckCFJGAaNKhNDQuCB8JpgMJKRIdbqDLDzCiSxo6PgQtXWhCB4pAgioJiQFRuKGJ+AEWhBSALCHZIJR58RxyyJ25s2d958srvQ26nd2H29ubXc81bGxskCE1swfZcXa3uIMdE0M58Sn7WJxhp9lXJgb1RDneM3aSPc7uZUceuf6p+AX7VcnfC+xD9jr7E/tMa4CNSnHesDfZWfYS+7UL2HKKSIwlibkpffgOPMz+wd5ljxmYMdYsHJM+0FfCD+BOmWpf5DmtldDXV+m7s1bAo+yf7AnyTxMyhlHTwCn2FruF/FeLjCVlAjjK/sheUFzotNagBRlbVAu4XZ6bSQquJmWM7dUC47/2md1HwVefjDVaDfBKncCWQq9UCpwK+DQuN71TXoGx3M9R/WrO6ZXV6JBUrAVsNa5k9V6zS07soBYD8p7VeE8vPgac8DmDMpGRJcoBz1L4NOsEPFTjjUAtNxxDdsDTFF5NPwTGScVIiIFHhPF+w57U2rx3dXVRT08PFQoFymQydHFx4al9a2srxeNxikQidHR0RNlsVusQAYzL1h0e1/pXAjYajVIsFqOBgQFqa2tz3RbXog3aIgZiKWrcmtI4XezVioo7a6mpqYn6+/tdQeMaXIs2drEUBMbmRlnFIlpRMY2vr689QdvBIgZiKQqMgwCOa0bFM7u/v+8a2gkWMbw+/y4UB3C3dtTz83NX0OVgEcOAuo0Au4H2AfYeuMNU9HLQPsBCHQCOmezBCdoHWChmHNgJ2gfYe+D/SgDOme7EboGqJDlRUM44sNNq7DU50QQ+rTUsnlkvyYmiTgF8XGtYLFBukxNlHRsBdptU+AB9B6yaoWM/6yWpKAeNWMrKABgFJGr7MGzevSYVTtCIpSgwpgGMaplDtT1YJFJRUmEHXRpLQWC8shKPda2oOJbJ5/OUy+Vob2/PUwaFa9EGbREDsRR1x9ggdVo44MqSmaKUIOgGx23sM+sOow5qJ8QZ5Y4w/nUuPR9i4PnSXNrSd1mxw6a0sP0DDH0IIfD7h7ulUqEwZC1EsGD5Vg4YQrnAZQhgL8mm9MEO+ISKv6ve1jHsrTCcuAGGttkzdQw8IwzkFhhCucBqHcKukk2pgxtg6B37oI5gD2TMVClwnv22TqAPZKz5aoCh31QsBF8N+DQelrFStcDWnZ6iYulAkFbvWxnT1GN31itw6UI2FpD39KWMZdFLo0oO4rHcv/Q5I1uTMWx7bVjpLw94oSfluanlhiMtfSbtkgqTwJaQp+JzmwQVy/FvDG3et6SP1w9zY6/SOuHYFT+XlM7th1pOMvahlvaRzi/2sjiQn+L9EWAADeyxT6v5becAAAAASUVORK5CYII=');
+    }
+    strong{
+      font-size: 25px;
+      font-weight: normal;
+      color:$companyColor;
     }
   }
 }

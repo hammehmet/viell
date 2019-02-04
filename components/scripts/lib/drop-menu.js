@@ -12,21 +12,23 @@ module.exports = function (options) {
     };
 
 
-    /*$(document).on('click.filter-icon','[data-drop-target]',function (e) {
+    $(document).on('click','[data-drop-target]',function (e) {
         //console.log(e);
         var $this = $(this);
         var data = $this.data();
         var hasTarget = data.dropTarget != 'undefined';
         if(hasTarget) functions.show($(data.dropTarget),$this);
-    });*/
+    });
 
 
     var functions = {
         show : function(target,pointerTarget){
             if(!opened){
+
                 target.addClass(defaults.animateClass);
                 setTimeout(function(){
                     target.addClass(defaults.showClass);
+                    $(".notification-list .center").scrollTop(0);
                 },0);
 
                 $("body").append("<div class='drop-menu-show'></div>");
@@ -46,6 +48,9 @@ module.exports = function (options) {
                     moved = true;
                 });
                 opened = true;
+
+
+
 
 
 

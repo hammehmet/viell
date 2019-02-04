@@ -3,12 +3,87 @@
 		<div class="logo">
 			<a href="/"><img src="img/viell-logo.svg" alt="Viell"></a>
 		</div>
+
 		<div class="search">
 			<input type="text" class="txt-search" id="txtSearch" name="search" placeholder="Arama">
 			<button type="submit" class="btn-search" id="btnSearch"><i class="font-search"></i></button>
 		</div>
+		<div class="notification">
+			<a  data-drop-target="#notificationList">
+				<i class="font-bell"></i>
+				<span>12</span>
+			</a>
+			<div id="notificationList" class="drop-menu notification-list">
+				<div class="title">Bildirimler</div>
+				<div class="center">
+					<div class="items-list">
+						<div class="items">
+							<div class="logos"><img src="img/viell-logo-notification.jpg"></div>
+							<div class="text">
+								₺50 Viell Kredisi Kazandınız
+							</div>
+							<a href="#" class="delete-notification"><i class="font-delete"></i></a>
+						</div>
+						<div class="items">
+							<div class="logos"><img src="img/viell-logo-notification.jpg"></div>
+							<div class="text">
+								Tesla Kampanyanız Onaylandı
+							</div>
+							<a href="#" class="delete-notification"><i class="font-delete"></i></a>
+						</div>
+						<div class="items">
+							<div class="logos"><img src="img/viell-logo-notification.jpg"></div>
+							<div class="text">
+								Netflix Kampanyanız Onaylanmadı
+								İncelemek için <a href="#notification-1" rel="modal:open">tıklayınız</a>
+							</div>
+							<a href="#" class="delete-notification"><i class="font-delete"></i></a>
+						</div>
+						<div class="items">
+							<div class="logos"><img src="img/viell-logo-notification.jpg"></div>
+							<div class="text">
+								Polen Kampanyanız Onaylandı
+							</div>
+							<a href="#" class="delete-notification"><i class="font-delete"></i></a>
+						</div>
+						<div class="items">
+							<div class="logos"><img src="img/viell-logo-notification.jpg"></div>
+							<div class="text">
+								₺750 Viell Kredisi Kazandınız
+							</div>
+							<a href="#" class="delete-notification"><i class="font-delete"></i></a>
+						</div>
+						<div class="items">
+							<div class="logos"><img src="img/viell-logo-notification.jpg"></div>
+							<div class="text">
+								Mercedes Kampanyanız
+								Onaylanmadı İncelemek için <a href="#">tıklayınız</a>
+							</div>
+							<a href="#" class="delete-notification"><i class="font-delete"></i></a>
+						</div>
+						<div class="items">
+							<div class="logos"><img src="img/viell-logo-notification.jpg"></div>
+							<div class="text">
+								Mercedes Kampanyanız
+								Onaylanmadı İncelemek için <a href="#">tıklayınız</a>
+							</div>
+							<a href="#" class="delete-notification"><i class="font-delete"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 </div>
+
+
+<div id="notification-1" class="modal notification-result">
+	<strong>Onaylanmama Sebebi</strong>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ornare blandit pulvinar. Phasellus vitae risus sodales, lobortis est at, accumsan risus. Donec aliquam, nisi vitae blandit consequat, leo leo fermentum odio, quis elementum nisl erat in lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+</div>
+
+
+
 <script src="js/jquery.easy-autocomplete.js"></script>
 <script>
     var options = {

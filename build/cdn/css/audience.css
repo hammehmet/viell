@@ -2339,7 +2339,7 @@ label.error {
   src: url("../fonts/icons/icons.eot");
   src: url("../fonts/icons/icons.eot?#iefix") format("eot"), url("../fonts/icons/icons.woff") format("woff"), url("../fonts/icons/icons.ttf") format("truetype"), url("../fonts/icons/icons.svg#icons") format("svg"); }
 
-.font-add:before, .font-arrow-down-sign-to-navigate:before, .font-arrow-left:before, .font-building:before, .font-cancel:before, .font-check:before, .font-cross-remove-sign:before, .font-davet-et:before, .font-delete:before, .font-dil:before, .font-down-arrow:before, .font-download:before, .font-icon-calendar-black:before, .font-icon-copy-big:before, .font-icon-eye-clicked:before, .font-icon-eye:before, .font-icon-promosyon-gray:before, .font-invitation:before, .font-kullanıcılar:before, .font-language:before, .font-menu-dots:before, .font-multiple-users-silhouette:before, .font-navigate-up-arrow:before, .font-plus-black-symbol:before, .font-power-off:before, .font-profile:before, .font-profilim:before, .font-right-arrow-2:before, .font-right-arrow:before, .font-search:before, .font-sirket-profili:before, .font-takvim:before, .font-urunler:before, .font-verified-copy-10:before, .font-verified:before, .font-m_ayarlar:before, .font-m_cuzdan:before, .font-m_iletisim:before, .font-m_kampanya:before, .font-m_kitle:before, .font-m_raporlar:before, .font-m_sepet-odeme:before, .font-facebook-app-logo:before, .font-icon-mail2:before, .font-icon-sms:before, .font-icon-whatsapp:before, .font-instagram:before, .font-linkedin-logo:before, .font-twitter-logo-silhouette:before, input[type="checkbox"].yellow + label:before, input[type="checkbox"].all-checkboxes + label:before, input[type="checkbox"].dt-checkboxes + label:before, input[type="checkbox"].terms + label:after, input[type="checkbox"].terms-yellow + label:after, input[type="checkbox"].membership-type + label:after, input[type="radio"].budget + label:after, .radios-check span:before, .thumnailGallery .flex-direction-nav a:before, .sidebar-left .items ul li a:after, .sidebar-right.audience-page .sidebar-qutter .sidebar-content .audience-maps .registered a:after {
+.font-add:before, .font-arrow-down-sign-to-navigate:before, .font-arrow-left:before, .font-bell:before, .font-building:before, .font-cancel:before, .font-check:before, .font-cross-remove-sign:before, .font-davet-et:before, .font-delete:before, .font-dil:before, .font-down-arrow:before, .font-download:before, .font-icon-calendar-black:before, .font-icon-copy-big:before, .font-icon-eye-clicked:before, .font-icon-eye:before, .font-icon-promosyon-gray:before, .font-invitation:before, .font-kullanıcılar:before, .font-language:before, .font-menu-dots:before, .font-multiple-users-silhouette:before, .font-navigate-up-arrow:before, .font-plus-black-symbol:before, .font-power-off:before, .font-profile:before, .font-profilim:before, .font-right-arrow-2:before, .font-right-arrow:before, .font-search:before, .font-sirket-profili:before, .font-takvim:before, .font-urunler:before, .font-verified-copy-10:before, .font-verified:before, .font-m_ayarlar:before, .font-m_cuzdan:before, .font-m_iletisim:before, .font-m_kampanya:before, .font-m_kitle:before, .font-m_raporlar:before, .font-m_sepet-odeme:before, .font-facebook-app-logo:before, .font-icon-mail2:before, .font-icon-sms:before, .font-icon-whatsapp:before, .font-instagram:before, .font-linkedin-logo:before, .font-twitter-logo-silhouette:before, input[type="checkbox"].yellow + label:before, input[type="checkbox"].all-checkboxes + label:before, input[type="checkbox"].dt-checkboxes + label:before, input[type="checkbox"].terms + label:after, input[type="checkbox"].terms-yellow + label:after, input[type="checkbox"].membership-type + label:after, input[type="radio"].budget + label:after, .radios-check span:before, .thumnailGallery .flex-direction-nav a:before, .sidebar-left .items ul li a:after, .sidebar-right.audience-page .sidebar-qutter .sidebar-content .audience-maps .registered a:after {
   font-family: "icons";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -2360,143 +2360,146 @@ label.error {
 .font-arrow-left:before {
   content: ""; }
 
-.font-building:before {
+.font-bell:before {
   content: ""; }
 
-.font-cancel:before {
+.font-building:before {
   content: ""; }
 
-.font-check:before {
+.font-cancel:before {
   content: ""; }
 
-.font-cross-remove-sign:before {
+.font-check:before {
   content: ""; }
 
-.font-davet-et:before {
+.font-cross-remove-sign:before {
   content: ""; }
 
-.font-delete:before {
+.font-davet-et:before {
   content: ""; }
 
-.font-dil:before {
+.font-delete:before {
   content: ""; }
 
-.font-down-arrow:before {
+.font-dil:before {
   content: ""; }
 
-.font-download:before {
+.font-down-arrow:before {
   content: ""; }
 
-.font-icon-calendar-black:before {
+.font-download:before {
   content: ""; }
 
-.font-icon-copy-big:before {
+.font-icon-calendar-black:before {
   content: ""; }
 
-.font-icon-eye-clicked:before {
+.font-icon-copy-big:before {
   content: ""; }
 
-.font-icon-eye:before {
+.font-icon-eye-clicked:before {
   content: ""; }
 
-.font-icon-promosyon-gray:before {
+.font-icon-eye:before {
   content: ""; }
 
-.font-invitation:before {
+.font-icon-promosyon-gray:before {
   content: ""; }
 
-.font-kullanıcılar:before {
+.font-invitation:before {
   content: ""; }
 
-.font-language:before {
+.font-kullanıcılar:before {
   content: ""; }
 
-.font-menu-dots:before {
+.font-language:before {
   content: ""; }
 
-.font-multiple-users-silhouette:before {
+.font-menu-dots:before {
   content: ""; }
 
-.font-navigate-up-arrow:before {
+.font-multiple-users-silhouette:before {
   content: ""; }
 
-.font-plus-black-symbol:before {
+.font-navigate-up-arrow:before {
   content: ""; }
 
-.font-power-off:before {
+.font-plus-black-symbol:before {
   content: ""; }
 
-.font-profile:before {
+.font-power-off:before {
   content: ""; }
 
-.font-profilim:before {
+.font-profile:before {
   content: ""; }
 
-.font-right-arrow-2:before {
+.font-profilim:before {
   content: ""; }
 
-.font-right-arrow:before {
+.font-right-arrow-2:before {
   content: ""; }
 
-.font-search:before {
+.font-right-arrow:before {
   content: ""; }
 
-.font-sirket-profili:before {
+.font-search:before {
   content: ""; }
 
-.font-takvim:before {
+.font-sirket-profili:before {
   content: ""; }
 
-.font-urunler:before {
+.font-takvim:before {
   content: ""; }
 
-.font-verified-copy-10:before {
+.font-urunler:before {
   content: ""; }
 
-.font-verified:before {
+.font-verified-copy-10:before {
   content: ""; }
 
-.font-m_ayarlar:before {
+.font-verified:before {
   content: ""; }
 
-.font-m_cuzdan:before {
+.font-m_ayarlar:before {
   content: ""; }
 
-.font-m_iletisim:before {
+.font-m_cuzdan:before {
   content: ""; }
 
-.font-m_kampanya:before {
+.font-m_iletisim:before {
   content: ""; }
 
-.font-m_kitle:before {
+.font-m_kampanya:before {
   content: ""; }
 
-.font-m_raporlar:before {
+.font-m_kitle:before {
   content: ""; }
 
-.font-m_sepet-odeme:before {
+.font-m_raporlar:before {
   content: ""; }
 
-.font-facebook-app-logo:before {
+.font-m_sepet-odeme:before {
   content: ""; }
 
-.font-icon-mail2:before {
+.font-facebook-app-logo:before {
   content: ""; }
 
-.font-icon-sms:before {
+.font-icon-mail2:before {
   content: ""; }
 
-.font-icon-whatsapp:before {
+.font-icon-sms:before {
   content: ""; }
 
-.font-instagram:before {
+.font-icon-whatsapp:before {
   content: ""; }
 
-.font-linkedin-logo:before {
+.font-instagram:before {
   content: ""; }
 
-.font-twitter-logo-silhouette:before {
+.font-linkedin-logo:before {
   content: ""; }
+
+.font-twitter-logo-silhouette:before {
+  content: ""; }
 
 input[type=email],
 input[type=text],
@@ -2557,7 +2560,7 @@ input[type="checkbox"].yellow {
   input[type="checkbox"].yellow:checked + label:before {
     border-color: #061332;
     background-color: #061332;
-    content: ""; }
+    content: ""; }
 
 input[type="checkbox"].all-checkboxes, input[type="checkbox"].dt-checkboxes {
   -webkit-border-radius: 3px;
@@ -2592,7 +2595,7 @@ input[type="checkbox"].all-checkboxes, input[type="checkbox"].dt-checkboxes {
   input[type="checkbox"].all-checkboxes:checked + label:before, input[type="checkbox"].dt-checkboxes:checked + label:before {
     display: inline-block;
     color: #ddbb74;
-    content: ""; }
+    content: ""; }
 
 input[type="checkbox"].all-checkboxes + label:before {
   top: -2px; }
@@ -2638,7 +2641,7 @@ input[type="checkbox"].terms {
     background-image: linear-gradient(to bottom, #ddbb74, #ddbb74), linear-gradient(315deg, #ddbb74, #d0aa5b);
     border-color: #ddbb74; }
   input[type="checkbox"].terms:checked + label:after {
-    content: "";
+    content: "";
     color: #fff; }
 
 input[type="checkbox"].terms-yellow {
@@ -2676,7 +2679,7 @@ input[type="checkbox"].terms-yellow {
     left: 3px;
     font-size: 13px; }
   input[type="checkbox"].terms-yellow:checked + label:after {
-    content: "";
+    content: "";
     color: #ddbb74; }
 
 input[type="checkbox"].membership-type {
@@ -2715,7 +2718,7 @@ input[type="checkbox"].membership-type {
     font-size: 13px;
     line-height: normal; }
   input[type="checkbox"].membership-type:checked + label:after {
-    content: "";
+    content: "";
     color: #2b3445; }
 
 input[type="radio"].budget {
@@ -2754,7 +2757,7 @@ input[type="radio"].budget {
     font-size: 16px;
     line-height: normal; }
   input[type="radio"].budget:checked + label:after {
-    content: "";
+    content: "";
     color: #ddbb74; }
 
 .radios-check {
@@ -2788,7 +2791,7 @@ input[type="radio"].budget {
   .radios-check input[type=radio]:checked + span:before {
     display: inline-block;
     color: #ddbb74;
-    content: ""; }
+    content: ""; }
 
 .slideCheckbox input {
   position: relative;
@@ -3260,6 +3263,135 @@ input[type="radio"].budget {
   .header .header-center .logo {
     display: inline-block;
     padding-top: 11px; }
+  .header .header-center .notification {
+    float: right;
+    padding: 20px 30px 0 0;
+    position: relative; }
+    .header .header-center .notification a {
+      font-size: 30px;
+      color: #ddbb74;
+      position: relative; }
+      .header .header-center .notification a span {
+        position: absolute;
+        top: 5px;
+        right: 0px;
+        font-size: 8px;
+        border: 1px solid #ddbb74;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        border-radius: 50%;
+        width: 12px;
+        height: 12px;
+        text-align: center;
+        display: inline-block;
+        line-height: 12px;
+        background: #fff; }
+      .header .header-center .notification a i {
+        display: inline-block; }
+        .header .header-center .notification a i:before {
+          display: block; }
+  .header .header-center .notification-list {
+    width: 340px;
+    height: 525px;
+    position: absolute;
+    top: 70px;
+    left: -45px;
+    display: none; }
+    .header .header-center .notification-list.show {
+      display: block; }
+    .header .header-center .notification-list:after {
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 10px 10px 10px;
+      border-color: transparent transparent #ddbb74 transparent;
+      content: "";
+      display: inline-block;
+      position: absolute;
+      top: -9px;
+      left: 50px; }
+    .header .header-center .notification-list .title {
+      line-height: 45px;
+      text-align: center;
+      height: 45px;
+      background-color: #ddbb74;
+      color: #fff;
+      font-size: 16px;
+      -webkit-border-radius: 4px 4px 0 0;
+      -moz-border-radius: 4px 4px 0 0;
+      -ms-border-radius: 4px 4px 0 0;
+      border-radius: 4px 4px 0 0; }
+    .header .header-center .notification-list .center {
+      background: #f6f6f6;
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      -ms-border-radius: 4px;
+      border-radius: 4px;
+      border: 1px solid #e6eaee;
+      box-shadow: 0 0 10px 0 rgba(197, 205, 215, 0.76);
+      overflow-y: scroll;
+      height: 100%; }
+      .header .header-center .notification-list .center .items-list {
+        padding: 0 10px; }
+        .header .header-center .notification-list .center .items-list .items {
+          padding: 20px 0;
+          border-bottom: 1px solid #c5cdd7;
+          position: relative;
+          display: -webkit-box;
+          display: -moz-box;
+          display: box;
+          display: -webkit-flex;
+          display: -moz-flex;
+          display: -ms-flexbox;
+          display: flex;
+          align-items: center;
+          -webkit-align-items: center; }
+          .header .header-center .notification-list .center .items-list .items::after {
+            clear: both;
+            content: "";
+            display: table; }
+          .header .header-center .notification-list .center .items-list .items .logos {
+            width: 40px;
+            height: 40px;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 1px solid #c5cdd7;
+            display: inline-block;
+            vertical-align: middle;
+            background: #fff; }
+            .header .header-center .notification-list .center .items-list .items .logos img {
+              max-width: 100%;
+              max-height: 100%; }
+          .header .header-center .notification-list .center .items-list .items .text {
+            font-family: "Source Sans Pro", sans-serif;
+            font-size: 16px;
+            color: #373737;
+            padding: 0 18px;
+            display: inline-block;
+            vertical-align: middle;
+            -webkit-box-flex: 1;
+            -moz-box-flex: 1;
+            box-flex: 1;
+            -webkit-flex: 1;
+            -moz-flex: 1;
+            -ms-flex: 1;
+            flex: 1; }
+          .header .header-center .notification-list .center .items-list .items a {
+            color: #ddbb74;
+            text-decoration: underline;
+            font-size: 16px; }
+            .header .header-center .notification-list .center .items-list .items a.delete-notification {
+              position: absolute;
+              top: 50%;
+              right: 0px;
+              margin-top: -9px;
+              font-size: 18px; }
+          .header .header-center .notification-list .center .items-list .items:last-child {
+            border-bottom: 0; }
   .header .header-center .search {
     float: right;
     max-width: 240px;
@@ -3304,6 +3436,18 @@ input[type="radio"].budget {
       left: 0px; }
       .header .header-center .search .btn-search i {
         font-size: 18px; }
+
+.modal.notification-result {
+  padding: 30px;
+  max-width: 840px; }
+  .modal.notification-result .close-modal {
+    top: 10px;
+    right: 10px;
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyNpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQwIDc5LjE2MDQ1MSwgMjAxNy8wNS8wNi0wMTowODoyMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChNYWNpbnRvc2gpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjA5NTQ4ODdEMjA5RDExRTlBRDMxOEQ1QTlDOTdCNDczIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjA5NTQ4ODdFMjA5RDExRTlBRDMxOEQ1QTlDOTdCNDczIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MDk1NDg4N0IyMDlEMTFFOUFEMzE4RDVBOUM5N0I0NzMiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MDk1NDg4N0MyMDlEMTFFOUFEMzE4RDVBOUM5N0I0NzMiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4XwoFgAAAD9UlEQVR42uSbPU8bQRCGBxRsCckCFJGAaNKhNDQuCB8JpgMJKRIdbqDLDzCiSxo6PgQtXWhCB4pAgioJiQFRuKGJ+AEWhBSALCHZIJR58RxyyJ25s2d958srvQ26nd2H29ubXc81bGxskCE1swfZcXa3uIMdE0M58Sn7WJxhp9lXJgb1RDneM3aSPc7uZUceuf6p+AX7VcnfC+xD9jr7E/tMa4CNSnHesDfZWfYS+7UL2HKKSIwlibkpffgOPMz+wd5ljxmYMdYsHJM+0FfCD+BOmWpf5DmtldDXV+m7s1bAo+yf7AnyTxMyhlHTwCn2FruF/FeLjCVlAjjK/sheUFzotNagBRlbVAu4XZ6bSQquJmWM7dUC47/2md1HwVefjDVaDfBKncCWQq9UCpwK+DQuN71TXoGx3M9R/WrO6ZXV6JBUrAVsNa5k9V6zS07soBYD8p7VeE8vPgac8DmDMpGRJcoBz1L4NOsEPFTjjUAtNxxDdsDTFF5NPwTGScVIiIFHhPF+w57U2rx3dXVRT08PFQoFymQydHFx4al9a2srxeNxikQidHR0RNlsVusQAYzL1h0e1/pXAjYajVIsFqOBgQFqa2tz3RbXog3aIgZiKWrcmtI4XezVioo7a6mpqYn6+/tdQeMaXIs2drEUBMbmRlnFIlpRMY2vr689QdvBIgZiKQqMgwCOa0bFM7u/v+8a2gkWMbw+/y4UB3C3dtTz83NX0OVgEcOAuo0Au4H2AfYeuMNU9HLQPsBCHQCOmezBCdoHWChmHNgJ2gfYe+D/SgDOme7EboGqJDlRUM44sNNq7DU50QQ+rTUsnlkvyYmiTgF8XGtYLFBukxNlHRsBdptU+AB9B6yaoWM/6yWpKAeNWMrKABgFJGr7MGzevSYVTtCIpSgwpgGMaplDtT1YJFJRUmEHXRpLQWC8shKPda2oOJbJ5/OUy+Vob2/PUwaFa9EGbREDsRR1x9ggdVo44MqSmaKUIOgGx23sM+sOow5qJ8QZ5Y4w/nUuPR9i4PnSXNrSd1mxw6a0sP0DDH0IIfD7h7ulUqEwZC1EsGD5Vg4YQrnAZQhgL8mm9MEO+ISKv6ve1jHsrTCcuAGGttkzdQw8IwzkFhhCucBqHcKukk2pgxtg6B37oI5gD2TMVClwnv22TqAPZKz5aoCh31QsBF8N+DQelrFStcDWnZ6iYulAkFbvWxnT1GN31itw6UI2FpD39KWMZdFLo0oO4rHcv/Q5I1uTMWx7bVjpLw94oSfluanlhiMtfSbtkgqTwJaQp+JzmwQVy/FvDG3et6SP1w9zY6/SOuHYFT+XlM7th1pOMvahlvaRzi/2sjiQn+L9EWAADeyxT6v5becAAAAASUVORK5CYII="); }
+  .modal.notification-result strong {
+    font-size: 25px;
+    font-weight: normal;
+    color: #ddbb74; }
 
 .sidebar-left {
   background: #ddbb74;
@@ -3355,7 +3499,7 @@ input[type="radio"].budget {
         .sidebar-left .items ul li a i:before {
           display: block; }
       .sidebar-left .items ul li a:after {
-        content: "";
+        content: "";
         display: inline-block;
         position: absolute;
         top: 50%;
@@ -4062,7 +4206,7 @@ Build date: 2018-12-12 00:07:25
   src: url("../fonts/icons/icons.eot");
   src: url("../fonts/icons/icons.eot?#iefix") format("eot"), url("../fonts/icons/icons.woff") format("woff"), url("../fonts/icons/icons.ttf") format("truetype"), url("../fonts/icons/icons.svg#icons") format("svg"); }
 
-.font-add:before, .font-arrow-down-sign-to-navigate:before, .font-arrow-left:before, .font-building:before, .font-cancel:before, .font-check:before, .font-cross-remove-sign:before, .font-davet-et:before, .font-delete:before, .font-dil:before, .font-down-arrow:before, .font-download:before, .font-icon-calendar-black:before, .font-icon-copy-big:before, .font-icon-eye-clicked:before, .font-icon-eye:before, .font-icon-promosyon-gray:before, .font-invitation:before, .font-kullanıcılar:before, .font-language:before, .font-menu-dots:before, .font-multiple-users-silhouette:before, .font-navigate-up-arrow:before, .font-plus-black-symbol:before, .font-power-off:before, .font-profile:before, .font-profilim:before, .font-right-arrow-2:before, .font-right-arrow:before, .font-search:before, .font-sirket-profili:before, .font-takvim:before, .font-urunler:before, .font-verified-copy-10:before, .font-verified:before, .font-m_ayarlar:before, .font-m_cuzdan:before, .font-m_iletisim:before, .font-m_kampanya:before, .font-m_kitle:before, .font-m_raporlar:before, .font-m_sepet-odeme:before, .font-facebook-app-logo:before, .font-icon-mail2:before, .font-icon-sms:before, .font-icon-whatsapp:before, .font-instagram:before, .font-linkedin-logo:before, .font-twitter-logo-silhouette:before, input[type="checkbox"].yellow + label:before, input[type="checkbox"].all-checkboxes + label:before, input[type="checkbox"].dt-checkboxes + label:before, input[type="checkbox"].terms + label:after, input[type="checkbox"].terms-yellow + label:after, input[type="checkbox"].membership-type + label:after, input[type="radio"].budget + label:after, .radios-check span:before, .thumnailGallery .flex-direction-nav a:before, .sidebar-left .items ul li a:after, .sidebar-right.audience-page .sidebar-qutter .sidebar-content .audience-maps .registered a:after {
+.font-add:before, .font-arrow-down-sign-to-navigate:before, .font-arrow-left:before, .font-bell:before, .font-building:before, .font-cancel:before, .font-check:before, .font-cross-remove-sign:before, .font-davet-et:before, .font-delete:before, .font-dil:before, .font-down-arrow:before, .font-download:before, .font-icon-calendar-black:before, .font-icon-copy-big:before, .font-icon-eye-clicked:before, .font-icon-eye:before, .font-icon-promosyon-gray:before, .font-invitation:before, .font-kullanıcılar:before, .font-language:before, .font-menu-dots:before, .font-multiple-users-silhouette:before, .font-navigate-up-arrow:before, .font-plus-black-symbol:before, .font-power-off:before, .font-profile:before, .font-profilim:before, .font-right-arrow-2:before, .font-right-arrow:before, .font-search:before, .font-sirket-profili:before, .font-takvim:before, .font-urunler:before, .font-verified-copy-10:before, .font-verified:before, .font-m_ayarlar:before, .font-m_cuzdan:before, .font-m_iletisim:before, .font-m_kampanya:before, .font-m_kitle:before, .font-m_raporlar:before, .font-m_sepet-odeme:before, .font-facebook-app-logo:before, .font-icon-mail2:before, .font-icon-sms:before, .font-icon-whatsapp:before, .font-instagram:before, .font-linkedin-logo:before, .font-twitter-logo-silhouette:before, input[type="checkbox"].yellow + label:before, input[type="checkbox"].all-checkboxes + label:before, input[type="checkbox"].dt-checkboxes + label:before, input[type="checkbox"].terms + label:after, input[type="checkbox"].terms-yellow + label:after, input[type="checkbox"].membership-type + label:after, input[type="radio"].budget + label:after, .radios-check span:before, .thumnailGallery .flex-direction-nav a:before, .sidebar-left .items ul li a:after, .sidebar-right.audience-page .sidebar-qutter .sidebar-content .audience-maps .registered a:after {
   font-family: "icons";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -4083,143 +4227,146 @@ Build date: 2018-12-12 00:07:25
 .font-arrow-left:before {
   content: ""; }
 
-.font-building:before {
+.font-bell:before {
   content: ""; }
 
-.font-cancel:before {
+.font-building:before {
   content: ""; }
 
-.font-check:before {
+.font-cancel:before {
   content: ""; }
 
-.font-cross-remove-sign:before {
+.font-check:before {
   content: ""; }
 
-.font-davet-et:before {
+.font-cross-remove-sign:before {
   content: ""; }
 
-.font-delete:before {
+.font-davet-et:before {
   content: ""; }
 
-.font-dil:before {
+.font-delete:before {
   content: ""; }
 
-.font-down-arrow:before {
+.font-dil:before {
   content: ""; }
 
-.font-download:before {
+.font-down-arrow:before {
   content: ""; }
 
-.font-icon-calendar-black:before {
+.font-download:before {
   content: ""; }
 
-.font-icon-copy-big:before {
+.font-icon-calendar-black:before {
   content: ""; }
 
-.font-icon-eye-clicked:before {
+.font-icon-copy-big:before {
   content: ""; }
 
-.font-icon-eye:before {
+.font-icon-eye-clicked:before {
   content: ""; }
 
-.font-icon-promosyon-gray:before {
+.font-icon-eye:before {
   content: ""; }
 
-.font-invitation:before {
+.font-icon-promosyon-gray:before {
   content: ""; }
 
-.font-kullanıcılar:before {
+.font-invitation:before {
   content: ""; }
 
-.font-language:before {
+.font-kullanıcılar:before {
   content: ""; }
 
-.font-menu-dots:before {
+.font-language:before {
   content: ""; }
 
-.font-multiple-users-silhouette:before {
+.font-menu-dots:before {
   content: ""; }
 
-.font-navigate-up-arrow:before {
+.font-multiple-users-silhouette:before {
   content: ""; }
 
-.font-plus-black-symbol:before {
+.font-navigate-up-arrow:before {
   content: ""; }
 
-.font-power-off:before {
+.font-plus-black-symbol:before {
   content: ""; }
 
-.font-profile:before {
+.font-power-off:before {
   content: ""; }
 
-.font-profilim:before {
+.font-profile:before {
   content: ""; }
 
-.font-right-arrow-2:before {
+.font-profilim:before {
   content: ""; }
 
-.font-right-arrow:before {
+.font-right-arrow-2:before {
   content: ""; }
 
-.font-search:before {
+.font-right-arrow:before {
   content: ""; }
 
-.font-sirket-profili:before {
+.font-search:before {
   content: ""; }
 
-.font-takvim:before {
+.font-sirket-profili:before {
   content: ""; }
 
-.font-urunler:before {
+.font-takvim:before {
   content: ""; }
 
-.font-verified-copy-10:before {
+.font-urunler:before {
   content: ""; }
 
-.font-verified:before {
+.font-verified-copy-10:before {
   content: ""; }
 
-.font-m_ayarlar:before {
+.font-verified:before {
   content: ""; }
 
-.font-m_cuzdan:before {
+.font-m_ayarlar:before {
   content: ""; }
 
-.font-m_iletisim:before {
+.font-m_cuzdan:before {
   content: ""; }
 
-.font-m_kampanya:before {
+.font-m_iletisim:before {
   content: ""; }
 
-.font-m_kitle:before {
+.font-m_kampanya:before {
   content: ""; }
 
-.font-m_raporlar:before {
+.font-m_kitle:before {
   content: ""; }
 
-.font-m_sepet-odeme:before {
+.font-m_raporlar:before {
   content: ""; }
 
-.font-facebook-app-logo:before {
+.font-m_sepet-odeme:before {
   content: ""; }
 
-.font-icon-mail2:before {
+.font-facebook-app-logo:before {
   content: ""; }
 
-.font-icon-sms:before {
+.font-icon-mail2:before {
   content: ""; }
 
-.font-icon-whatsapp:before {
+.font-icon-sms:before {
   content: ""; }
 
-.font-instagram:before {
+.font-icon-whatsapp:before {
   content: ""; }
 
-.font-linkedin-logo:before {
+.font-instagram:before {
   content: ""; }
 
-.font-twitter-logo-silhouette:before {
+.font-linkedin-logo:before {
   content: ""; }
+
+.font-twitter-logo-silhouette:before {
+  content: ""; }
 
 .sidebar-right.audience-page .sidebar-qutter .sidebar-content .audience-choose {
   -webkit-border-radius: 4px;
@@ -4429,7 +4576,7 @@ Build date: 2018-12-12 00:07:25
     position: relative;
     display: block; }
     .sidebar-right.audience-page .sidebar-qutter .sidebar-content .audience-maps .registered a:after {
-      content: "";
+      content: "";
       display: inline-block;
       position: absolute;
       top: 50%;

@@ -44,25 +44,25 @@
           }
         }
         .total-promotion{
-          border:1px solid #d7d7d7;
           @include clearfix();
-          padding: 20px 15px 19px 15px;
+          padding: 20px 18px 19px 18px;
           @include border-radius(4px);
+          background: $companyColor;
           label{
-            float: left;
-            display: inline-block;
-            font-size: 18px;
-            font-weight: bold;
-            font-family: $sourceSansFontFamily;
-            color:$companyColor;
-          }
-          span{
             float: right;
             display: inline-block;
+            font-size: 22px;
+            font-weight: 500;
             font-family: $sourceSansFontFamily;
-            font-size: 14px;
-            font-weight: 600;
-            color: #9b9b9b;
+            color:#fff;
+          }
+          span{
+            float: left;
+            display: inline-block;
+            font-family: $sourceSansFontFamily;
+            font-size: 18px;
+            font-weight: 500;
+            color: #fff;
           }
         }
       }

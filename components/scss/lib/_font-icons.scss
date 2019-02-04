@@ -33,143 +33,146 @@
 	@if $filename == arrow-left {
 		$char: "\E003";
 	}
-	@if $filename == building {
+	@if $filename == bell {
 		$char: "\E004";
 	}
-	@if $filename == cancel {
+	@if $filename == building {
 		$char: "\E005";
 	}
-	@if $filename == check {
+	@if $filename == cancel {
 		$char: "\E006";
 	}
-	@if $filename == cross-remove-sign {
+	@if $filename == check {
 		$char: "\E007";
 	}
-	@if $filename == davet-et {
+	@if $filename == cross-remove-sign {
 		$char: "\E008";
 	}
-	@if $filename == delete {
+	@if $filename == davet-et {
 		$char: "\E009";
 	}
-	@if $filename == dil {
+	@if $filename == delete {
 		$char: "\E00A";
 	}
-	@if $filename == down-arrow {
+	@if $filename == dil {
 		$char: "\E00B";
 	}
-	@if $filename == download {
+	@if $filename == down-arrow {
 		$char: "\E00C";
 	}
-	@if $filename == icon-calendar-black {
+	@if $filename == download {
 		$char: "\E00D";
 	}
-	@if $filename == icon-copy-big {
+	@if $filename == icon-calendar-black {
 		$char: "\E00E";
 	}
-	@if $filename == icon-eye-clicked {
+	@if $filename == icon-copy-big {
 		$char: "\E00F";
 	}
-	@if $filename == icon-eye {
+	@if $filename == icon-eye-clicked {
 		$char: "\E010";
 	}
-	@if $filename == icon-promosyon-gray {
+	@if $filename == icon-eye {
 		$char: "\E011";
 	}
-	@if $filename == invitation {
+	@if $filename == icon-promosyon-gray {
 		$char: "\E012";
 	}
-	@if $filename == kullanıcılar {
+	@if $filename == invitation {
 		$char: "\E013";
 	}
-	@if $filename == language {
+	@if $filename == kullanıcılar {
 		$char: "\E014";
 	}
-	@if $filename == menu-dots {
+	@if $filename == language {
 		$char: "\E015";
 	}
-	@if $filename == multiple-users-silhouette {
+	@if $filename == menu-dots {
 		$char: "\E016";
 	}
-	@if $filename == navigate-up-arrow {
+	@if $filename == multiple-users-silhouette {
 		$char: "\E017";
 	}
-	@if $filename == plus-black-symbol {
+	@if $filename == navigate-up-arrow {
 		$char: "\E018";
 	}
-	@if $filename == power-off {
+	@if $filename == plus-black-symbol {
 		$char: "\E019";
 	}
-	@if $filename == profile {
+	@if $filename == power-off {
 		$char: "\E01A";
 	}
-	@if $filename == profilim {
+	@if $filename == profile {
 		$char: "\E01B";
 	}
-	@if $filename == right-arrow-2 {
+	@if $filename == profilim {
 		$char: "\E01C";
 	}
-	@if $filename == right-arrow {
+	@if $filename == right-arrow-2 {
 		$char: "\E01D";
 	}
-	@if $filename == search {
+	@if $filename == right-arrow {
 		$char: "\E01E";
 	}
-	@if $filename == sirket-profili {
+	@if $filename == search {
 		$char: "\E01F";
 	}
-	@if $filename == takvim {
+	@if $filename == sirket-profili {
 		$char: "\E020";
 	}
-	@if $filename == urunler {
+	@if $filename == takvim {
 		$char: "\E021";
 	}
-	@if $filename == verified-copy-10 {
+	@if $filename == urunler {
 		$char: "\E022";
 	}
-	@if $filename == verified {
+	@if $filename == verified-copy-10 {
 		$char: "\E023";
 	}
-	@if $filename == m_ayarlar {
+	@if $filename == verified {
 		$char: "\E024";
 	}
-	@if $filename == m_cuzdan {
+	@if $filename == m_ayarlar {
 		$char: "\E025";
 	}
-	@if $filename == m_iletisim {
+	@if $filename == m_cuzdan {
 		$char: "\E026";
 	}
-	@if $filename == m_kampanya {
+	@if $filename == m_iletisim {
 		$char: "\E027";
 	}
-	@if $filename == m_kitle {
+	@if $filename == m_kampanya {
 		$char: "\E028";
 	}
-	@if $filename == m_raporlar {
+	@if $filename == m_kitle {
 		$char: "\E029";
 	}
-	@if $filename == m_sepet-odeme {
+	@if $filename == m_raporlar {
 		$char: "\E02A";
 	}
-	@if $filename == facebook-app-logo {
+	@if $filename == m_sepet-odeme {
 		$char: "\E02B";
 	}
-	@if $filename == icon-mail2 {
+	@if $filename == facebook-app-logo {
 		$char: "\E02C";
 	}
-	@if $filename == icon-sms {
+	@if $filename == icon-mail2 {
 		$char: "\E02D";
 	}
-	@if $filename == icon-whatsapp {
+	@if $filename == icon-sms {
 		$char: "\E02E";
 	}
-	@if $filename == instagram {
+	@if $filename == icon-whatsapp {
 		$char: "\E02F";
 	}
-	@if $filename == linkedin-logo {
+	@if $filename == instagram {
 		$char: "\E030";
 	}
-	@if $filename == twitter-logo-silhouette {
+	@if $filename == linkedin-logo {
 		$char: "\E031";
+	}
+	@if $filename == twitter-logo-silhouette {
+		$char: "\E032";
 	}
 
 	@return $char;
@@ -190,6 +193,9 @@
 }
 .font-arrow-left {
 	@include font(arrow-left);
+}
+.font-bell {
+	@include font(bell);
 }
 .font-building {
 	@include font(building);
