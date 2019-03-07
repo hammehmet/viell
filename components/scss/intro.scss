@@ -7,7 +7,7 @@
 
 
 body{
-  background: url(../../img/background.jpg) no-repeat top center;
+  background: url(../../img/index-back.jpg) no-repeat top center;
   background-size: cover;
   height: 100%;
   .intro{
@@ -30,8 +30,11 @@ body{
             font-size: 17px;
             vertical-align: middle;
             margin-left: 25px;
+
             &.buttons{
               width: 125px;
+              background-color: $companyColor;
+              color:#fff;
               &:hover{
                 color:$textColor
               }
@@ -40,40 +43,69 @@ body{
         }
       }
       .text{
-        color:#ffF;
-        max-width: 400px;
+        color:$textColor;
         position: absolute;
         top: 50%;
-        left: 170px;
+        left: 0px;
         -webkit-transform: translate(0, -50%);
         transform: translate(0, -50%);
+        .text-center{
+          max-width: 460px;
+        }
         h1{
-          font-size: 32px;
+          font-size: 40px;
           font-weight: normal;
           font-style: normal;
           font-stretch: normal;
           line-height: normal;
           letter-spacing: normal;
-          color:#ffF;
+          color:$companyColor;
           margin:  0 0 20px 0;
         }
         span{
           display: block;
-          font-size: 17px;
+          font-size: 18px;
+          margin-bottom: 20px;
         }
       }
       .app{
-        position: absolute;
-        bottom: 60px;
-        left: 170px;
+        padding: 50px 0;
+        @include clearfix();
+        a{
+          margin-right: 50px;
+          display: inline-block;
+          float: left;
+          &.watch{
+            position: relative;
+            top:-7px;
+          }
+        }
+      }
+      .socials{
+        li{
+          display: inline-block;
+        }
       }
       .phone{
-        max-width: 307px;
-        position: absolute;
-        bottom: 0;
-        right: 130px;
+        float: right;
+        //position: absolute;
+        //bottom: 0;
+        //right: 0px;
         img{
           max-width: 100%;
+        }
+      }
+      .footer{
+        font-family: $Titillium;
+        font-size: 15px;
+        padding-bottom: 50px;
+        ul{
+          text-align: center;
+          display: block;;
+          li{
+            display: inline-block;
+            margin: 0 10px;
+          }
         }
       }
     }

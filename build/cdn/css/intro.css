@@ -566,7 +566,7 @@ label.error {
   animation-name: fadeOut; }
 
 body {
-  background: url(../../img/background.jpg) no-repeat top center;
+  background: url(../../img/index-back.jpg) no-repeat top center;
   background-size: cover;
   height: 100%; }
   body .intro {
@@ -592,39 +592,61 @@ body {
             vertical-align: middle;
             margin-left: 25px; }
             body .intro .wrapper .head .links a.buttons {
-              width: 125px; }
+              width: 125px;
+              background-color: #ddbb74;
+              color: #fff; }
               body .intro .wrapper .head .links a.buttons:hover {
                 color: #2b3445; }
       body .intro .wrapper .text {
-        color: #ffF;
-        max-width: 400px;
+        color: #2b3445;
         position: absolute;
         top: 50%;
-        left: 170px;
+        left: 0px;
         -webkit-transform: translate(0, -50%);
         transform: translate(0, -50%); }
+        body .intro .wrapper .text .text-center {
+          max-width: 460px; }
         body .intro .wrapper .text h1 {
-          font-size: 32px;
+          font-size: 40px;
           font-weight: normal;
           font-style: normal;
           font-stretch: normal;
           line-height: normal;
           letter-spacing: normal;
-          color: #ffF;
+          color: #ddbb74;
           margin: 0 0 20px 0; }
         body .intro .wrapper .text span {
           display: block;
-          font-size: 17px; }
+          font-size: 18px;
+          margin-bottom: 20px; }
       body .intro .wrapper .app {
-        position: absolute;
-        bottom: 60px;
-        left: 170px; }
+        padding: 50px 0; }
+        body .intro .wrapper .app::after {
+          clear: both;
+          content: "";
+          display: table; }
+        body .intro .wrapper .app a {
+          margin-right: 50px;
+          display: inline-block;
+          float: left; }
+          body .intro .wrapper .app a.watch {
+            position: relative;
+            top: -7px; }
+      body .intro .wrapper .socials li {
+        display: inline-block; }
       body .intro .wrapper .phone {
-        max-width: 307px;
-        position: absolute;
-        bottom: 0;
-        right: 130px; }
+        float: right; }
         body .intro .wrapper .phone img {
           max-width: 100%; }
+      body .intro .wrapper .footer {
+        font-family: "Titillium Web", sans-serif;
+        font-size: 15px;
+        padding-bottom: 50px; }
+        body .intro .wrapper .footer ul {
+          text-align: center;
+          display: block; }
+          body .intro .wrapper .footer ul li {
+            display: inline-block;
+            margin: 0 10px; }
 
 /*# sourceMappingURL=intro.css.map */
